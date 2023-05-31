@@ -38,6 +38,9 @@ Open settings.json (right upper icon)
 
 &nbsp;
 
+[Application for this demo](https://github.com/TestingTalks/react-app)
+
+&nbsp;
 
 ### Steps ###
 1. Download Node.js
