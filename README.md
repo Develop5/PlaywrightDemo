@@ -24,6 +24,20 @@ Practices on Plawright by using BDD
 &nbsp;
 
 &nbsp;
+### Project editor ###
+Settings (left down icon)
+Open settings.json (right upper icon)
+&nbsp;
+```
+{
+    "cucumberautocomplete.steps": ["./e2e/src/step-definition/**/*.ts"],
+    "cucumberautocomplete.syncfeatures": "test/features/*.feature"
+}
+    
+```
+
+&nbsp;
+
 
 ### Steps ###
 1. Download Node.js
