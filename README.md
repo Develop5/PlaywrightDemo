@@ -114,8 +114,12 @@ Open settings.json (right upper icon)
 
 5. yarn add ts-node -D
 
+&nbsp;
 
 
+I am here:
+- [ ] Setting up your first automation framework - part 2
+time 3:24
 
 &nbsp;
 
