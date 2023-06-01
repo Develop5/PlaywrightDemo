@@ -10,5 +10,17 @@ BeforeAll(async() => {
 
 AfterAll(async() => {
     global.browser = await chromium.close();
-})
+});
+
+Before(async() => {
+    global.context = await global.browser.newContext();
+    global.page = await global.context.NewPage();
+
+});
+
+After(async() => {
+    global.page.close();
+});
+
+
 
