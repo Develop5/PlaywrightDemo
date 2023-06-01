@@ -119,7 +119,7 @@ Open settings.json (right upper icon)
 
 I am here:
 - [ ] Setting up your first automation framework - part 2
-time 3:24
+time 4:41
 
 &nbsp;
 
