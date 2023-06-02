@@ -118,8 +118,17 @@ Open settings.json (right upper icon)
 
 
 I am here:
-- [ ] Setting up your first automation framework - part 2
-time 4:41
+- [ ] Setting up your first automation framework - part 3
+time 0:52
+But .feature files did not find step-definitions, so I ran:
+
+yarn add @types/cucumber -D
+
+Issue not solved, thought, until settings.json was created in .vscode folder
+Pending:
+- [ ] Verify if the feature runs
+- [ ] Remove @types/cucumber -D from packages.json
+- [ ] remove User settings.json 
 
 &nbsp;
 
