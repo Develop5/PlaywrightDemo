@@ -33,7 +33,7 @@
   dependencies:
     regexp-match-indices "1.0.2"
 
-"@cucumber/cucumber@^9.1.2":
+"@cucumber/cucumber@*", "@cucumber/cucumber@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@cucumber/cucumber/-/cucumber-9.1.2.tgz#b134a9b678a615a678dbd1ef84ceb72908f9e57c"
   integrity sha512-0V96qH4Uozfu68vm6BY3DA8ZqbnQWgz8N3rnqw/geOG9sY05QeLUQ1PRGDZCznluqEdxt8iEu/QzoGwR7EjDcg==
@@ -199,6 +199,13 @@
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
+
+"@types/cucumber@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@types/cucumber/-/cucumber-7.0.0.tgz#941b25135a0212e315380ab39f7f674c66711b0b"
+  integrity sha512-cr5NN8/jmbw3vDKTQfGW0cSzDtkvxixu9bUD6po9U6OEF04XLuukTDldFG34ccDscLkA8bYnZ7VjxP79cIC7tg==
+  dependencies:
+    "@cucumber/cucumber" "*"
 
 "@types/lodash@^4.14.175":
   version "4.14.195"
