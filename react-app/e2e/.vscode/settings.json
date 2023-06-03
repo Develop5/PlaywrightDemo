@@ -1,5 +1,20 @@
 {
     "cucumberautocomplete.strictGherkinCompletion": true,
     "cucumberautocomplete.steps": ["/e2e/src/step-definitions/**/*.ts"],
-    "cucumberautocomplete.syncfeatures": "src/features/*.feature"
+    "cucumberautocomplete.syncfeatures": "/e2e/src/features/*.feature",
+    "gherkin-autocomplete.featuresPath": "../src/features",
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "files.autoSave": "afterDelay",
+    "cucumberautocomplete.onTypeFormat": true,
+
+    "cucumber.features": [
+        "features/**/*.feature",
+        "src/features/*.feature",
+        "src/test/**/*.feature",
+        "tests/**/*.feature",
+        "*specs*/**/.feature"
+      ],
+
+
+
 }

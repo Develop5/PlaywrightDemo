@@ -118,8 +118,6 @@ Open settings.json (right upper icon)
 
 I am here:
 - [ ] Section 3
-11 Running your automation test ... using NPM confguration
-time 0:33
 
 
 &nbsp;
