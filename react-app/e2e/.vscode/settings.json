@@ -7,13 +7,6 @@
     "files.autoSave": "afterDelay",
     "cucumberautocomplete.onTypeFormat": true,
 
-    "cucumber.features": [
-        "features/**/*.feature",
-        "src/features/*.feature",
-        "src/test/**/*.feature",
-        "tests/**/*.feature",
-        "*specs*/**/.feature"
-      ],
 
 
 
