@@ -131,8 +131,8 @@ Then, you can have a single browser with multiple pages or tabs
 &nbsp;
 
 I am here:
-- [ ] Section 4. Chapter 20. Separate context cucumber scenarios. Part 3
-Momentarily, this command is needed at the command line:
+- [ ] Section 4. Chapter 21. A more flexible cucumber.js - part1
+By now, we continue with this at the command line:
 export UI_AUTOMATION_BROWSER=firefox
 Exactly like that.
 
