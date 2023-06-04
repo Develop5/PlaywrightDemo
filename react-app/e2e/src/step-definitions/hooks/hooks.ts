@@ -12,16 +12,21 @@ AfterAll(async() => {
     await global.browser.close();
 });
 
-Before(async() => {
-    global.context = await global.browser.newContext();
+Before(async(scenario) => {
     // Context: A context creates a new fresh incognito instance of the brower 
     //for each test. No cache no cookies, it is fresh browser
     // A browser context can contain multiple pages
+    global.context = await global.browser.newContext({
+        recordVideo: {
+            dir: './reports/videos/' + scenario.pickle.name,
+        }
+    });
 
-    global.page = await global.context.newPage();
+
     // Page: Single tab or pop-up window within a browser
     // Here we will have a single page to run our automation
     // Then, you can have a single browser with multiple pages or tabs
+    global.page = await global.context.newPage();
 
 });
 
