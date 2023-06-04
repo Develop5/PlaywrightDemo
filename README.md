@@ -117,7 +117,11 @@ Open settings.json (right upper icon)
 &nbsp;
 
 I am here:
-- [ ] Section 3
+
+- [ ] Section 4. Chapter 20. Separate context cucumber scenarios. Part 3
+Momentarily, this command is needed at the command line:
+export UI_AUTOMATION_BROWSER=firefox
+Exactly like that.
 
 &nbsp;
 
