@@ -4,11 +4,10 @@ import playwright, {
     Page,
     Browser,
     BrowserContext,
-    BrowserType
+    BrowserType,
 } from "playwright";
+
 import {env} from '../../env/parseEnv';
-
-
 import { World, IWorldOptions, setWorldConstructor } from "@cucumber/cucumber";
 
 export type Screen = {
@@ -23,9 +22,9 @@ export class ScenarioWorld extends World {
     }
     screen!: Screen;                            // The "!" makes it optional
     async init(contextOptions?: BrowserContextOptions) : Promise<Screen> {
-        await this.screen?.page.close();
-        await this.screen?.context.close();
-        await this.screen?.browser.close();
+        await this.screen?.page?.close();
+        await this.screen?.context?.close();
+        await this.screen?.browser?.close();
 
         const browser = await this.newBrowser();            
         // We will create a custom browser that will determine a new browser
@@ -49,7 +48,7 @@ export class ScenarioWorld extends World {
         const browserType: BrowserType = playwright[automationBrowser];
         const browser = await browserType.launch({
             headless: process.env.HEADLESS != 'false',
-            args: ['--disable-web-security', 'disable-features=IsolateOrigins, site-per-process'],
+            args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process'],
 
         })
         return browser;
