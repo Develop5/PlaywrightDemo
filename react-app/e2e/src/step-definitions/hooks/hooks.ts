@@ -16,6 +16,7 @@ Before(async(scenario) => {
     // Context: A context creates a new fresh incognito instance of the brower 
     //for each test. No cache no cookies, it is fresh browser
     // A browser context can contain multiple pages
+
     global.context = await global.browser.newContext({
         recordVideo: {
             dir: './reports/videos/' + scenario.pickle.name,
@@ -30,7 +31,13 @@ Before(async(scenario) => {
 
 });
 
-After(async() => {
+After(async(scenario) => {
+    const scenarioStatus = scenario.result?.status;
+    if (scenarioStatus === 'FAILED') {
+        await global.page.screenshot({
+            path: `./reports/screenshots/${scenario.pickle.name}.png`
+        });
+    }
     await global.page.close();
     // Closes all pages
 });
