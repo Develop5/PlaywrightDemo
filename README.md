@@ -117,7 +117,7 @@ Open settings.json (right upper icon)
 &nbsp;
 
 I am here:
-- [ ] Section 3
+- [ ] Section 4.
 
 
 &nbsp;
