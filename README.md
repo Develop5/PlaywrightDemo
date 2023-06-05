@@ -125,6 +125,28 @@ Page: Single tab or pop-up window within a browser
 Here we will have a single page to run our automation
 Then, you can have a single browser with multiple pages or tabs
 
+&nbsp;
+
+### ... More steps ###
+
+6. yarn add @babel/cli -D
+
+    Install babel.
+    
+    Babel comes with a built-in CLI which can be used to compile files from the command line.
+
+In addition, various entry point scripts live in the top-level package at @babel/cli/bin.
+
+7. yarn add @babel/preset-env -D
+
+    A smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). This both makes your life easier and JavaScript bundles smaller!
+
+    Babel will do the necessary completion or transform/rewriting of JS code into TS
+
+
+
+
+
 
 
 
