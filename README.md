@@ -1,6 +1,6 @@
 # PlaywrightDemo
 
-Practices on Plawright by using BDD
+## Practices on Plawright by using BDD ##
 
 &nbsp;
 ### Framework goals ###
@@ -42,7 +42,7 @@ Open settings.json (right upper icon)
 
 &nbsp;
 
-### Steps ###
+### **Steps** ###
 1. Download Node.js
 2. System environment variables
 &nbsp;
@@ -82,11 +82,11 @@ Open settings.json (right upper icon)
     (The browser will launch the application)
 
 &nbsp;
-### Configuring the project ###
+### **Configuring the project** ###
 1. Create "e2e" folder under the folder for the application react-app. Go into it.
 2. npm init -y
-&nbsp;
 
+    &nbsp;
     (will create package.json)
 &nbsp;
 
@@ -117,17 +117,61 @@ Open settings.json (right upper icon)
 
 &nbsp;
 
-Context: A context creates a new fresh incognito instance of the brower 
+**Context**: A context creates a new fresh incognito instance of the brower 
 for each test. No cache no cookies, it is fresh browser
 A browser context can contain multiple pages
 
-Page: Single tab or pop-up window within a browser
+**Page**: Single tab or pop-up window within a browser
 Here we will have a single page to run our automation
 Then, you can have a single browser with multiple pages or tabs
 
 &nbsp;
+### **Dotenv** ###
+Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
 
-### ... More steps ###
+&nbsp;
+### **Dotfiles** ###
+A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.
+&nbsp;
+
+The Dotfiles live right in your home directory, so you can keep them under version control, and you can use them on any computer, anywhere.
+&nbsp;
+
+They aggregates a collection of standalone dotfiles combined into a single lib directory located in your home directory ~/.dotfiles/lib. They provide convenient aliases, functions, and a few ready-to-use settings built for speed and high performance for your shell.
+
+&nbsp;
+
+### **The twelve-factor app** ###
+In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps that:
+&nbsp;
+
+Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
+&nbsp;
+
+Have a clean contract with the underlying operating system, offering maximum portability between execution environments;
+&nbsp;
+
+Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;
+&nbsp;
+
+Minimize divergence between development and production, enabling continuous deployment for maximum agility;
+&nbsp;
+
+And can scale up without significant changes to tooling, architecture, or development practices.
+&nbsp;
+
+The twelve-factor methodology can be applied to apps written in any programming language, and &nbsp;
+
+which use any combination of backing services (database, queue, memory cache, etc).
+
+https://12factor.net/
+&nbsp;
+
+https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology
+
+&nbsp;
+
+### **... More steps** ###
 
 6. yarn add @babel/cli -D
 
@@ -152,7 +196,7 @@ In addition, various entry point scripts live in the top-level package at @babel
 
 &nbsp;
 
-I am here:
+*I am here:*
 - [ ] Section 22. Dynamic test configuration - A more flexible cucumber.js - part 2
 
     &nbsp;
