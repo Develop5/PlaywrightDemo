@@ -15,17 +15,17 @@ Before(async function(this: ScenarioWorld, scenario) {
 });
 
 After(async function(this:ScenarioWorld, scenario) {
-    const {
-        screen: {page, browser}
-    } = this;
-
-    const scenarioStatus = scenario.result?.status;
-    if (scenarioStatus === 'FAILED') {
-        await page.screenshot({
-            path: `./reports/screenshots/${scenario.pickle.name}.png`
-        });
-    }
-    await browser.close();
+    console.log(`Closing cucumber scenario ${scenario.pickle.name}`)
+      const {
+          screen: {page, browser}
+      } = this
+      const scenarioStatus = scenario.result?.status;
+      if (scenarioStatus === 'FAILED') {
+          await page.screenshot({
+              path: `./reports/screenshots/${scenario.pickle.name}.png`
+          });
+      }
+      await browser.close();
     return browser;
     // Closes all pages
 });

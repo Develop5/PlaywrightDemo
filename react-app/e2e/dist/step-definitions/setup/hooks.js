@@ -39,22 +39,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
+          console.log("Closing cucumber scenario ".concat(scenario.pickle.name));
           _this$screen = this.screen, page = _this$screen.page, browser = _this$screen.browser;
           scenarioStatus = (_scenario$result = scenario.result) === null || _scenario$result === void 0 ? void 0 : _scenario$result.status;
           if (!(scenarioStatus === 'FAILED')) {
-            _context2.next = 5;
+            _context2.next = 6;
             break;
           }
-          _context2.next = 5;
+          _context2.next = 6;
           return page.screenshot({
             path: "./reports/screenshots/".concat(scenario.pickle.name, ".png")
           });
-        case 5:
-          _context2.next = 7;
+        case 6:
+          _context2.next = 8;
           return browser.close();
-        case 7:
-          return _context2.abrupt("return", browser);
         case 8:
+          return _context2.abrupt("return", browser);
+        case 9:
         case "end":
           return _context2.stop();
       }
