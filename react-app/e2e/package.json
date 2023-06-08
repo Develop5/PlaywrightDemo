@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "_comment": "Really compiling typescript files into javascript files from src to dist?",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
     "cucumber": "yarn transpile && cucumber-js"
   },
