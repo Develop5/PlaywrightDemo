@@ -7,8 +7,6 @@ exports.smoke = exports.regression = exports.dev = void 0;
 var _dotenv = _interopRequireDefault(require("dotenv"));
 var _parseEnv = require("./env/parseEnv");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//require('dotenv').config()                  // Extra. Is this needed?
-
 _dotenv.default.config({
   path: (0, _parseEnv.env)('COMMON_CONFIG_FILE')
 });

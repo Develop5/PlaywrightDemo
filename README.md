@@ -195,7 +195,12 @@ In addition, various entry point scripts live in the top-level package at @babel
 
     Methodologies like the 12 Factor App specify that an application’s code and configuration are separate but combine during deployment to accommodate specific environments.
 
-    
+9. To run the tests:
+
+    yarn cucumber --profile smoke
+    yarn cucumber --profile regression
+    yarn cucumber --profile dev
+
 
 
 
