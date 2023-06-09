@@ -216,9 +216,6 @@ In addition, various entry point scripts live in the top-level package at @babel
     Time: 6:21
 &nbsp;
 
-By now, we continue with this at the command line:
-export UI_AUTOMATION_BROWSER=firefox
-Exactly like that.
 
 &nbsp;
 

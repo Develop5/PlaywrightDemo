@@ -13,8 +13,9 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 1854193699
+              "status": "failed",
+              "duration": 1791699,
+              "error_message": "Error: No environment variable found for UI_AUTOMATION_BROWSER\n    at env (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\env\\parseEnv.ts:7:15)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:17:54)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:16:12)"
             }
           },
           {
@@ -26,8 +27,8 @@
               "location": "src\\step-definitions\\navigation.ts:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 645738499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -39,8 +40,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 40328500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -52,16 +53,17 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 12087800
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 1594989599
+              "status": "failed",
+              "duration": 715499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'page')\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:33:27)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\setup\\hooks.ts:31:12)"
             }
           }
         ],
