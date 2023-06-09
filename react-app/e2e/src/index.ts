@@ -1,4 +1,3 @@
-require('dotenv').config()                  // Extra. Is this needed?
 
 import dotenv from 'dotenv'
 import { env } from './env/parseEnv'
