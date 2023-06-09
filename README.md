@@ -187,7 +187,15 @@ In addition, various entry point scripts live in the top-level package at @babel
 
     Babel will do the necessary completion or transform/rewriting of JS code into TS
 
+8. yarn add dotenv -D
+    
+    Loads environment variables from .env file
 
+    Storing configuration environments separate from code is based on the twelve-factor app methodology
+
+    Methodologies like the 12 Factor App specify that an application’s code and configuration are separate but combine during deployment to accommodate specific environments.
+
+    
 
 
 
