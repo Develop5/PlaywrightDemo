@@ -201,8 +201,15 @@ In addition, various entry point scripts live in the top-level package at @babel
     yarn cucumber --profile regression
     yarn cucumber --profile dev
 
+&nbsp;
 
 
+### Issue ###
+At the command line: 
+
+    export VIDEO_PATH="./reports/videos/"
+    
+    export UI_AUTOMATION_BROWSER='chromium'
 
 
 
@@ -218,5 +225,21 @@ In addition, various entry point scripts live in the top-level package at @babel
 
 
 &nbsp;
+
+
+Emoji
+A simple plugin to insert emoji from the command palette.
+
+Installation
+Run ext install emoji in the command palette.
+
+Usage
+Open command palette with command/ctrl + p
+
+type > select Emoji: Insert emoji
+
+Run Emoji: Insert emoji or Emoji: Insert emoji unicode in the command palette by hitting enter and select the emoji to insert at the cursor.
+
+Example
 
 [Makdown Guide](https://www.markdownguide.org/basic-syntax)
