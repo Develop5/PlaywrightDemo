@@ -1,13 +1,9 @@
-// This will be seen in the BeforeAll 
 import {Before, After, ITestCaseHookParameter} from "@cucumber/cucumber";
 import { ScenarioWorld } from './world';
 import { env } from '../../env/parseEnv';
 
 Before(async function(this: ScenarioWorld, scenario) {
-    // Check this part. Environment variables are not read
     const automationBrowser = env('UI_AUTOMATION_BROWSER')
-    console.log(`Variable de entorno : ${env('UI_AUTOMATION_BROWSER')}   <<<<<<<<<<<<<<<<`)
-    // To hear
 
     console.log(`Running cucumber scenario ${scenario.pickle.name}`)
     const contextOptions = {

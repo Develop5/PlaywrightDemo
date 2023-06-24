@@ -8,23 +8,22 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 (0, _cucumber.Before)( /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(scenario) {
-    var automationBrowser, contextOptions, ready;
+    var contextOptions, ready;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          automationBrowser = (0, _parseEnv.env)('UI_AUTOMATION_BROWSER');
-          console.log("Running cucumber scenario ".concat(scenario.pickle.name));
+          console.log("\uD83E\uDD52 Running cucumber \"".concat(scenario.pickle.name, "\""));
           contextOptions = {
             recordVideo: {
               dir: "".concat((0, _parseEnv.env)('VIDEO_PATH')).concat(scenario.pickle.name)
             }
           };
-          _context.next = 5;
+          _context.next = 4;
           return this.init(contextOptions);
-        case 5:
+        case 4:
           ready = _context.sent;
           return _context.abrupt("return", ready);
-        case 7:
+        case 6:
         case "end":
           return _context.stop();
       }
@@ -37,27 +36,30 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 (0, _cucumber.After)( /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(scenario) {
     var _scenario$result;
-    var _this$screen, page, browser, scenarioStatus;
+    var _this$screen, page, browser, scenarioStatus, screenshot;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          console.log("Closing cucumber scenario ".concat(scenario.pickle.name));
           _this$screen = this.screen, page = _this$screen.page, browser = _this$screen.browser;
           scenarioStatus = (_scenario$result = scenario.result) === null || _scenario$result === void 0 ? void 0 : _scenario$result.status;
           if (!(scenarioStatus === 'FAILED')) {
-            _context2.next = 6;
+            _context2.next = 8;
             break;
           }
-          _context2.next = 6;
+          _context2.next = 5;
           return page.screenshot({
             path: "".concat((0, _parseEnv.env)('SCREENSHOT_PATH')).concat(scenario.pickle.name, ".png")
           });
-        case 6:
+        case 5:
+          screenshot = _context2.sent;
           _context2.next = 8;
-          return browser.close();
+          return this.attach(screenshot, 'image/png');
         case 8:
+          _context2.next = 10;
+          return browser.close();
+        case 10:
           return _context2.abrupt("return", browser);
-        case 9:
+        case 11:
         case "end":
           return _context2.stop();
       }
