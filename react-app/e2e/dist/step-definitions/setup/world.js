@@ -33,7 +33,6 @@ var ScenarioWorld = /*#__PURE__*/function (_World) {
     _classCallCheck(this, ScenarioWorld);
     _this = _super.call(this, options);
     _defineProperty(_assertThisInitialized(_this), "globalConfig", void 0);
-    _defineProperty(_assertThisInitialized(_this), "globalVariables", void 0);
     _defineProperty(_assertThisInitialized(_this), "screen", void 0);
     _defineProperty(_assertThisInitialized(_this), "newBrowser", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
       var automationBrowsers, automationBrowser, browserType, browser;
@@ -58,9 +57,6 @@ var ScenarioWorld = /*#__PURE__*/function (_World) {
       }, _callee);
     })));
     _this.globalConfig = options.parameters;
-    _this.globalVariables = {
-      currentScreen: ''
-    };
     return _this;
   }
   _createClass(ScenarioWorld, [{

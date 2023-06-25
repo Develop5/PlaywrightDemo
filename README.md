@@ -222,8 +222,7 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 6, Chapter 39. Matching our Page URL to our expected route Regex
-        Looking for stability when navigating through pages. Common parts in regex
+- [ ] Section 6, Chapter 41. Determining our PageId by matching our page URL to our page Regex - part 2
 
     &nbsp;
     Time: 

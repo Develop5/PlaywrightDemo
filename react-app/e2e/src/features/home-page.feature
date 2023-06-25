@@ -1,6 +1,5 @@
 Feature: As a user I expect to be able to navigate to home page
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I expect to be able to see contacts
