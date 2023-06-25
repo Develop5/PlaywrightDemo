@@ -222,7 +222,7 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 6, Chapter 41. Determining our PageId by matching our page URL to our page Regex - part 2
+- [ ] Section 6, Chapter 44. Introducing Form Steps - Our first end to end test - part 1
 
     &nbsp;
     Time: 

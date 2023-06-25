@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2969629700
+              "duration": 3121527399
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 775623700
+              "duration": 793591399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90337400
+              "duration": 86853399
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1227400
+              "duration": 1106599
             }
           },
           {
@@ -66,7 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8124399
+              "duration": 8688600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in the \"name\" input with \"Ted Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32825599
             }
           },
           {
@@ -74,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32463200
+              "duration": 2129626199
             }
           }
         ],

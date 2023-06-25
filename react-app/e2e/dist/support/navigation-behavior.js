@@ -42,21 +42,17 @@ var pathMatchesPageId = function pathMatchesPageId(path, pageId, _ref3) {
 var currentPathMatchesPageId = function currentPathMatchesPageId(page, pageId, globalConfig) {
   var _URL = new URL(page.url()),
     currentPath = _URL.pathname;
-  console.log(" currentPath ", currentPath);
   return pathMatchesPageId(currentPath, pageId, globalConfig);
 };
 exports.currentPathMatchesPageId = currentPathMatchesPageId;
 var getCurrentPageId = function getCurrentPageId(page, globalConfig) {
   var pagesConfig = globalConfig.pagesConfig;
-  console.log(" pagesConfig ", pagesConfig);
   var pageConfigPageIds = Object.keys(pagesConfig);
-  console.log(" pageConfigPageIds ", pageConfigPageIds);
   var _URL2 = new URL(page.url()),
     currentPath = _URL2.pathname;
   var currentPageId = pageConfigPageIds.find(function (pageId) {
     return pathMatchesPageId(currentPath, pageId, globalConfig);
   });
-  console.log(" currentPageId ", currentPageId);
   if (!currentPageId) {
     throw Error("Failed to get page name from current route ".concat(currentPath, ",             possible pages: ").concat(JSON.stringify(pagesConfig)));
   }
