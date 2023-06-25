@@ -1,9 +1,11 @@
 import { Given } from '@cucumber/cucumber'
 import { PageId } from '../env/global'
 import { 
-    navigateToPage
+    navigateToPage,
+    currentPathMatchesPageId,
 } from '../support/navigation-behavior';
 import { ScenarioWorld } from './setup/world';
+import { waitFor } from '../support/wait-for-behavior';
 
 Given(
     /^I am on the "([^"]*)" page$/,
@@ -19,5 +21,6 @@ Given(
         
         await page.goto("http://localhost:3000/");
         await navigateToPage(page, pageId, globalConfig)
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
     }
 )
