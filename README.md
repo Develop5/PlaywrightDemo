@@ -222,7 +222,7 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 6, Chapter 44. Introducing Form Steps - Our first end to end test - part 1
+- [ ] Section 6, Chapter 45. Introducing Form Steps - Our first end to end test - part 2
 
     &nbsp;
     Time: 
