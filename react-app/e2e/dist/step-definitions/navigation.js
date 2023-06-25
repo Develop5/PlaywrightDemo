@@ -26,7 +26,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }
     }, _callee, this);
   }));
-  return function (_x) {
+  return function (_x, _x2) {
     return _ref.apply(this, arguments);
   };
 }());
