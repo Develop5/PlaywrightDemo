@@ -19,8 +19,6 @@ Then(
             const elementText = await page.textContent(elementIdentifier)
             return elementText?.includes(expectedElementText)
         })
-        //const content = await page.textContent(elementIdentifier);
-        //expect(content).toBe(expectedElementText);
     }
 )
 
