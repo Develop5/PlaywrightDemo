@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3109871299
+              "duration": 2969629700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 769399599
+              "duration": 775623700
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90578000
+              "duration": 90337400
             }
           },
           {
@@ -53,7 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1380800
+              "duration": 1227400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"create contact header\" should contain the text \"Create Contact\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8124399
             }
           },
           {
@@ -61,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2182496900
+              "duration": 32463200
             }
           }
         ],
