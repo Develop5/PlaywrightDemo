@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1457817799
+              "duration": 1468035500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 817636099
+              "duration": 799845600
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 136774100
+              "duration": 145862699
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 817799
+              "duration": 1110400
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8149899
+              "duration": 9507000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43923200
+              "duration": 43989399
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45584699
+              "duration": 43442799
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30833999
+              "duration": 35404299
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28275700
+              "duration": 31588800
             }
           },
           {
@@ -131,7 +131,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30134400
+              "duration": 37416099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the \"save\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75155699
             }
           },
           {
@@ -139,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 161769999
+              "duration": 165033700
             }
           }
         ],
