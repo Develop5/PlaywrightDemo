@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2858307200
+              "duration": 2977767899
             }
           },
           {
@@ -27,33 +27,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 917469099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "the \"contacts header\" should contain the text \"Contacts\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28933499
+              "duration": 915812999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 8,
             "name": "the \"header logo\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:22"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 9622099
+              "duration": 32685000
             }
           },
           {
@@ -61,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28877600
+              "duration": 2106758000
             }
           }
         ],

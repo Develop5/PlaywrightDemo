@@ -222,7 +222,7 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 28. Creating Mappings for Host URLS and Page ROUTES - part 2
+- [ ] Section 31. Creating Mappings and using Global Variables to pass page - part 1
 
     &nbsp;
     Time: 
