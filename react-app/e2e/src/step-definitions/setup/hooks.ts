@@ -19,7 +19,7 @@ After(async function(this:ScenarioWorld, scenario) {
     console.log(`Closing cucumber scenario ${scenario.pickle.name}`)
       const {
           screen: {page, browser}
-      } = this
+      } = this;
       const scenarioStatus = scenario.result?.status;
       if (scenarioStatus === 'FAILED') {
           const screenshot = await page.screenshot({
@@ -29,7 +29,6 @@ After(async function(this:ScenarioWorld, scenario) {
       }
       await browser.close();
     return browser;
-    // Closes all pages
 });
 
 
