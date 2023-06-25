@@ -53,3 +53,48 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^I select the "([^"]*)" option from the "([^"]*)"$/, /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(option, elementKey) {
+    var page, globalConfig, elementIdentifier;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          page = this.screen.page, globalConfig = this.globalConfig;
+          console.log("I select the ".concat(option, " option from the ").concat(elementKey));
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+          _context4.next = 5;
+          return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+            var result;
+            return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+              while (1) switch (_context3.prev = _context3.next) {
+                case 0:
+                  _context3.next = 2;
+                  return page.waitForSelector(elementIdentifier, {
+                    state: 'visible'
+                  });
+                case 2:
+                  result = _context3.sent;
+                  if (!result) {
+                    _context3.next = 6;
+                    break;
+                  }
+                  _context3.next = 6;
+                  return (0, _htmlBehavior.selectValue)(page, elementIdentifier, option);
+                case 6:
+                  return _context3.abrupt("return", result);
+                case 7:
+                case "end":
+                  return _context3.stop();
+              }
+            }, _callee3);
+          })));
+        case 5:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, this);
+  }));
+  return function (_x4, _x5, _x6) {
+    return _ref3.apply(this, arguments);
+  };
+}());

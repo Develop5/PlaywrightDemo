@@ -1,4 +1,3 @@
 {
-    "create contact header": "[data-id='create-contact-header']",
-    "name": "[data-id='name']"
+    "create contact header": "[data-id='create-contact-header']"   
 }
