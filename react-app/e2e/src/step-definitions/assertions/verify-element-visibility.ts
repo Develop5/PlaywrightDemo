@@ -15,7 +15,11 @@ Then(
         console.log(`the ${elementKey} should contain the text ${expectedElementText}`);
         const elementIdentifier = getElementLocator(page, elementKey, globalVariables, globalConfig)
         
-        const content = await page.textContent(elementIdentifier);
+        await waitFor(async() => {
+            const elementText = await page.textContent(elementIdentifier)
+            return elementText?.includes(expectedElementText)
+        })
+        //const content = await page.textContent(elementIdentifier);
         //expect(content).toBe(expectedElementText);
     }
 )

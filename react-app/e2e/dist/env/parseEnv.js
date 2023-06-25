@@ -13,7 +13,6 @@ var env = function env(key) {
 };
 exports.env = env;
 var envNumber = function envNumber(key) {
-  console.log("===========  " + Number(env[key]));
   return Number(process.env[key]);
 };
 exports.envNumber = envNumber;
