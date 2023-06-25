@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3183089500
+              "duration": 3051818999
             }
           },
           {
@@ -27,21 +27,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 770603700
+              "duration": 775705600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "the \"contacts header\" should contain the text \"Contactssss\"",
+            "name": "the \"contacts header\" should contain the text \"XXXContacts\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
             },
             "result": {
               "status": "failed",
-              "duration": 37108300,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Contacts\u001b[7msss\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Contacts\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-element-visibility.ts:19:37)\n    at fulfilled (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-element-visibility.ts:5:58)"
+              "duration": 38006600,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mXXX\u001b[27mContacts\"\u001b[39m\nReceived: \u001b[31m\"Contacts\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-element-visibility.ts:19:37)\n    at fulfilled (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-element-visibility.ts:5:58)"
             }
           },
           {
@@ -62,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 109276200
+              "duration": 119608300
             },
             "embeddings": [
               {
