@@ -9,18 +9,19 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 (0, _cucumber.Then)(/^the "([^"]*)" should contain the text "(.*)"$/, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(elementKey, expectedElementText) {
-    var page, content;
+    var page, globalConfig, globalVariables, elementIdentifier, content;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          page = this.screen.page;
+          page = this.screen.page, globalConfig = this.globalConfig, globalVariables = this.globalVariables;
           console.log("the ".concat(elementKey, " should contain the text ").concat(expectedElementText));
-          _context.next = 4;
-          return page.textContent("[data-id='contacts']");
-        case 4:
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalVariables, globalConfig);
+          _context.next = 5;
+          return page.textContent(elementIdentifier);
+        case 5:
           content = _context.sent;
           (0, _test.expect)(content).toBe(expectedElementText);
-        case 6:
+        case 7:
         case "end":
           return _context.stop();
       }
@@ -38,8 +39,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         case 0:
           page = this.screen.page, globalVariables = this.globalVariables, globalConfig = this.globalConfig;
           console.log("the ".concat(elementKey, " should be displayed"));
-
-          //const locator = page.locator("[data-id='header-logo']")
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalVariables, globalConfig);
           locator = page.locator(elementIdentifier);
           _context2.next = 6;
