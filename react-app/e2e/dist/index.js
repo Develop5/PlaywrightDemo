@@ -10,12 +10,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _dotenv.default.config({
   path: (0, _parseEnv.env)('COMMON_CONFIG_FILE')
 });
-var common = "./src/features/**/*.feature                 --require-module ts-node/register                 --require ./src/step-definitions/**/**/*.ts                 -f json:./reports/report.json                 --format progress-bar";
+var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOST_URL_PATH'));
+console.log("hostsConfig ", hostsConfig);
+var pagesConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('PAGE_URL_PATH'));
+console.log("pagesConfig ", pagesConfig);
+var worldParameters = {
+  hostsConfig: hostsConfig,
+  pagesConfig: pagesConfig
+};
+var common = "./src/features/**/*.feature                 --require-module ts-node/register                 --require ./src/step-definitions/**/**/*.ts                 --world-parameters ".concat(JSON.stringify(worldParameters), "                 -f json:./reports/report.json                 --format progress-bar");
 var dev = "".concat(common, " --tags '@dev'");
 exports.dev = dev;
 var smoke = "".concat(common, " --tags '@smoke'");
 exports.smoke = smoke;
 var regression = "".concat(common, " --tags '@regression'");
-
-//console.log('\n 😃  😃  😃  😃')
 exports.regression = regression;
