@@ -222,7 +222,8 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 31. Creating Mappings and using Global Variables to pass page - part 1
+- [ ] Section 6, Chapter 39. Matching our Page URL to our expected route Regex
+        Looking for stability when navigating through pages. Common parts in regex
 
     &nbsp;
     Time: 
