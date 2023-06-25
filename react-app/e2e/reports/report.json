@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1444856800
+              "duration": 1468035500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 807711799
+              "duration": 799845600
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 127374300
+              "duration": 145862699
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 856800
+              "duration": 1110400
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7538399
+              "duration": 9507000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41073899
+              "duration": 43989399
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39058499
+              "duration": 43442799
             }
           },
           {
@@ -105,7 +105,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27168599
+              "duration": 35404299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill in the \"street\" input with \"123 Fake Street\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31588800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I fill in the \"city\" input with \"Melbourne\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37416099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the \"save\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75155699
             }
           },
           {
@@ -113,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 136209300
+              "duration": 165033700
             }
           }
         ],
