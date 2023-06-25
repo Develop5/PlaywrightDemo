@@ -4,56 +4,43 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page;as-a-user-i-expect-to-be-able-to-see-contacts",
+        "id": "as-a-user-i-expect-to-be-able-to-create-contacts;as-a-user-i-expect-to-be-able-to-create-a-new-contact",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "As a user I expect to be able to see contacts",
+        "line": 4,
+        "name": "As a user I expect to be able to create a new contact",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2961397499
+              "duration": 3088734399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 5,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 781298699
+              "duration": 793392000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "the \"header logo\" should be displayed",
+            "line": 6,
+            "name": "I click the \"create\" button",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+              "location": "src\\step-definitions\\click.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 37745099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "the \"contacts header\" should contain the text \"Contacts\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11139800
+              "duration": 114456299
             }
           },
           {
@@ -61,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33140999
+              "duration": 34470599
             }
           }
         ],
@@ -69,24 +56,16 @@
           {
             "name": "@dev",
             "line": 3
-          },
-          {
-            "name": "@smoke",
-            "line": 4
-          },
-          {
-            "name": "@regression",
-            "line": 5
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page",
+    "id": "as-a-user-i-expect-to-be-able-to-create-contacts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I expect to be able to navigate to home page",
+    "name": "As a user I expect to be able to create contacts",
     "tags": [],
-    "uri": "src\\features\\home-page.feature"
+    "uri": "src\\features\\create-contact.feature"
   }
 ]
