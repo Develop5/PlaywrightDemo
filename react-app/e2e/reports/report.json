@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3088734399
+              "duration": 3109871299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 793392000
+              "duration": 769399599
             }
           },
           {
@@ -40,7 +40,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 114456299
+              "duration": 90578000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I am directed to the \"create contact\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1380800
             }
           },
           {
@@ -48,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34470599
+              "duration": 2182496900
             }
           }
         ],
