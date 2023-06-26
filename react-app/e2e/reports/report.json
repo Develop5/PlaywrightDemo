@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1468035500
+              "duration": 1442615999
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 799845600
+              "duration": 802476000
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 145862699
+              "duration": 131738200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1110400
+              "duration": 778400
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9507000
+              "duration": 7366800
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43989399
+              "duration": 43084999
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43442799
+              "duration": 46436700
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35404299
+              "duration": 27597000
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31588800
+              "duration": 28323000
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37416099
+              "duration": 35682999
             }
           },
           {
@@ -144,7 +144,137 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75155699
+              "duration": 74638899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I am directed to the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 736699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I fill in the \"search\" input with \"Ted Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37958000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"full name label\" should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4911700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"name\" should contain the text \"Ted Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6373899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"gender label\" should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4984399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"gender\" should contain the text \"Male\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3392700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"address label\" should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3611100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the \"address\" should contain the text \"123 Fake Street\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3690199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the \"edit\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5603200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the \"delete\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5043700
             }
           },
           {
@@ -152,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165033700
+              "duration": 142732599
             }
           }
         ],
