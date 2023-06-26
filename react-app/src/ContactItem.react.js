@@ -5,7 +5,7 @@ export class ContactItem extends React.Component {
     const {item} = this.props;
     return (
       <div className="ContactItem" data-id="contact">
-        <p data-id="full-name-label">
+        <p data-id="full-name-labelX">
             Name:<strong className="item-value" data-id="name">{item.name}</strong>
         </p>
         <p data-id="gender-label">
