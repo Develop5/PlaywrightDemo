@@ -222,7 +222,8 @@ At the command line:
 &nbsp;
 
 *I am here:*
-- [ ] Section 6, Chapter 46. Introducing Form Steps - Our first end to end test - part 3
+- [ ] Section 7, Chapter 48. Playwright Inspector - Stepping into our automation test
+        Outcome: Notes on Debugging tips
 
     &nbsp;
     Time: 
