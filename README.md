@@ -208,13 +208,23 @@ In addition, various entry point scripts live in the top-level package at @babel
 
 &nbsp;
 
+> 
+> In case you want to work with the Playwright Inspector:
+> PWDEBUG=1
+> If you want to track an error to here:
+> react-app\src\ContactItem.react.js
+> And change:
+> full-name-label
+> To:
+> full-name-labellll
+> Just to yield an error
+> Then do "Step Into" in Playwright Inspector until you see the error is not green anymore
+> but gray. The failure is there.
+> Go back to the code and fix it.
+> 
+> Reference: [PlayWright Inspector](https://playwright.dev/docs/debug)
+> 
 
-### Issue ###
-At the command line: 
-
-    export VIDEO_PATH="./reports/videos/"
-    
-    export UI_AUTOMATION_BROWSER='chromium'
 
 
 
