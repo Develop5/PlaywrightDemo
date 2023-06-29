@@ -246,7 +246,7 @@ It is openly a bug but when you run the test you will see it is not detected
         Outcome: Notes on Debugging tips
 
     &nbsp;
-    Time: 
+    Time: 9:34
 &nbsp;
 
 
