@@ -234,10 +234,15 @@ Other tips in Playwright Inspector:
 
 
 
+Introduce a typo in the source code
+react-app\src\ContactItem.react.js
+Now you go to the page in the browser and you will see an extra "s" at the end of each name
+It is openly a bug but when you run the test you will see it is not detected
+
 &nbsp;
 
 *I am here:*
-- [ ] Section 7, Chapter 48. Playwright Inspector - Stepping into our automation test
+- [ ] Section 7, Chapter 49. Unlocking the benefits of Chrome Developer Tools - part 1
         Outcome: Notes on Debugging tips
 
     &nbsp;
