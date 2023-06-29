@@ -225,6 +225,11 @@ In addition, various entry point scripts live in the top-level package at @babel
 > Reference: [PlayWright Inspector](https://playwright.dev/docs/debug)
 > 
 
+&nbsp;
+
+Other tips in Playwright Inspector:
+- There is a "Pick locator" button that suggests other locators.
+    In the same place you can find also Element (?)
 
 
 
