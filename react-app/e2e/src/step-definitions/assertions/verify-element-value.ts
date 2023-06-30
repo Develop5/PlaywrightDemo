@@ -31,6 +31,9 @@ Then(
     console.log(`the ${elementKey} should equal the text ${expectedElementText}`)
     const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
     await waitFor(async() => {
+
+        await page.pause()  // For us to be able to watch the console
+
         const elementText = await page.textContent(elementIdentifier)
         return (elementText === expectedElementText)
     })

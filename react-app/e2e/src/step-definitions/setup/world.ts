@@ -51,6 +51,11 @@ export class ScenarioWorld extends World {
 
         const browserType: BrowserType = playwright[automationBrowser];
         const browser = await browserType.launch({
+            
+            devtools: process.env.DEVTOOLS !== 'false',
+            // this argument devtools to "true" shows the devtools from the moment we run the test
+            // this environment variable DEVTOOLS needs now to be created in common.env
+            
             headless: process.env.HEADLESS != 'false',
             args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process'],
 
