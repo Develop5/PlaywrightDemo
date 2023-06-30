@@ -237,6 +237,9 @@ Other tips in Playwright Inspector:
 Introduce a typo in the source code
 react-app\src\ContactItem.react.js
 Now you go to the page in the browser and you will see an extra "s" at the end of each name
+```
+    Name:<strong className="item-value" data-id="name">{item.name}s</strong>
+```
 It is openly a bug but when you run the test you will see it is not detected
 
 &nbsp;
