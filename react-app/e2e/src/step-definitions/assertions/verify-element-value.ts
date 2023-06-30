@@ -32,6 +32,10 @@ Then(
     const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
     await waitFor(async() => {
         const elementText = await page.textContent(elementIdentifier)
+
+        console.log(">>>>>>>>> elementText: ", elementText)
+        console.log(">>>>>>>>> expectedElementText: ", expectedElementText)
+
         return (elementText === expectedElementText)
     })
 

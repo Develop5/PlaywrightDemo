@@ -12,7 +12,7 @@ export class ContactItem extends React.Component {
             Gender:<strong className="item-value" data-id="gender">{item.gender}</strong>
         </p>
         <p data-id="address-label">
-            Address:<strong className="item-value" data-id="address">{item.street}, {item.city}</strong>
+            Address:<strong className="item-value" data-id="address">{item.street}</strong>
         </p>
         <button
           className="ContactItemEdit"

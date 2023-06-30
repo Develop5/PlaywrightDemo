@@ -62,8 +62,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return page.textContent(elementIdentifier);
                 case 2:
                   elementText = _context3.sent;
+                  console.log(">>>>>>>>> elementText: ", elementText);
+                  console.log(">>>>>>>>> expectedElementText: ", expectedElementText);
                   return _context3.abrupt("return", elementText === expectedElementText);
-                case 4:
+                case 6:
                 case "end":
                   return _context3.stop();
               }
