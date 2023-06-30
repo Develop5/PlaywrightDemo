@@ -97,7 +97,7 @@ export class ContactForm extends React.Component {
           contact[field] = this.getInputValue(field);
           assertTextValue(field, contact[field]);
         }
-        console.log("contact: ", contact)   // Display the contact to the actual console
+        debugger
         onSave(contact);
       } catch (err) {
         this.setState({error: err});

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 756707000
+              "duration": 755815599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 959291700
+              "duration": 947301900
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 101785799
+              "duration": 110672500
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 882699
+              "duration": 1019899
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8265400
+              "duration": 10563699
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48083799
+              "duration": 48765599
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72258100
+              "duration": 65849200
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36555400
+              "duration": 37133200
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37620899
+              "duration": 33927999
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64731899
+              "duration": 65073799
             }
           },
           {
@@ -143,8 +143,9 @@
               "location": "src\\step-definitions\\click.ts:10"
             },
             "result": {
-              "status": "passed",
-              "duration": 84445600
+              "status": "failed",
+              "duration": 15006557699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 15000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -156,8 +157,8 @@
               "location": "src\\step-definitions\\navigation.ts:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 704300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -169,8 +170,8 @@
               "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 41825699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -182,8 +183,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 4995500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -195,8 +196,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 12460235700
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -208,8 +209,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 6597300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -221,8 +222,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 896427000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -234,8 +235,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 6640100
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -247,8 +248,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 703718600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -260,8 +261,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 9337599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -273,16 +274,17 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 6375200
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 170552600
+              "status": "failed",
+              "duration": 15014865000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 15000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           }
         ],
