@@ -238,7 +238,7 @@ Introduce a typo in the source code
 react-app\src\ContactItem.react.js
 Now you go to the page in the browser and you will see an extra "s" at the end of each name
 ```
-    Name:<strong className="item-value" data-id="name">{item.name}s</strong>
+Name:<strong className="item-value" data-id="name">{item.name}s</strong>
 ```
 It is openly a bug but when you run the test you will see it is not detected
 
@@ -249,6 +249,21 @@ You can use the command "debugger" as a line in the .js source code, to make the
 &nbsp;
 
 Probably console.log() is almost the most practical tool for showing what is in a variable
+
+&nbsp;
+
+This environment variable guarantees that the report will go online to be share with other people. 
+This will remove the frame that comes at the end of the execution "Share your Cucumber Report wit your team at"
+```
+CUCUMBER_PUBLISH_QUIET=true
+```
+But then you need to Authorize SmartBear to enter to [Public Cucumber Reports](https://reports.cucumber.io)
+Removed from my example
+&nbsp;
+
+
+&nbsp;
+
 
 &nbsp;
 
