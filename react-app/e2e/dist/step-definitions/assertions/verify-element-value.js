@@ -59,14 +59,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               while (1) switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return page.pause();
-                case 2:
-                  _context3.next = 4;
                   return page.textContent(elementIdentifier);
-                case 4:
+                case 2:
                   elementText = _context3.sent;
                   return _context3.abrupt("return", elementText === expectedElementText);
-                case 6:
+                case 4:
                 case "end":
                   return _context3.stop();
               }
