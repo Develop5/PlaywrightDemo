@@ -33,6 +33,7 @@ export class ContactForm extends React.Component {
         {this.renderInput('city', 'City', contact.city)}
         {this.renderError()}
         <div className="ContactFormButtons">
+          <button type="submit" data-id="save-button">Save</button>
           <button type="button" data-id="cancel-button" onClick={this.onCancel}>Cancel</button>
         </div>
       </form>
