@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1990226600
+              "duration": 2321805599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 800395599
+              "duration": 776952199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 415084900
+              "duration": 375795000
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2099799
+              "duration": 1792000
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137103900
+              "duration": 131142199
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73105000
+              "duration": 76502700
             }
           },
           {
@@ -92,46 +92,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78973299
+              "duration": 71375699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I check the \"red\" check box",
+            "name": "the \"red\" check box should not be checked",
             "match": {
-              "location": "src\\step-definitions\\check.ts:8"
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 61373800
+              "duration": 5924499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "I check the \"blue\" check box",
+            "name": "the \"purple\" check box should not be checked",
             "match": {
-              "location": "src\\step-definitions\\check.ts:8"
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 65015500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I check the \"purple\" check box",
-            "match": {
-              "location": "src\\step-definitions\\check.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 67363199
+              "duration": 4837200
             }
           },
           {
@@ -139,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33357500
+              "duration": 39537500
             }
           }
         ],

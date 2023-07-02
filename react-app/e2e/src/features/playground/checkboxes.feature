@@ -10,6 +10,8 @@ Feature: As a user I can interact with checkboxes
         And the "blue" check box should not be checked
         And I check the "green" check box
         And I check the "grey" check box
-        And I check the "red" check box
-        And I check the "blue" check box
-        And I check the "purple" check box
+        And the "red" check box should not be checked
+        And the "purple" check box should not be checked
+        #And I check the "red" check box
+        #And I check the "blue" check box
+        #And I check the "purple" check box

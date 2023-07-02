@@ -15,7 +15,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
           page = this.screen.page, globalConfig = this.globalConfig;
-          console.log("I check the ".concat(elementKey, " radio button"));
+          console.log("I check the ".concat(elementKey, " check box|radio button"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context2.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
