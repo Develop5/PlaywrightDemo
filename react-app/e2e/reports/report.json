@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-radio-buttons;as-a-user-i-can-interact-and-assert-on-radio-buttons",
+        "id": "as-a-user-i-can-interact-with-checkboxes;as-a-user-i-can-interact-and-assert-on-checkboxes",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on radio buttons",
+        "name": "As a user I can interact and assert on checkboxes",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1940009899
+              "duration": 2306059400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 783978500
+              "duration": 775883199
             }
           },
           {
@@ -40,12 +40,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375361099
+              "duration": 379953999
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 9,
             "name": "I am directed to the \"playground\" page",
             "match": {
@@ -53,137 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2018699
+              "duration": 2121799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"female label\" should not contain the text \"Male\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 125804800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"male label\" should not contain the text \"Female\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5174099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"female\" radio button should be checked",
+            "name": "the \"blue\" check box should not be checked",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 7022400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"male\" radio button should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4092700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "I check the \"male\" radio button",
-            "match": {
-              "location": "src\\step-definitions\\setup\\check.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 92833199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"male\" radio button should be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5128299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"female\" radio button should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5194600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "I check the \"female\" radio button",
-            "match": {
-              "location": "src\\step-definitions\\setup\\check.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 75345700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"female\" radio button should be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5005200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "the \"male\" radio button should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4552000
+              "duration": 136424900
             }
           },
           {
@@ -191,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1549076600
+              "duration": 31114400
             }
           }
         ],
@@ -212,11 +95,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-radio-buttons",
+    "id": "as-a-user-i-can-interact-with-checkboxes",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with radio buttons",
+    "name": "As a user I can interact with checkboxes",
     "tags": [],
-    "uri": "src\\features\\playground\\radio-buttons.feature"
+    "uri": "src\\features\\playground\\checkboxes.feature"
   }
 ]
