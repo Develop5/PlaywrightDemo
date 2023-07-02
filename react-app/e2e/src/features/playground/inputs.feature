@@ -22,3 +22,5 @@ Feature: As a user I can interact with autocomplete inputs
         And the "outlined read only" should equal the value "Hub"
         And the "outlined required" should be enabled
         And the "outlined disabled" should not be enabled
+        And I fill in the "outlined required" input with "Testing Talks Online"
+        And the "outlined required" should equal the value "Testing Talks Online"
