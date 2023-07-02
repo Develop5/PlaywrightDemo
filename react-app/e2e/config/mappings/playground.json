@@ -13,7 +13,7 @@
     "blue" : "[data-id='blue-radio-button']",
     "purple" : "[data-id='purple-radio-button']",
     "green" : "[data-id='green-radio-button']",
-    "gray" : "[data-id='gray-radio-button']",
+    "grey" : "[data-id='grey-radio-button']",
     "red" : "[data-id='red-radio-button']"
 
 }

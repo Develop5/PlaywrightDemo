@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2306059400
+              "duration": 1990226600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 775883199
+              "duration": 800395599
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 379953999
+              "duration": 415084900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2121799
+              "duration": 2099799
             }
           },
           {
@@ -66,7 +66,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 136424900
+              "duration": 137103900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I check the \"green\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73105000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I check the \"grey\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78973299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I check the \"red\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61373800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I check the \"blue\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65015500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I check the \"purple\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67363199
             }
           },
           {
@@ -74,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31114400
+              "duration": 33357500
             }
           }
         ],
