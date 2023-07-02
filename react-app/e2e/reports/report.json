@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1923375100
+              "duration": 1933788800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 780655800
+              "duration": 776043900
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376612999
+              "duration": 411904200
             }
           },
           {
@@ -53,137 +53,137 @@
             },
             "result": {
               "status": "passed",
-              "duration": 956300
+              "duration": 981699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "the \"female radio button label\" should contain the text \"Female\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 149426300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
+            "line": 8,
             "name": "the \"female radio button label\" should not contain the text \"Male\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 6027199
+              "duration": 134568300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"male radio button label\" should not contain the text \"Female\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6204999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"female\" radio button should be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5634700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"male\" radio button should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4611199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"female\" radio button should be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7116999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"male\" radio button should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4845899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
             "name": "I check the \"male\" radio button",
             "match": {
               "location": "src\\step-definitions\\setup\\check.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 74773000
+              "duration": 96174199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 13,
             "name": "the \"male\" radio button should be checked",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 5970299
+              "duration": 5272000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 14,
             "name": "the \"female\" radio button should not be checked",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 6003999
+              "duration": 5416300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 15,
             "name": "I check the \"female\" radio button",
             "match": {
               "location": "src\\step-definitions\\setup\\check.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 82002700
+              "duration": 72859299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 16,
             "name": "the \"female\" radio button should be checked",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 5327499
+              "duration": 4505500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 17,
             "name": "the \"male\" radio button should not be checked",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 5145799
+              "duration": 4521799
             }
           },
           {
@@ -191,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29752900
+              "duration": 29104199
             }
           }
         ],
