@@ -1,5 +1,6 @@
 Feature: As a user I can interact with IFrames
 
+    @dev
     @smoke
     @regression
     Scenario: As a user I can interact and assert on IFrames
@@ -8,3 +9,4 @@ Feature: As a user I can interact with IFrames
         When I am directed to the "playground" page
         And I fill in the "search" input on the "basic iframe" iframe with "Abraham Perry"
         And the "contact" on the "basic iframe" iframe should be displayed
+        And the "full name label" on the "basic iframe" iframe should contain the text "Name:"
