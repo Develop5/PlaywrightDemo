@@ -116,3 +116,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref5.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the value "(.*)"$/, /*#__PURE__*/function () {
+  var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(elementKey, negate, elementValue) {
+    var page, globalConfig, elementIdentifier;
+    return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+      while (1) switch (_context8.prev = _context8.next) {
+        case 0:
+          page = this.screen.page, globalConfig = this.globalConfig;
+          console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', " equal the value ").concat(elementValue));
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+          _context8.next = 5;
+          return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+            var elementAttribute;
+            return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+              while (1) switch (_context7.prev = _context7.next) {
+                case 0:
+                  _context7.next = 2;
+                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                case 2:
+                  elementAttribute = _context7.sent;
+                  return _context7.abrupt("return", elementAttribute === elementValue === !negate);
+                case 4:
+                case "end":
+                  return _context7.stop();
+              }
+            }, _callee7);
+          })));
+        case 5:
+        case "end":
+          return _context8.stop();
+      }
+    }, _callee8, this);
+  }));
+  return function (_x13, _x14, _x15, _x16) {
+    return _ref7.apply(this, arguments);
+  };
+}());
