@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 58. Automation test AutoComplte inputs, input values and form validation - part 1
+- [ ] Section 8, Chapter 59. Automation test AutoComplte inputs, input values and form validation - part 2
 
     &nbsp;
     Time: 
