@@ -268,8 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 62. Running our automation suite in parallel & introducing test retry
-
+- [ ] Section 8, Chapter 64. Automation test Checkboxes (Check and Uncheck) - part 1
     &nbsp;
     Time: 
 
