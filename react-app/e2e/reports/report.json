@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 774143800
+              "duration": 784761500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 811833699
+              "duration": 810565299
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 441887700
+              "duration": 438782200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1902400
+              "duration": 2146299
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 125861299
+              "duration": 131101000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 97665999
+              "duration": 94716099
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53272899
+              "duration": 55328899
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6662699
+              "duration": 6289499
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5392299
+              "duration": 6129300
             }
           },
           {
@@ -131,7 +131,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50044999
+              "duration": 44103199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"green\" check box should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4713499
             }
           },
           {
@@ -139,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 140781599
+              "duration": 146150099
             }
           }
         ],
