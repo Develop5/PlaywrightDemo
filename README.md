@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 62. Running our automation suite in parallel & introdcing test retry
+- [ ] Section 8, Chapter 62. Running our automation suite in parallel & introducing test retry
 
     &nbsp;
     Time: 

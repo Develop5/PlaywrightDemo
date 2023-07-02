@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1893988000
+              "duration": 1931030900
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 862181800
+              "duration": 846223500
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 135928600
+              "duration": 135352800
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2282900
+              "duration": 3431999
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15619199
+              "duration": 13727200
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56808599
+              "duration": 42766799
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54377400
+              "duration": 29253200
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39689300
+              "duration": 26814899
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38623999
+              "duration": 21936500
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39343499
+              "duration": 24126100
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 70260699
+              "duration": 75947999
             }
           },
           {
@@ -157,137 +157,137 @@
             },
             "result": {
               "status": "passed",
-              "duration": 955500
+              "duration": 854399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 17,
             "name": "I fill in the \"search\" input with \"Ted Smith\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 39367500
+              "duration": 33099200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 18,
             "name": "the \"search\" should not equal the text \"Terry Smiths\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 12088899
+              "duration": 8036300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 19,
             "name": "the \"full name label\" should contain the text \"Name:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 4883300
+              "duration": 4932699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 20,
             "name": "the \"name\" should equal the text \"Ted Smith\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 4231299
+              "duration": 4056599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 21,
             "name": "the \"gender label\" should contain the text \"Gender:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3934900
+              "duration": 3533999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 22,
             "name": "the \"gender\" should equal the text \"Male\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 4063800
+              "duration": 3202199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 23,
             "name": "the \"address label\" should contain the text \"Address:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 4109899
+              "duration": 3486900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 24,
             "name": "the \"address\" should equal the text \"123 Fake Street, Melbourne\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 3324399
+              "duration": 3028799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
+            "line": 25,
             "name": "the \"edit\" should be displayed",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 7604300
+              "duration": 6404500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 26,
             "name": "the \"delete\" should be displayed",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 5745500
+              "duration": 5181600
             }
           },
           {
@@ -295,7 +295,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35684299
+              "duration": 1759136199
             }
           }
         ],
@@ -334,7 +334,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1203219599
+              "duration": 1303826799
             }
           },
           {
@@ -347,7 +347,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 870284800
+              "duration": 845156699
             }
           },
           {
@@ -360,7 +360,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43051100
+              "duration": 52807900
             }
           },
           {
@@ -373,7 +373,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12615299
+              "duration": 12986299
             }
           },
           {
@@ -381,7 +381,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49140900
+              "duration": 2084081200
             }
           }
         ],
@@ -409,7 +409,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 664740900
+              "duration": 622865499
             }
           },
           {
@@ -422,7 +422,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 857660300
+              "duration": 854599200
             }
           },
           {
@@ -435,7 +435,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117025899
+              "duration": 122091099
             }
           },
           {
@@ -448,7 +448,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10562899
+              "duration": 8985800
             }
           },
           {
@@ -456,7 +456,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41433399
+              "duration": 2040330899
             }
           }
         ],
@@ -487,7 +487,7 @@
         "description": "",
         "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-autocomplete-inputs",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 5,
         "name": "As a user I can interact and assert on autocomplete inputs",
         "steps": [
           {
@@ -495,98 +495,98 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1224596600
+              "duration": 1544677799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 6,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 818931399
+              "duration": 842860000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 7,
             "name": "I click the \"playground\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 486184900
+              "duration": 511583800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 8,
             "name": "I am directed to the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 3728900
+              "duration": 4087500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 9,
             "name": "I fill in the \"movies\" input with \"The G\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 264284199
+              "duration": 269796200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 10,
             "name": "I click the \"the godfather\" link",
             "match": {
               "location": "src\\step-definitions\\click.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 118969599
+              "duration": 101627799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
+            "line": 11,
             "name": "the \"movies\" should contain the value \"The Godfather\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 18943799
+              "duration": 23722500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 12,
             "name": "the \"movies\" should not contain the value \"The Godfather: Part II\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 13547999
+              "duration": 9773900
             }
           },
           {
@@ -594,25 +594,25 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37366000
+              "duration": 30286599
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 6
+            "line": 3
           },
           {
             "name": "@regression",
-            "line": 7
+            "line": 4
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "as-a-user-i-can-interact-with-autocomplete-inputs",
-    "line": 4,
+    "line": 1,
     "keyword": "Feature",
     "name": "As a user I can interact with autocomplete inputs",
     "tags": [],
@@ -625,7 +625,7 @@
         "description": "",
         "id": "as-a-user-i-can-interact-with-input-validation;as-a-user-i-can-interact-and-assert-on-input-validation",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 5,
         "name": "As a user I can interact and assert on input validation",
         "steps": [
           {
@@ -633,85 +633,85 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1193973300
+              "duration": 1444671600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 6,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 842384199
+              "duration": 821946099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 7,
             "name": "I click the \"playground\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 496126699
+              "duration": 477452600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 8,
             "name": "I am directed to the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 2850500
+              "duration": 840300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 9,
             "name": "the \"outlined error\" should contain the text \"Error\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 183661199
+              "duration": 192987199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 10,
             "name": "the \"outlined error\" should not contain the text \"Errors\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 7424900
+              "duration": 5302400
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 11,
             "name": "the \"outlined error text\" should contain the text \"Incorrect entry.\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 7319299
+              "duration": 5374400
             }
           },
           {
@@ -719,22 +719,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34434799
+              "duration": 32148900
             }
           }
         ],
         "tags": [
           {
-            "name": "@dev",
+            "name": "@smoke",
             "line": 3
           },
           {
-            "name": "@smoke",
-            "line": 4
-          },
-          {
             "name": "@regression",
-            "line": 5
+            "line": 4
           }
         ],
         "type": "scenario"
@@ -762,7 +758,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 967460400
+              "duration": 1516191499
             }
           },
           {
@@ -775,7 +771,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 837375200
+              "duration": 812535099
             }
           },
           {
@@ -788,7 +784,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 498912099
+              "duration": 522511599
             }
           },
           {
@@ -801,7 +797,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 842900
+              "duration": 3101899
             }
           },
           {
@@ -814,7 +810,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 208788699
+              "duration": 191684000
             }
           },
           {
@@ -827,7 +823,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10932699
+              "duration": 10953600
             }
           },
           {
@@ -840,7 +836,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9877200
+              "duration": 11129199
             }
           },
           {
@@ -853,7 +849,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7585500
+              "duration": 10788100
             }
           },
           {
@@ -866,7 +862,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5624099
+              "duration": 7066299
             }
           },
           {
@@ -879,7 +875,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38474900
+              "duration": 52613700
             }
           },
           {
@@ -892,7 +888,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8263100
+              "duration": 11537799
             }
           },
           {
@@ -900,7 +896,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38218800
+              "duration": 41265799
             }
           }
         ],
@@ -939,7 +935,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 716395499
+              "duration": 684699800
             }
           },
           {
@@ -952,7 +948,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 768750299
+              "duration": 757780200
             }
           },
           {
@@ -965,7 +961,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 82034199
+              "duration": 77477499
             }
           },
           {
@@ -978,7 +974,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 807600
+              "duration": 661599
             }
           },
           {
@@ -991,7 +987,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 333944700
+              "duration": 335537400
             }
           },
           {
@@ -1004,7 +1000,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108930799
+              "duration": 124807799
             }
           },
           {
@@ -1017,7 +1013,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9003000
+              "duration": 14830800
             }
           },
           {
@@ -1030,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4902100
+              "duration": 4694400
             }
           },
           {
@@ -1043,7 +1039,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 80839499
+              "duration": 75565400
             }
           },
           {
@@ -1056,7 +1052,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5140300
+              "duration": 4685600
             }
           },
           {
@@ -1069,7 +1065,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4425499
+              "duration": 5153299
             }
           },
           {
@@ -1082,7 +1078,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71538700
+              "duration": 70694600
             }
           },
           {
@@ -1095,7 +1091,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4680000
+              "duration": 4569700
             }
           },
           {
@@ -1108,7 +1104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4785500
+              "duration": 4313199
             }
           },
           {
@@ -1116,7 +1112,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 26760300
+              "duration": 26758099
             }
           }
         ],
