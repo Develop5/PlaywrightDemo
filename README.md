@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 7, Chapter 56. Introducing Negate to reduce duplication of step definitions - part 1
+- [ ] Section 7, Chapter 57. Introducing Negate to reduce duplication of step definitions - part 1
 
     &nbsp;
     Time: 
