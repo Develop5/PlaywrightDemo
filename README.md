@@ -268,11 +268,11 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 7, Chapter 55. Automation Test Radio Buttons - Check and Uncheck - part 2
+- [ ] Section 7, Chapter 56. Introducing Negate to reduce duplication of step definitions - part 1
 
     &nbsp;
-    Time: 10:36
-    Check a specific radio button is checked. Not a switch to another but a check of it.
+    Time: 
+
 &nbsp;
 
 

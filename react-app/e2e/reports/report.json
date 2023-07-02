@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2714678200
+              "duration": 1923203299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 777465500
+              "duration": 776935899
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 385772300
+              "duration": 384435299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 766499
+              "duration": 899099
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153330699
+              "duration": 131978799
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85098600
+              "duration": 96242199
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5322899
+              "duration": 5652199
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75621299
+              "duration": 81025599
             }
           },
           {
@@ -118,7 +118,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5327499
+              "duration": 5547599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"male\" radio button should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5894699
             }
           },
           {
@@ -126,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30542900
+              "duration": 30792000
             }
           }
         ],
