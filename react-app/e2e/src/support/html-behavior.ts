@@ -42,3 +42,11 @@ export const getValue = async (
     })
     return value;
 }
+
+export const uncheckElement = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< void > => {
+    await page.uncheck(elementIdentifier)
+}
+

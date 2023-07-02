@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2321805599
+              "duration": 774143800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 776952199
+              "duration": 811833699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375795000
+              "duration": 441887700
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1792000
+              "duration": 1902400
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 131142199
+              "duration": 125861299
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 11,
             "name": "I check the \"green\" check box",
             "match": {
-              "location": "src\\step-definitions\\check.ts:8"
+              "location": "src\\step-definitions\\check.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 76502700
+              "duration": 97665999
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 12,
             "name": "I check the \"grey\" check box",
             "match": {
-              "location": "src\\step-definitions\\check.ts:8"
+              "location": "src\\step-definitions\\check.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 71375699
+              "duration": 53272899
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5924499
+              "duration": 6662699
             }
           },
           {
@@ -118,7 +118,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4837200
+              "duration": 5392299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I uncheck the \"green\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50044999
             }
           },
           {
@@ -126,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39537500
+              "duration": 140781599
             }
           }
         ],

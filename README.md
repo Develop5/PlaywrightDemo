@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 64. Automation test Checkboxes (Check and Uncheck) - part 1
+- [ ] Section 8, Chapter 65. Automation test Checkboxes (Check and Uncheck) - part 2
     &nbsp;
     Time: 
 
