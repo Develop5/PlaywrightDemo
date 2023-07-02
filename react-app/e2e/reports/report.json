@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1944973800
+              "duration": 1981215900
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 801438500
+              "duration": 782060699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 427456900
+              "duration": 408534099
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1311100
+              "duration": 968400
             }
           },
           {
@@ -66,7 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141529899
+              "duration": 138191999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I check the \"male\" radio button",
+            "match": {
+              "location": "src\\step-definitions\\setup\\check.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89740800
             }
           },
           {
@@ -74,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28606400
+              "duration": 36465499
             }
           }
         ],

@@ -6,3 +6,4 @@ Feature: As a user I can interact with radio buttons
         And I click the "playground" button
         And I am directed to the "playground" page
         And the "female" radio button should be checked
+        And I check the "male" radio button

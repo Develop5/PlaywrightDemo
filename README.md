@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 7, Chapter 54. Automation Test Radio Buttons - Check and Uncheck - part 1
+- [ ] Section 7, Chapter 55. Automation Test Radio Buttons - Check and Uncheck - part 2
 
     &nbsp;
     Time: 
