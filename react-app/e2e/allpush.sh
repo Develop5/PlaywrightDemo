@@ -1,8 +1,11 @@
 #!/bin/bash
 echo "Pushing to main..."
 git checkout main
-git merge framework
+echo "...merging..."
+git merge playground
 git push
-git checkout framework
-echo "... finished"
+git checkout playground
+echo "... finished. Going back to the original branch"
+
+
 
