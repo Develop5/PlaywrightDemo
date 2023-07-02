@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-checkboxes;as-a-user-i-can-interact-and-assert-on-checkboxes",
+        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on checkboxes",
+        "name": "As a user I can interact and assert on IFrames",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 784761500
+              "duration": 1173547700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 810565299
+              "duration": 796075099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 438782200
+              "duration": 454317800
             }
           },
           {
@@ -53,98 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2146299
+              "duration": 2105799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"blue\" check box should not be checked",
+            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+              "location": "src\\step-definitions\\iframe.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 131101000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I check the \"green\" check box",
-            "match": {
-              "location": "src\\step-definitions\\check.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94716099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I check the \"grey\" check box",
-            "match": {
-              "location": "src\\step-definitions\\check.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55328899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"red\" check box should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6289499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"purple\" check box should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6129300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I uncheck the \"green\" check box",
-            "match": {
-              "location": "src\\step-definitions\\check.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 44103199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"green\" check box should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4713499
+              "duration": 209123100
             }
           },
           {
@@ -152,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 146150099
+              "duration": 135715600
             }
           }
         ],
@@ -173,11 +95,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-checkboxes",
+    "id": "as-a-user-i-can-interact-with-iframes",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with checkboxes",
+    "name": "As a user I can interact with IFrames",
     "tags": [],
-    "uri": "src\\features\\playground\\checkboxes.feature"
+    "uri": "src\\features\\playground\\iframes.feature"
   }
 ]
