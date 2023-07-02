@@ -271,7 +271,8 @@ Removed from my example
 - [ ] Section 7, Chapter 55. Automation Test Radio Buttons - Check and Uncheck - part 2
 
     &nbsp;
-    Time: 
+    Time: 10:36
+    Check a specific radio button is checked. Not a switch to another but a check of it.
 &nbsp;
 
 
