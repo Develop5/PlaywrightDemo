@@ -268,7 +268,7 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 67. Automating iFrames - Switching Frames mid test - part 2
+- [ ] Section 8, Chapter 68. Automating iFrames - Switching Frames mid test - part 3
     &nbsp;
     Time: 
 
