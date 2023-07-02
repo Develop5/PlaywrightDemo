@@ -152,3 +152,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref7.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? be enabled$/, /*#__PURE__*/function () {
+  var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10(elementKey, negate) {
+    var page, globalConfig, elementIdentifier;
+    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+      while (1) switch (_context10.prev = _context10.next) {
+        case 0:
+          page = this.screen.page, globalConfig = this.globalConfig;
+          console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', " be enabled"));
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+          _context10.next = 5;
+          return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
+            var isElementEnabled;
+            return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+              while (1) switch (_context9.prev = _context9.next) {
+                case 0:
+                  _context9.next = 2;
+                  return page.isEnabled(elementIdentifier);
+                case 2:
+                  isElementEnabled = _context9.sent;
+                  return _context9.abrupt("return", isElementEnabled === !negate);
+                case 4:
+                case "end":
+                  return _context9.stop();
+              }
+            }, _callee9);
+          })));
+        case 5:
+        case "end":
+          return _context10.stop();
+      }
+    }, _callee10, this);
+  }));
+  return function (_x17, _x18, _x19) {
+    return _ref9.apply(this, arguments);
+  };
+}());

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2079427799
+              "duration": 2142937799
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 788783999
+              "duration": 779148799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 380976999
+              "duration": 381719399
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 979799
+              "duration": 958500
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147064199
+              "duration": 148117700
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8236899
+              "duration": 8778399
             }
           },
           {
@@ -92,7 +92,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7144999
+              "duration": 8108999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the \"outlined required\" should be enabled",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6213999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the \"outlined disabled\" should not be enabled",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5042500
             }
           },
           {
@@ -100,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30214799
+              "duration": 28975100
             }
           }
         ],
