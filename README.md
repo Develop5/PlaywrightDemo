@@ -268,10 +268,8 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 61. Automation test AutoComplte inputs, input values and form validation - part 4
+- [ ] Section 8, Chapter 62. Running our automation suite in parallel & introdcing test retry
 
-    Check attribute "disabled" is actually working in the app
-    
     &nbsp;
     Time: 
 
