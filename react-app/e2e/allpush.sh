@@ -2,9 +2,9 @@
 echo "Pushing to main..."
 git checkout main
 echo "...merging..."
-git merge playground
+git merge framework
 git push
-git checkout playground
+git checkout framework
 echo "... finished. Going back to the original branch"
 
 
