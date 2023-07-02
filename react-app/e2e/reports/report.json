@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1913396299
+              "duration": 1944973800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 788986900
+              "duration": 801438500
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 419187700
+              "duration": 427456900
             }
           },
           {
@@ -53,7 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1252500
+              "duration": 1311100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"female\" radio button should be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141529899
             }
           },
           {
@@ -61,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33359200
+              "duration": 28606400
             }
           }
         ],

@@ -268,23 +268,10 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 7, Chapter 51. Console logs, Breakpoints and Test Reports - part 1
-        Outcome: Notes on Debugging tips
-
-From this block in ContactItem.react.js :
-        <p data-id="address-label">
-            Address:<strong className="item-value" data-id="address">{item.street}, {item.city}</strong>
-        </p>
-
-Remove 
-, {item.city}
-And now the address will not contain comma and the name of the city at the end
+- [ ] Section 7, Chapter 54. Automation Test Radio Buttons - Check and Uncheck - part 1
 
     &nbsp;
-    Time: 9:34
-&nbsp;
-
-
+    Time: 
 &nbsp;
 
 
