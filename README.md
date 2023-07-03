@@ -268,9 +268,16 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 8, Chapter 69. Automating iFrames - Switching Frames mid test - part 4
+- [ ] Section 9, Chapter 70. Automating New Tabs and New Windows - part 1
     &nbsp;
     Time: 
+
+
+Blocker: Need to solve this line
+```
+const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
+```
+In react-app\e2e\src\step-definitions\assertions\verify-new-page.ts
 
 &nbsp;
 

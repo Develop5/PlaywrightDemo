@@ -1,6 +1,5 @@
 Feature: As a user I can interact with IFrames
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I can interact and assert on IFrames
@@ -13,8 +12,6 @@ Feature: As a user I can interact with IFrames
         And the "name" on the "basic iframe" iframe should equal the text "Abraham Perry"
         And the "gender label" on the "basic iframe" iframe should contain the text "Gender:"
         And the "gender" on the "basic iframe" iframe should equal the text "Male"
-
         And the "address label" on the "basic iframe" iframe should contain the text "Address:"
         And the "address" on the "basic iframe" iframe should equal the text "Ap #826-8849 Vulputate Street, Laramie"
-
         And the "delete" on the "basic iframe" iframe should be displayed
