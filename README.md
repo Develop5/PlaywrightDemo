@@ -270,7 +270,11 @@ Removed from my example
 *I am here:*
 - [ ] Section 9, Chapter 70. Automating New Tabs and New Windows - part 1
     &nbsp;
-    Time: 
+    Time: Ending the chapter
+        Issue: "2nd" and "1st" not recognized 
+            The problem must be around this line of code:
+            const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
+            In verify-new-page.ts
 
 
 Blocker: Need to solve this line

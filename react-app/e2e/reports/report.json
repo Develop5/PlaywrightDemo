@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 699128200
+              "duration": 610348199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 764902499
+              "duration": 782805799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 115045199
+              "duration": 89131200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4785399
+              "duration": 985399
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 565436300
+              "duration": 563931099
             }
           },
           {
@@ -79,21 +79,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1140399,
+              "duration": 1291900,
               "error_message": "TypeError: Cannot read properties of null (reading 'match')\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-new-page.ts:17:50)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-new-page.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-new-page.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\assertions\\verify-new-page.ts:16:12)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"1st\" tab should contain the title \"Playground\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
             }
           },
           {
@@ -101,7 +88,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 146345099
+              "duration": 147408699
             },
             "embeddings": [
               {
