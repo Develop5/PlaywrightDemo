@@ -9,5 +9,6 @@ Feature: As a user I can interact with tabs
         When I am directed to the "playground" page
         And I click the "new tab" button
         And the "2nd" tab should contain the title "Contacts"
-        #And the "1st" tab should contain the title "Playground"
+        And the "1st" tab should contain the title "Playground"
+        And I fill in the "search" input on the "2nd" tab with "Sloane Juarez"
 

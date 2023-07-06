@@ -268,21 +268,9 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 9, Chapter 70. Automating New Tabs and New Windows - part 1
+- [ ] Section 9, Chapter 72. Automating New Tabs and New Windows - part 3
     &nbsp;
-    Time: Ending the chapter
-        Issue: "2nd" and "1st" not recognized 
-            The problem must be around this line of code:
-            const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
-            In verify-new-page.ts
-
-
-Blocker: Need to solve this line
-```
-const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
-```
-In react-app\e2e\src\step-definitions\assertions\verify-new-page.ts
-
+    Time:   
 &nbsp;
 
 
