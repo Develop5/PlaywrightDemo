@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 875715599
+              "duration": 835256000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 808611000
+              "duration": 801829100
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 447251299
+              "duration": 444191399
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2001799
+              "duration": 1983300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 249852899
+              "duration": 251160199
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3015199599
+              "duration": 3010962799
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3012843200
+              "duration": 3011994599
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67933300
+              "duration": 63497500
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19610600
+              "duration": 15872400
             }
           },
           {
@@ -131,7 +131,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9737499
+              "duration": 10630900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"name\" on the \"2nd\" tab should equal the text \"Sloane Juarez\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6801099
             }
           },
           {
@@ -139,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 184519700
+              "duration": 172163200
             }
           }
         ],
