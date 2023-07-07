@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 845646600
+              "duration": 875715599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 806213999
+              "duration": 808611000
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 453241000
+              "duration": 447251299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2145399
+              "duration": 2001799
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 260148599
+              "duration": 249852899
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3013625000
+              "duration": 3015199599
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3012634800
+              "duration": 3012843200
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68216599
+              "duration": 67933300
             }
           },
           {
@@ -118,7 +118,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13385099
+              "duration": 19610600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"full name label\" on the \"2nd\" tab should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9737499
             }
           },
           {
@@ -126,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 172163399
+              "duration": 184519700
             }
           }
         ],
