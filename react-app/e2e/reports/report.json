@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 834381199
+              "duration": 845646600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 812898399
+              "duration": 806213999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 450502900
+              "duration": 453241000
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2232599
+              "duration": 2145399
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 257130400
+              "duration": 260148599
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3016843200
+              "duration": 3013625000
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3012474100
+              "duration": 3012634800
             }
           },
           {
@@ -105,20 +105,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68240899
+              "duration": 68216599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
-            "name": "I wait \"10\" seconds",
+            "line": 15,
+            "name": "the \"contact\" on the \"2nd\" tab should be displayed",
             "match": {
-              "location": "src\\step-definitions\\general.ts:4"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 10010995699
+              "duration": 13385099
             }
           },
           {
@@ -126,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 167434799
+              "duration": 172163399
             }
           }
         ],

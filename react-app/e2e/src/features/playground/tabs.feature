@@ -11,5 +11,6 @@ Feature: As a user I can interact with tabs
         And the "2nd" tab should contain the title "Contacts"
         And the "1st" tab should contain the title "Playground"
         And I fill in the "search" input on the "2nd" tab with "Sloane Juarez"
-        And I wait "10" seconds
+        #And I wait "10" seconds
+        And the "contact" on the "2nd" tab should be displayed
 
