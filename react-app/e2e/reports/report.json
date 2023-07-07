@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 795103300
+              "duration": 834381199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 812355900
+              "duration": 812898399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 439425600
+              "duration": 450502900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1977800
+              "duration": 2232599
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 263840099
+              "duration": 257130400
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3014721600
+              "duration": 3016843200
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3011955300
+              "duration": 3012474100
             }
           },
           {
@@ -105,7 +105,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73857500
+              "duration": 68240899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait \"10\" seconds",
+            "match": {
+              "location": "src\\step-definitions\\general.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10010995699
             }
           },
           {
@@ -113,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 183367799
+              "duration": 167434799
             }
           }
         ],
