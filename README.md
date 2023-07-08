@@ -268,9 +268,11 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 9, Chapter 73. Automating New Tabs and New Windows - part 4
+- [ ] Section 9, Chapter 74. Automating New Tabs and New Windows - part 5
+        Opening a new windows
+        
     &nbsp;
-    Time:   
+    Time:   0:19
 &nbsp;
 
 
