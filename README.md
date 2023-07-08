@@ -269,7 +269,10 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 10: The Playground - Automating all the things
-        Chapter 82. Automating Tables - Matching our HTML table to Cucumber Data Table - part 3
+        Chapter 83. Automating Switches - low code / no code
+
+        Note:
+            Playwright treats switches in the same fashion as checkboxes
         
     &nbsp;
     Time:  
