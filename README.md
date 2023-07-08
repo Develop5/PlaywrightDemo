@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 11: The Playground - Automating all the things
-        Chapter 85. Automating Browser Alerts, Page Alerts and Tooltips - part 1
+        Chapter 86. Automating Browser Alerts, Page Alerts and Tooltips - part 2
 
         Note:
             Playwright treats switches in the same fashion as checkboxes
