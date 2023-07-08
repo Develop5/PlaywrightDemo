@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2770430500
+              "duration": 1968076000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 770258000
+              "duration": 776868200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 380288800
+              "duration": 387572800
             }
           },
           {
@@ -53,20 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2238000
+              "duration": 2544300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "I click the \"1st\" \"my button\" button",
+            "line": 11,
+            "name": "I click the \"my button\" button",
             "match": {
-              "location": "src\\step-definitions\\click.ts:33"
+              "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 203051600
+              "duration": 214232900
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30339500
+              "duration": 33522499
             }
           }
         ],
