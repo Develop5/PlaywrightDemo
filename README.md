@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 10: The Playground - Automating all the things
-        Chapter 79. Automating Links, Buttons and Clicking element at index - part 4
+        Chapter 80. Automating Tables - Matching our HTML table to Cucumber Data Table - part 1
         
     &nbsp;
     Time:   0:19
