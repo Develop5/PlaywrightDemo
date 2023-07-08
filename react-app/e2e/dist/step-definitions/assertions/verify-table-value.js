@@ -16,7 +16,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           page = this.screen.page, globalConfig = this.globalConfig;
           console.log("the ".concat(elementKey, " table should ").concat(negate ? 'not ' : '', "equal the following:"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-          _context2.next = 5;
+          console.log(elementIdentifier + " tbody tr");
+          _context2.next = 6;
           return page.$$eval(elementIdentifier + " tbody tr", function (rows) {
             return rows.map(function (row) {
               var cells = row.querySelectorAll('td');
@@ -25,9 +26,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               });
             });
           });
-        case 5:
+        case 6:
           dataBefore = _context2.sent;
-          _context2.next = 8;
+          console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n");
+          console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n");
+          _context2.next = 11;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
@@ -39,7 +42,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               }
             }, _callee);
           })));
-        case 8:
+        case 11:
         case "end":
           return _context2.stop();
       }

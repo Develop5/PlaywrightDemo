@@ -17,12 +17,18 @@ Then(
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
+        console.log(elementIdentifier + " tbody tr")
+
         const dataBefore = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
             return rows.map(row => {
                 const cells = row.querySelectorAll('td')
                 return Array.from(cells).map(cell => cell.textContent)
             })
         })
+
+        console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
+        console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n")
+
 
         await waitFor( async () => {
             return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate
