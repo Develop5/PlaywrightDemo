@@ -8,10 +8,8 @@ Scenario: As a user I can interact and assert on buttons at index
     And I click the "playground" button
     When I am directed to the "playground" page
     And I click the "1st" "my button" button
-    #And the "my button" should contain the text "One"
     And the "1st" "my button" should contain the text "One"
     And I click the "2nd" "my button" button
-    #And the "2nd" "my button" should contain the text "Two"
-    And the "my button" should contain the text "Two"
+    And the "2nd" "my button" should contain the text "Two"
 
 
