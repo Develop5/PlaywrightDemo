@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2678876599
+              "duration": 2018903499
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 772652400
+              "duration": 780947200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 378148499
+              "duration": 385718099
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1938899
+              "duration": 2265599
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 205437500
+              "duration": 218361499
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11114199
+              "duration": 13142100
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68299600
+              "duration": 82103400
             }
           },
           {
@@ -105,7 +105,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5379500
+              "duration": 6551100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the \"3rd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69004600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"3rd\" \"my button\" should contain the text \"Three\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5536899
             }
           },
           {
@@ -113,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28951899
+              "duration": 29235899
             }
           }
         ],

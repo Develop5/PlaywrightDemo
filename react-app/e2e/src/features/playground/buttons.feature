@@ -11,5 +11,7 @@ Scenario: As a user I can interact and assert on buttons at index
     And the "1st" "my button" should contain the text "One"
     And I click the "2nd" "my button" button
     And the "2nd" "my button" should contain the text "Two"
+    And I click the "3rd" "my button" button
+    And the "3rd" "my button" should contain the text "Three"
 
 
