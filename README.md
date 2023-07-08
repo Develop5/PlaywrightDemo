@@ -268,8 +268,8 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 9, Chapter 74. Automating New Tabs and New Windows - part 5
-        Opening a new windows
+- [ ] Section 10: The Playground - Automating all the things
+        Chapter 76. Automating Links, Buttons and Clicking element at index - part 1
         
     &nbsp;
     Time:   0:19
