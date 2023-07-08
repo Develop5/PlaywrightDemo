@@ -269,10 +269,10 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 10: The Playground - Automating all the things
-        Chapter 80. Automating Tables - Matching our HTML table to Cucumber Data Table - part 1
+        Chapter 82. Automating Tables - Matching our HTML table to Cucumber Data Table - part 3
         
     &nbsp;
-    Time:   0:19
+    Time:  
 &nbsp;
 
 

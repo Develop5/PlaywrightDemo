@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2020793700
+              "duration": 2693063899
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 798039099
+              "duration": 769140199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 409534400
+              "duration": 403185200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2068300
+              "duration": 2004599
             }
           },
           {
@@ -111,7 +111,65 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133081600
+              "duration": 132022799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "159",
+                      "6",
+                      "24",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "237",
+                      "9",
+                      "37",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "262",
+                      "16",
+                      "24",
+                      "6"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "305",
+                      "3.4",
+                      "67",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "356",
+                      "16",
+                      "49",
+                      "3.9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"basic\" table should not equal the following:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-table-value.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6101700
             }
           },
           {
@@ -119,7 +177,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32302299
+              "duration": 30549899
             }
           }
         ],
