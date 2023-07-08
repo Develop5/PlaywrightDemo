@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-switches;as-a-user-i-can-interact-and-assert-on-switches",
+        "id": "as-a-user-i-can-interact-with-browser-alerts;as-a-user-i-can-interact-and-assert-on-browser-alerts",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on switches",
+        "name": "As a user I can interact and assert on browser alerts",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2310182300
+              "duration": 2930820899
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 783220100
+              "duration": 785832699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 382044600
+              "duration": 382354400
             }
           },
           {
@@ -53,85 +53,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1774399
+              "duration": 2063799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"switch one\" switch should be checked",
+            "name": "I click the \"browser alert\" button",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+              "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 143108700
+              "duration": 203110400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "I uncheck the \"switch one\" switch",
+            "name": "I click accept on the alert dialog",
             "match": {
-              "location": "src\\step-definitions\\check.ts:11"
+              "location": "src\\step-definitions\\alerts.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 68134799
+              "duration": 4438999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"switch one\" switch should not be checked",
+            "name": "I click the \"browser alert\" button",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+              "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 6382999
+              "duration": 81332800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I check the \"switch one\" switch",
+            "name": "I click dismiss on the alert dialog",
             "match": {
-              "location": "src\\step-definitions\\check.ts:11"
+              "location": "src\\step-definitions\\alerts.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 175250000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"switch one\" switch should be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7795399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"switch two\" should not be enabled",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7768899
+              "duration": 900199
             }
           },
           {
@@ -139,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1467141000
+              "duration": 29912000
             }
           }
         ],
@@ -160,11 +134,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-switches",
+    "id": "as-a-user-i-can-interact-with-browser-alerts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with switches",
+    "name": "As a user I can interact with browser alerts",
     "tags": [],
-    "uri": "src\\features\\playground\\switches.feature"
+    "uri": "src\\features\\playground\\browser-alerts.feature"
   }
 ]

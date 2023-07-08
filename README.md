@@ -268,8 +268,8 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 10: The Playground - Automating all the things
-        Chapter 83. Automating Switches - low code / no code
+- [ ] Section 11: The Playground - Automating all the things
+        Chapter 85. Automating Browser Alerts, Page Alerts and Tooltips - part 1
 
         Note:
             Playwright treats switches in the same fashion as checkboxes
