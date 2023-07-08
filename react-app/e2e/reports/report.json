@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2136394199
+              "duration": 2041915400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 777658799
+              "duration": 776760999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 389621399
+              "duration": 382659400
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2238200
+              "duration": 2044100
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 207533900
+              "duration": 201250399
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11714399
+              "duration": 10345200
             }
           },
           {
@@ -92,7 +92,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62637900
+              "duration": 79442899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"2nd\" \"my button\" should contain the text \"Two\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5785600
             }
           },
           {
@@ -100,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29194600
+              "duration": 30411799
             }
           }
         ],
