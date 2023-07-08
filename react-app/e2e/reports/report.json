@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2197953599
+              "duration": 2136394199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 772016300
+              "duration": 777658799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384351500
+              "duration": 389621399
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2289599
+              "duration": 2238200
             }
           },
           {
@@ -66,20 +66,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 210204099
+              "duration": 207533900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"my button\" should contain the text \"One\"",
+            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
             },
             "result": {
               "status": "passed",
-              "duration": 16239399
+              "duration": 11714399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the \"2nd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62637900
             }
           },
           {
@@ -87,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32371399
+              "duration": 29194600
             }
           }
         ],
