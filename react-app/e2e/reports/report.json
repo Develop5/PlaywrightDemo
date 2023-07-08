@@ -4,134 +4,290 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-buttons;as-a-user-i-can-interact-and-assert-on-buttons-at-index",
+        "id": "as-a-user-i-expect-to-be-able-to-create-contacts;as-a-user-i-expect-to-be-able-to-create-a-new-contact",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "As a user I can interact and assert on buttons at index",
+        "line": 5,
+        "name": "As a user I expect to be able to create a new contact",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2018903499
+              "duration": 5731049199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 6,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 780947200
+              "duration": 804952500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "I click the \"playground\" button",
+            "line": 7,
+            "name": "I click the \"create\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 385718099
+              "duration": 144794200
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I am directed to the \"playground\" page",
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I am directed to the \"create contact\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 2265599
+              "duration": 2872600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"create contact header\" should contain the text \"Create Contact\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12601500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I click the \"1st\" \"my button\" button",
+            "name": "I fill in the \"name\" input with \"Ted Smith\"",
             "match": {
-              "location": "src\\step-definitions\\click.ts:33"
+              "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 218361499
+              "duration": 72907499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
+            "name": "I select the \"Male\" option from the \"gender\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+              "location": "src\\step-definitions\\forms.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 13142100
+              "duration": 57169300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I click the \"2nd\" \"my button\" button",
+            "name": "I fill in the \"phone\" input with \"0434555555\"",
             "match": {
-              "location": "src\\step-definitions\\click.ts:33"
+              "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 82103400
+              "duration": 37129399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"2nd\" \"my button\" should contain the text \"Two\"",
+            "name": "I fill in the \"street\" input with \"123 Fake Street\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+              "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 6551100
+              "duration": 40773000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "I click the \"3rd\" \"my button\" button",
+            "name": "I fill in the \"city\" input with \"Melbourne\"",
             "match": {
-              "location": "src\\step-definitions\\click.ts:33"
+              "location": "src\\step-definitions\\forms.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 69004600
+              "duration": 35154599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "the \"3rd\" \"my button\" should contain the text \"Three\"",
+            "name": "I click the \"save\" button",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+              "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 5536899
+              "duration": 79427399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I am directed to the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1005600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I fill in the \"search\" input with \"Ted Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32901099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"search\" should not equal the text \"Terry Smiths\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6308699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"full name label\" should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4961800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"name\" should equal the text \"Ted Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3983899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"gender label\" should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3297100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"gender\" should equal the text \"Male\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3314300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the \"address label\" should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3131399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the \"address\" should equal the text \"123 Fake Street, Melbourne\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3241099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the \"edit\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5841700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the \"delete\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6671299
             }
           },
           {
@@ -139,22 +295,481 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29235899
+              "duration": 29625499
             }
           }
         ],
         "tags": [
           {
-            "name": "@dev",
+            "name": "@smoke",
             "line": 3
           },
           {
-            "name": "@smoke",
+            "name": "@regression",
             "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-expect-to-be-able-to-create-contacts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I expect to be able to create contacts",
+    "tags": [],
+    "uri": "src\\features\\create-contact.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page;as-a-user-i-expect-to-be-able-to-see-contacts",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I expect to be able to see contacts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4996129800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 820262199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the \"header logo\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37027699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the \"contacts header\" should contain the text \"Contacts\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14319299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38565699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
           },
           {
             "name": "@regression",
-            "line": 5
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page;as-a-user-i-don't-expect-to-see-a-contact-that-does-not-exist",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "As a user I don't expect to see a contact that does not exist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4545032900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 831116500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I fill in the \"search\" input with \"Funky Name\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113158600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the \"contact\" should not be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11208199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 643954199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I expect to be able to navigate to home page",
+    "tags": [],
+    "uri": "src\\features\\home-page.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-autocomplete-inputs",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on autocomplete inputs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 815434199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 790360500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377548500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2925299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in the \"movies\" input with \"The G\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202683500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the \"the godfather\" link",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85137999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"movies\" should contain the value \"The Godfather\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16842799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"movies\" should not contain the value \"The Godfather: Part II\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9177000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25487399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-autocomplete-inputs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with autocomplete inputs",
+    "tags": [],
+    "uri": "src\\features\\playground\\autocomplete-inputs.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-buttons;as-a-user-i-can-interact-and-assert-on-buttons-at-index",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on buttons at index",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1789240199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 794701700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 454253299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 689500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"1st\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226283799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13267700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the \"2nd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78820800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"2nd\" \"my button\" should contain the text \"Two\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6590700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the \"3rd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87784899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"3rd\" \"my button\" should contain the text \"Three\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5808599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37446600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
           }
         ],
         "type": "scenario"
@@ -166,5 +781,1499 @@
     "name": "As a user I can interact with buttons",
     "tags": [],
     "uri": "src\\features\\playground\\buttons.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-checkboxes;as-a-user-i-can-interact-and-assert-on-checkboxes",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on checkboxes",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1452210400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 789979400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442714200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2477300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"blue\" check box should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140133299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I check the \"green\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90506200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I check the \"grey\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78871299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"red\" check box should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7953899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"purple\" check box should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10529899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I uncheck the \"green\" check box",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76537000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"green\" check box should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5264799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31625600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-checkboxes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with checkboxes",
+    "tags": [],
+    "uri": "src\\features\\playground\\checkboxes.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on IFrames",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1463723499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 819147799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 415550100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 871199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
+            "match": {
+              "location": "src\\step-definitions\\iframe.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188728299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22324900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\iframe.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24505899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20589699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\iframe.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19761900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19616799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\iframe.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21122800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30617899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39574399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27412599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-iframes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with IFrames",
+    "tags": [],
+    "uri": "src\\features\\playground\\iframes.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-input-validation;as-a-user-i-can-interact-and-assert-on-input-validation",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on input validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1831707699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 919257400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92963600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 974799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"outlined error\" should contain the text \"Error\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 503235299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"outlined error\" should not contain the text \"Errors\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9081599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"outlined error text\" should contain the text \"Incorrect entry.\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4553599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26947699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-input-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with input validation",
+    "tags": [],
+    "uri": "src\\features\\playground\\input-validation.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-inputs",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on inputs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1655331399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 992722999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441122999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1299200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"outlined required\" should equal the value \"Testing\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172929100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"outlined disabled\" should equal the value \"Talks\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9188100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"outlined read only\" should equal the value \"Hub\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10196799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"outlined required\" should be enabled",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8470200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"outlined disabled\" should not be enabled",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4123099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I fill in the \"outlined required\" input with \"Testing Talks Online\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39200800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"outlined required\" should equal the value \"Testing Talks Online\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7281200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32053899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-autocomplete-inputs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with autocomplete inputs",
+    "tags": [],
+    "uri": "src\\features\\playground\\inputs.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-links;as-a-user-i-can-interact-and-assert-on-autocomplete-links",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on autocomplete links",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1746026099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 825496400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 433817100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 640100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"primary\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203493100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the \"primary\" should contain the text \"Primary\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9942499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"secondary\" should equal the text \"Disabled\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6113499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the \"third\" link",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102489799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"third\" should contain the text \"Link\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4425700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25075900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-links",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with links",
+    "tags": [],
+    "uri": "src\\features\\playground\\links.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-radio-buttons;as-a-user-i-can-interact-and-assert-on-radio-buttons",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and assert on radio buttons",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1810783000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 813331900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84268099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 763099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"female label\" should not contain the text \"Male\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 355604600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"male label\" should not contain the text \"Female\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112515499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"female\" radio button should be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9237000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"male\" radio button should not be checked",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8026199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I check the \"male\" radio button",
+            "match": {
+              "location": "src\\step-definitions\\check.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93079499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34231700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-radio-buttons",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with radio buttons",
+    "tags": [],
+    "uri": "src\\features\\playground\\radio-buttons.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-tabs;as-a-user-i-can-interact-and-asset-on-new-tabs",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a user I can interact and asset on new tabs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1648492300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 780506300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84186599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 749099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"new tab\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 589337699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the \"2nd\" tab should contain the title \"Contacts\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3019880100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"1st\" tab should contain the title \"Playground\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3017227500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill in the \"search\" input on the \"2nd\" tab with \"Sloane Juarez\"",
+            "match": {
+              "location": "src\\step-definitions\\page.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59464500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"contact\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11822200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"full name label\" on the \"2nd\" tab should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7002899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"name\" on the \"2nd\" tab should equal the text \"Sloane Juarez\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7271799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"gender label\" on the \"2nd\" tab should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6052899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"gender\" on the \"2nd\" tab should equal the text \"Female\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5937099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"address label\" on the \"2nd\" tab should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4182900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"address\" on the \"2nd\" tab should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4804700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"edit\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6579899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"delete\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7035699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28333599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-tabs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with tabs",
+    "tags": [],
+    "uri": "src\\features\\playground\\tabs.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-windows;as-a-uer-i-can-interact-and-assert-on-new-windows",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As a uer I can interact and assert on new windows",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1714806899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 793182500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92866999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 660900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"open window\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 575400700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the \"2nd\" window should contain the title \"Contacts\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3029495800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"1st\" window should contain the title \"Playground\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3018643800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill in the \"search\" input on the \"2nd\" window with \"Sloane Juarez\"",
+            "match": {
+              "location": "src\\step-definitions\\page.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47489800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"contact\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9749400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"full name label\" on the \"2nd\" window should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8671299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"name\" on the \"2nd\" window should equal the text \"Sloane Juarez\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7230500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"gender label\" on the \"2nd\" window should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4649499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"gender\" on the \"2nd\" window should equal the text \"Female\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4815999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"address label\" on the \"2nd\" window should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3845600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"address\" on the \"2nd\" window should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3946700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"edit\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6166299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"delete\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5384499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28814999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-windows",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with windows",
+    "tags": [],
+    "uri": "src\\features\\playground\\windows.feature"
   }
 ]
