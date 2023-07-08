@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1968076000
+              "duration": 2902486699
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 776868200
+              "duration": 772596799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 387572800
+              "duration": 381933799
             }
           },
           {
@@ -53,20 +53,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2544300
+              "duration": 1880700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the \"1st\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201853000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I click the \"my button\" button",
+            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
             "match": {
-              "location": "src\\step-definitions\\click.ts:11"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
             },
             "result": {
               "status": "passed",
-              "duration": 214232900
+              "duration": 15119100
             }
           },
           {
@@ -74,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33522499
+              "duration": 1680858199
             }
           }
         ],
