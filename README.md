@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 10: The Playground - Automating all the things
-        Chapter 76. Automating Links, Buttons and Clicking element at index - part 1
+        Chapter 79. Automating Links, Buttons and Clicking element at index - part 4
         
     &nbsp;
     Time:   0:19

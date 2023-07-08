@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2902486699
+              "duration": 2197953599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 772596799
+              "duration": 772016300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 381933799
+              "duration": 384351500
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1880700
+              "duration": 2289599
             }
           },
           {
@@ -66,20 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 201853000
+              "duration": 210204099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
+            "line": 12,
+            "name": "the \"my button\" should contain the text \"One\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:90"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 15119100
+              "duration": 16239399
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1680858199
+              "duration": 32371399
             }
           }
         ],
