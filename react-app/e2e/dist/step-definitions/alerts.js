@@ -12,7 +12,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context.prev = _context.next) {
         case 0:
           page = this.screen.page;
-          console.log("I click ".concat(dismissDialog, " on the alert dialog"));
+          console.log("I click ".concat(dismissDialog ? 'dismiss ' : 'accept ', "on the alert dialog"));
+          console.log("!!dismissDialog ", !!dismissDialog);
           if (!!dismissDialog) {
             page.on('dialog', function (dialog) {
               return dialog.dismiss();
@@ -22,7 +23,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               return dialog.accept();
             });
           }
-        case 3:
+        case 4:
         case "end":
           return _context.stop();
       }
