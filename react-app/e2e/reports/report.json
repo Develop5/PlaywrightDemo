@@ -4,329 +4,82 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-create-contacts;as-a-user-i-do-not-expect-saved-contacts-to-persist-after-a-page-refresh",
+        "id": "as-a-user-i-can-refresh-the-browser-and-see-the-application;as-a-user-i-can-refresh-the-browser-and-be-on-the-page-expected",
         "keyword": "Scenario",
-        "line": 32,
-        "name": "As a user I do not expect saved contacts to persist after a page refresh",
+        "line": 6,
+        "name": "As a user I can refresh the browser and be on the page expected",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1938997300
+              "duration": 1707729999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 7,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 658764800
+              "duration": 684271800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
-            "name": "I click the \"create\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 131489800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "I am directed to the \"create contact\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1593200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "the \"create contact header\" should contain the text \"Create Contact\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16354199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "I fill in the \"name\" input with \"Tanya Hardie\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47454999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "I select the \"Female\" option from the \"gender\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47377499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "I fill in the \"phone\" input with \"0434677333\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39708999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "I fill in the \"street\" input with \"152 Margi Court\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 88533599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "I fill in the \"city\" input with \"Shelbyville\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 37731800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "I click the \"save\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 72816000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "I am directed to the \"home\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1280199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "I fill in the \"search\" input with \"Tanya Hardie\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 35501799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "the \"search\" should not equal the text \"Tanya Hardies\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10230699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "the \"full name label\" should contain the text \"Name:\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6132499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "the \"name\" should equal the text \"Tanya Hardie\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4575000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "the \"gender label\" should contain the text \"Gender:\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4425600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "the \"gender\" should equal the text \"Female\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4103500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "the \"address label\" should contain the text \"Address:\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4019899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 52,
-            "name": "the \"address\" should equal the text \"152 Margi Court, Shelbyville\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4206600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "the \"edit\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8328399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "the \"delete\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6349200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 56,
+            "line": 8,
             "name": "I refresh the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 401421500
+              "duration": 409579200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122146200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 57,
-            "name": "I fill in the \"search\" input with \"Tanya Hardie\"",
+            "line": 10,
+            "name": "I am directed to the \"playground\" page",
             "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
+              "location": "src\\step-definitions\\navigation.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 79513499
+              "duration": 3162000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 58,
-            "name": "the \"contact\" should not be displayed",
+            "line": 11,
+            "name": "I refresh the \"playground\" page",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
+              "location": "src\\step-definitions\\navigation.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 4191000
+              "duration": 852878599
             }
           },
           {
@@ -334,32 +87,32 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 475583700
+              "duration": 364674300
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 29
+            "line": 3
           },
           {
             "name": "@smoke",
-            "line": 30
+            "line": 4
           },
           {
             "name": "@regression",
-            "line": 31
+            "line": 5
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-expect-to-be-able-to-create-contacts",
+    "id": "as-a-user-i-can-refresh-the-browser-and-see-the-application",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I expect to be able to create contacts",
+    "name": "As a user I can refresh the browser and see the application",
     "tags": [],
-    "uri": "src\\features\\create-contact.feature"
+    "uri": "src\\features\\playground\\page-refresh.feature"
   }
 ]
