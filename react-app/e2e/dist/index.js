@@ -22,7 +22,7 @@ _dotenv.default.config({
 });
 console.log("  >>>>>>>>>>>>>>>> " + "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment));
 _dotenv.default.config({
-  path: "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment)
+  path: "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment, ".env")
 });
 var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOST_URL_PATH'));
 var pagesConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('PAGE_URL_PATH'));
