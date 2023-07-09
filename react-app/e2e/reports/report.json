@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page;as-a-user-i-expect-to-be-able-to-see-contacts",
+        "id": "as-a-user-i-can-interact-with-buttons;as-a-user-i-can-interact-and-assert-on-buttons-at-index",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I expect to be able to see contacts",
+        "name": "As a user I can interact and assert on buttons at index",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1682912399
+              "duration": 2309043700
             }
           },
           {
@@ -27,33 +27,111 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599186200
+              "duration": 513161299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the \"header logo\" should be displayed",
+            "name": "I click the \"playground\" button",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
+              "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 44633500
+              "duration": 134126299
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 9,
-            "name": "the \"contacts header\" should contain the text \"Contacts\"",
+            "name": "I am directed to the \"playground\" page",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
+              "location": "src\\step-definitions\\navigation.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 16658299
+              "duration": 1712299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the \"1st\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 625144700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"1st\" \"my button\" should contain the text \"One\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10534699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the \"2nd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242345800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"2nd\" \"my button\" should contain the text \"Two\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7364799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the \"3rd\" \"my button\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70069399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"3rd\" \"my button\" should contain the text \"Three\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7667799
             }
           },
           {
@@ -61,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1668955800
+              "duration": 395325199
             }
           }
         ],
@@ -82,11 +160,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-home-page",
+    "id": "as-a-user-i-can-interact-with-buttons",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I expect to be able to navigate to home page",
+    "name": "As a user I can interact with buttons",
     "tags": [],
-    "uri": "src\\features\\home-page.feature"
+    "uri": "src\\features\\playground\\buttons.feature"
   }
 ]
