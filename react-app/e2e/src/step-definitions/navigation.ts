@@ -3,6 +3,7 @@ import { PageId } from '../env/global'
 import { 
     navigateToPage,
     currentPathMatchesPageId,
+    reloadPage,
 } from '../support/navigation-behavior';
 import { ScenarioWorld } from './setup/world';
 import { waitFor } from '../support/wait-for-behavior';
@@ -31,6 +32,24 @@ Given(
 
         console.log(`I am directed to the ${pageId} page`)
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
+
+    }
+)
+
+Given(
+    /^I refresh the "([^"]*)" page$/,
+    async function (this: ScenarioWorld, pageId: PageId) {
+        const {
+            screen: { page },
+            globalConfig,
+        } = this;
+
+        console.log(`I refresh the ${pageId} page`)
+        await reloadPage(page)
+
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig), {
+            timeout: 30000,
+        })
 
     }
 )
