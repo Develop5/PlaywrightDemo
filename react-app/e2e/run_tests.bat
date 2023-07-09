@@ -1,5 +1,8 @@
-set tag=%1
-set COMMON_CONFIG_FILE=env/common.env
+set env=%1
+set tag=%2
 
-yarn run cucumber --profile %tag% || yarn run postcucumber
+set COMMON_CONFIG_FILE=env/common.env
+set NODE_ENV=%env%
+
+yarn run cucumber:%env% --profile %tag% || yarn run postcucumber
 

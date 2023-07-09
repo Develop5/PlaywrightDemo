@@ -271,6 +271,9 @@ Removed from my example
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
         Chapter 102. Running our automation suite on a production environment - part 1
 
+        Prduction:
+        hub.testingtalks.com.au 
+
     &nbsp;
     Time:  
 &nbsp;
