@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 12: The Playground - Automating all the things
-        Chapter 97. Automating Drop Down menus and Select Boxes - part 1
+        Chapter 98. Automating Drop Down menus and Select Boxes - part 2
 
     &nbsp;
     Time:  
