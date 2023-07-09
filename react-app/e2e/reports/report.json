@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-page-alerts;as-a-user-i-can-interact-and-assert-on-page-alerts",
+        "id": "as-a-user-i-can-interact-with-tooltips;as-a-user-i-can-interact-and-assert-on-tooltips",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on page alerts",
+        "name": "As a user I can interact and assert on tooltips",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1956221700
+              "duration": 2043660699
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 777311000
+              "duration": 785923299
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 416831800
+              "duration": 392510800
             }
           },
           {
@@ -53,59 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2028100
+              "duration": 2151700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"error alert\" should contain the text \"This is an error alert — check it out!\"",
+            "name": "the \"tooltip\" \"title\" attribute should contain the text \"This is a tooltip\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 131284799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"warning alert\" should contain the text \"This is a warning alert — check it out!\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9056100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"info alert\" should contain the text \"This is an info alert — check it out!\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6187200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"success alert\" should contain the text \"This is a success alert — check it out!\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5095299
+              "duration": 140714699
             }
           },
           {
@@ -113,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32916500
+              "duration": 30756799
             }
           }
         ],
@@ -134,11 +95,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-page-alerts",
+    "id": "as-a-user-i-can-interact-with-tooltips",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with page alerts",
+    "name": "As a user I can interact with tooltips",
     "tags": [],
-    "uri": "src\\features\\playground\\page-alerts.feature"
+    "uri": "src\\features\\playground\\tooltips.feature"
   }
 ]

@@ -272,8 +272,8 @@ Removed from my example
         Chapter 86. Automating Browser Alerts, Page Alerts and Tooltips - part 2
 
         Note:
-            The previous alert was for browser. Now we are going go work on page alerts
-                    
+            Tooltips (hover shows an element attribute)
+
     &nbsp;
     Time:  
 &nbsp;
