@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 12: The Playground - Automating all the things
-        Chapter 96. Automating Cards and Avatars - Verify Element count - Part 3
+        Chapter 97. Automating Drop Down menus and Select Boxes - part 1
 
     &nbsp;
     Time:  
