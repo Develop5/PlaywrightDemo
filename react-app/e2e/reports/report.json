@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1714106299
+              "duration": 1888670500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 604190999
+              "duration": 807319499
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138139100
+              "duration": 173789300
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2677900
+              "duration": 3640699
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2076518799
+              "duration": 2075286499
             }
           },
           {
@@ -79,7 +79,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18217700
+              "duration": 18791299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"small avatar\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10305000
             }
           },
           {
@@ -87,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 339762800
+              "duration": 342317800
             }
           }
         ],

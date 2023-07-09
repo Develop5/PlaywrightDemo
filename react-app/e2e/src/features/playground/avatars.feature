@@ -9,3 +9,4 @@ Feature: As a user I can interact with avatars
         When I am directed to the "playground" page
         And the "1st" "avatar" should be displayed
         And the "2nd" "avatar" should be displayed
+        And the "small avatar" should be displayed
