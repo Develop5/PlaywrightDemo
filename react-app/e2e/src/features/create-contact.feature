@@ -54,3 +54,5 @@ Scenario: As a user I expect to be able to create a new contact
         And the "delete" should be displayed
 
         And I refresh the "home" page
+        And I fill in the "search" input with "Tanya Hardie"
+        Then the "contact" should not be displayed

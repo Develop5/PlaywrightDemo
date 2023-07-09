@@ -271,7 +271,7 @@ Removed from my example
 - [ ] Section 12: The Playground - Automating all the things
         Chapter 99. Refreshing our page mid test - Leveraging our URL assertion - part 1
 
-        When refreshing a page, data is not saved. This section resolves it.
+    When refreshing a page, data is not saved. **Corrected**: This section checks it.
     &nbsp;
     Time:  
 &nbsp;
