@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 11: The Playground - Automating all the things
-        Chapter 91. Asserting on stored values and expected values in our automation - part 2
+        Chapter 92. Asserting on stored values and expected values in our automation - part 3
 
         We need our "contain" and "equal" to work with stored values as well
     &nbsp;
