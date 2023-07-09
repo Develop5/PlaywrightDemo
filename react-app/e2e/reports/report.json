@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-cards;as-a-user-i-can-interact-and-assert-on-cards",
+        "id": "as-a-user-i-can-interact-with-avatars;as-a-user-i-can-interact-and-assert-on-avatars",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on cards",
+        "name": "As a user I can interact and assert on avatars",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1737436500
+              "duration": 1714106299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 619084200
+              "duration": 604190999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142886900
+              "duration": 138139100
             }
           },
           {
@@ -53,85 +53,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1826799
+              "duration": 2677900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"card header\" should contain the text \"Word of the Day\"",
+            "name": "the \"1st\" \"avatar\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 495994100
+              "duration": 2076518799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "the \"card main\" should contain the text \"Automation\"",
+            "name": "the \"2nd\" \"avatar\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 24551699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"card type\" should contain the text \"noun\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13228500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"card overview\" should contain the text \"Automate the execution of tests\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11036899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"card overview\" should contain the text \"\"compares actual with expected\"\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23233699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"card action\" should contain the text \"Learn More\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12052600
+              "duration": 18217700
             }
           },
           {
@@ -139,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1002350199
+              "duration": 339762800
             }
           }
         ],
@@ -160,11 +108,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-cards",
+    "id": "as-a-user-i-can-interact-with-avatars",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with cards",
+    "name": "As a user I can interact with avatars",
     "tags": [],
-    "uri": "src\\features\\playground\\cards.feature"
+    "uri": "src\\features\\playground\\avatars.feature"
   }
 ]
