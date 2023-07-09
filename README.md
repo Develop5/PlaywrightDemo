@@ -268,10 +268,9 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 11: The Playground - Automating all the things
-        Chapter 92. Asserting on stored values and expected values in our automation - part 3
+- [ ] Section 12: The Playground - Automating all the things
+        Chapter 94. Automating Cards and Avatars - Verify Element count - Part 1
 
-        We need our "contain" and "equal" to work with stored values as well
     &nbsp;
     Time:  
 &nbsp;
