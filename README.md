@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 12: The Playground - Automating all the things
-        Chapter 94. Automating Cards and Avatars - Verify Element count - Part 2
+        Chapter 96. Automating Cards and Avatars - Verify Element count - Part 3
 
     &nbsp;
     Time:  

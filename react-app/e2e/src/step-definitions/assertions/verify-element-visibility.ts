@@ -43,3 +43,23 @@ Then(
         })
     }
 )
+
+
+Then(
+    /^I should( not)? see "(\d*)" "([^"]*)" displayed$/,
+    async function(this: ScenarioWorld, negate: boolean, count: string, elementKey: ElementKey) {
+        const {
+            screen: { page },
+            globalConfig,
+        } = this;
+
+        console.log(`I should ${negate?'not ':''}see the ${count} ${elementKey}`)
+  
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+
+        await waitFor( async () => {
+            const element = await page.$$(elementIdentifier) 
+            return (Number(count) === element.length) === !negate
+        })
+    }
+)

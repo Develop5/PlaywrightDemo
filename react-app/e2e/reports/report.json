@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1888670500
+              "duration": 1808596400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 807319499
+              "duration": 632373199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173789300
+              "duration": 149008199
             }
           },
           {
@@ -53,12 +53,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3640699
+              "duration": 3372500
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 10,
             "name": "the \"1st\" \"avatar\" should be displayed",
             "match": {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2075286499
+              "duration": 2060673399
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18791299
+              "duration": 18755899
             }
           },
           {
@@ -92,7 +92,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10305000
+              "duration": 9557199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I should see \"2\" \"avatar\" displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12393200
             }
           },
           {
@@ -100,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 342317800
+              "duration": 364135399
             }
           }
         ],

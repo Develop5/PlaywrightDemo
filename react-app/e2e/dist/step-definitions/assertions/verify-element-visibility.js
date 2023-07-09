@@ -84,3 +84,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref3.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^I should( not)? see "(\d*)" "([^"]*)" displayed$/, /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(negate, count, elementKey) {
+    var page, globalConfig, elementIdentifier;
+    return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+      while (1) switch (_context6.prev = _context6.next) {
+        case 0:
+          page = this.screen.page, globalConfig = this.globalConfig;
+          console.log("I should ".concat(negate ? 'not ' : '', "see the ").concat(count, " ").concat(elementKey));
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+          _context6.next = 5;
+          return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+            var element;
+            return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+              while (1) switch (_context5.prev = _context5.next) {
+                case 0:
+                  _context5.next = 2;
+                  return page.$$(elementIdentifier);
+                case 2:
+                  element = _context5.sent;
+                  return _context5.abrupt("return", Number(count) === element.length === !negate);
+                case 4:
+                case "end":
+                  return _context5.stop();
+              }
+            }, _callee5);
+          })));
+        case 5:
+        case "end":
+          return _context6.stop();
+      }
+    }, _callee6, this);
+  }));
+  return function (_x8, _x9, _x10, _x11) {
+    return _ref5.apply(this, arguments);
+  };
+}());
