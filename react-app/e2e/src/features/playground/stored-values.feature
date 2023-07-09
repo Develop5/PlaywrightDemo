@@ -17,4 +17,5 @@ Feature: As a user I can interact with stored values
         # Because this is what is in the Playground page
 
         And the "fourth value" should not equal the "first value" stored in global variables
+        And the "fourth value" should contain the "first value" stored in global variables
 

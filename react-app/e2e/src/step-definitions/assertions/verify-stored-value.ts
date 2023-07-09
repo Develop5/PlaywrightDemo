@@ -15,13 +15,33 @@ Then(
         } = this;
 
         console.log(`the ${elementKey} should ${negate?'not ':''}equal the ${globalVariables[variableKey]} stored in global variables`)
-        
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-
         await waitFor( async () => {
             const elementText = await page.textContent(elementIdentifier)
             const variableValue = globalVariables[variableKey]
             return (elementText === variableValue) === !negate
         })
+    }
+)
+
+Then(
+    /^the "([^"]*)" should( not)? contain the "([^"]*)" stored in global variables$/,
+    async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean, variableKey: string) {
+        const {
+            screen: { page },
+            globalConfig,
+            globalVariables,
+        } = this;
+
+        console.log(`the ${elementKey} should ${negate?' not':''}contain the ${globalVariables[variableKey]} stored in global variables`)
+
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+
+        await waitFor( async() => {
+            const elementText = await page.textContent(elementIdentifier)
+            const variableValue = globalVariables[variableKey];
+            return elementText?.includes(variableValue) === !negate
+        })
+
     }
 )

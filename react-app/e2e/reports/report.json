@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1772385200
+              "duration": 1834530199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 671810000
+              "duration": 617407099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 143542099
+              "duration": 128663900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2199400
+              "duration": 2938799
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 577667700
+              "duration": 552869300
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10106399
+              "duration": 15465399
             }
           },
           {
@@ -92,7 +92,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7781700
+              "duration": 7469899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"fourth value\" should contain the \"first value\" stored in global variables",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9336999
             }
           },
           {
@@ -100,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 897032399
+              "duration": 952135299
             }
           }
         ],
