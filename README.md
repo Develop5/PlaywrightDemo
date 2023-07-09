@@ -269,11 +269,9 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 11: The Playground - Automating all the things
-        Chapter 89. Automating text areas & Hidden and Visible text
+        Chapter 91. Asserting on stored values and expected values in our automation - part 2
 
-        Note:
-            The previous commit was for text areas. This one is for hidden text
-
+        We need our "contain" and "equal" to work with stored values as well
     &nbsp;
     Time:  
 &nbsp;
