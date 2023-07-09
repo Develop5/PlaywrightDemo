@@ -268,11 +268,8 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 12: The Playground - Automating all the things
-        Chapter 99. Refreshing our page mid test - Leveraging our URL assertion - part 2
-
-    When refreshing a page, data is not saved. **Corrected**: This section checks it.
-    And then create anothe feature for refresh, specifically. And also validate it works for multi-pages.
+- [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
+        Chapter 102. Running our automation suite on a production environment - part 1
 
     &nbsp;
     Time:  
