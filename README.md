@@ -272,7 +272,7 @@ Removed from my example
         Chapter 89. Automating text areas & Hidden and Visible text
 
         Note:
-            Tooltips (hover shows an element attribute)
+            The previous commit was for text areas. This one is for hidden text
 
     &nbsp;
     Time:  
