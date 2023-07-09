@@ -7,12 +7,14 @@ import { waitFor } from '../../support/wait-for-behavior'
 
 Then(
     /^the "([^"]*)" table should( not)? equal the following:$/,
+    
     async function (this: ScenarioWorld, elementKey: ElementKey, negate: boolean, dataTable: DataTable) {
         const {
             screen: { page },
             globalConfig,
         } = this
 
+        
         console.log(`the ${elementKey} table should ${negate?'not ':''}equal the following:`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
@@ -24,7 +26,7 @@ Then(
                 const cells = row.querySelectorAll('td')
                 return Array.from(cells).map(cell => cell.textContent)
             })
-        })
+         })
 
         console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
         console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n")
@@ -33,11 +35,5 @@ Then(
         await waitFor( async () => {
             return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate
         })
-
-
-
-
     }
-
-
 )
