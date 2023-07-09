@@ -18,4 +18,6 @@ Feature: As a user I can interact with stored values
 
         And the "fourth value" should not equal the "first value" stored in global variables
         And the "fourth value" should contain the "first value" stored in global variables
+        And the "fifth value" should contain the "first value" stored in global variables
+        And the "third value" should not contain the "first value" stored in global variables
 
