@@ -269,10 +269,11 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 102. Running our automation suite on a production environment - part 1
+        Chapter 103. Running our automation suite on a production environment - part 2
 
-        Prduction:
+        Production:
         hub.testingtalks.com.au 
+        Run in no headless mode and watch the url
 
     &nbsp;
     Time:  

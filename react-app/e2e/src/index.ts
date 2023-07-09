@@ -12,7 +12,6 @@ import * as fs from "fs";
 const environment = env('NODE_ENV')
 
 dotenv.config({path: env('COMMON_CONFIG_FILE')})
-console.log("  >>>>>>>>>>>>>>>> " + `${env('ENV_PATH')}${environment}`)
 dotenv.config({path: `${env('ENV_PATH')}${environment}.env`})
 
 const hostsConfig: HostsConfig = getJsonFromFile(env('HOST_URL_PATH'))
