@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1707729999
+              "duration": 918085500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 684271800
+              "duration": 532055700
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 409579200
+              "duration": 215086299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 122146200
+              "duration": 306723400
             }
           },
           {
@@ -66,20 +66,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3162000
+              "duration": 2359800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "src\\step-definitions\\general.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3006841399
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 14,
             "name": "I refresh the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 852878599
+              "duration": 437834600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait \"2\" seconds",
+            "match": {
+              "location": "src\\step-definitions\\general.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2017642500
             }
           },
           {
@@ -87,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 364674300
+              "duration": 44044100
             }
           }
         ],
