@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 11: The Playground - Automating all the things
-        Chapter 86. Automating Browser Alerts, Page Alerts and Tooltips - part 2
+        Chapter 89. Automating text areas & Hidden and Visible text
 
         Note:
             Tooltips (hover shows an element attribute)
