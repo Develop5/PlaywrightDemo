@@ -17,9 +17,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           console.log("the ".concat(elementKey, " table should ").concat(negate ? 'not ' : '', "equal the following:"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           console.log(elementIdentifier + " tbody tr");
-          console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n");
           console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n");
-          _context2.next = 8;
+          _context2.next = 7;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
             var dataBefore;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -36,14 +35,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   });
                 case 2:
                   dataBefore = _context.sent;
+                  // If the browser is not quick enough (e.g. production), the data cannot be retrieved
+                  // Therefore it must go inside the waitFor cycle, to retry until timeout is exceeded
+
+                  console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n");
                   return _context.abrupt("return", JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate);
-                case 4:
+                case 5:
                 case "end":
                   return _context.stop();
               }
             }, _callee);
           })));
-        case 8:
+        case 7:
         case "end":
           return _context2.stop();
       }

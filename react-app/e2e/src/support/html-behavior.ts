@@ -46,6 +46,8 @@ export const getValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise< string | null > => {
+    // To void flakyness, we need to wait for the element to be ready in the page
+    await page.waitForSelector(elementIdentifier)
     const value = await page.$eval< string, HTMLSelectElement >(elementIdentifier, el => {
         return el.value;
     })

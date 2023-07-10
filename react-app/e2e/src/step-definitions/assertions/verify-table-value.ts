@@ -21,7 +21,6 @@ Then(
 
         console.log(elementIdentifier + " tbody tr")
 
-        console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
         console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n")
 
         await waitFor( async () => {
@@ -35,6 +34,7 @@ Then(
             // If the browser is not quick enough (e.g. production), the data cannot be retrieved
             // Therefore it must go inside the waitFor cycle, to retry until timeout is exceeded
     
+            console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
             return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate
         })
     }

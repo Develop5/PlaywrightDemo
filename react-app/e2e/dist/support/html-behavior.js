@@ -116,13 +116,16 @@ var getValue = /*#__PURE__*/function () {
       while (1) switch (_context6.prev = _context6.next) {
         case 0:
           _context6.next = 2;
+          return page.waitForSelector(elementIdentifier);
+        case 2:
+          _context6.next = 4;
           return page.$eval(elementIdentifier, function (el) {
             return el.value;
           });
-        case 2:
+        case 4:
           value = _context6.sent;
           return _context6.abrupt("return", value);
-        case 4:
+        case 6:
         case "end":
           return _context6.stop();
       }
