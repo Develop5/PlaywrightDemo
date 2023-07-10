@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-inputs",
+        "id": "as-a-user-i-can-interact-with-tables;as-a-user-i-can-interact-and-assert-on-tables",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on inputs",
+        "name": "As a user I can interact and assert on tables",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1696468400
+              "duration": 1714216199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2268882200
+              "duration": 3244240800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 238422399
+              "duration": 246356400
             }
           },
           {
@@ -53,98 +53,123 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1901000
+              "duration": 2813299
             }
           },
           {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"outlined required\" should equal the value \"Testing\"",
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "159",
+                      "6",
+                      "24",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "237",
+                      "9",
+                      "37",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "262",
+                      "16",
+                      "24",
+                      "6"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "305",
+                      "3.7",
+                      "67",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "356",
+                      "16",
+                      "49",
+                      "3.9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the \"basic\" table should equal the following:",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:60"
+              "location": "src\\step-definitions\\assertions\\verify-table-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 669289499
+              "duration": 2055927399
             }
           },
           {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"outlined disabled\" should equal the value \"Talks\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26151699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"outlined read only\" should equal the value \"Hub\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19479099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"outlined required\" should be enabled",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9586300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"outlined disabled\" should not be enabled",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8837999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "I fill in the \"outlined required\" input with \"Testing Talks Online\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 54949600
-            }
-          },
-          {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "159",
+                      "6",
+                      "24",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "237",
+                      "9",
+                      "37",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "262",
+                      "16",
+                      "24",
+                      "6"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "305",
+                      "3.4",
+                      "67",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "356",
+                      "16",
+                      "49",
+                      "3.9"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 20,
-            "name": "the \"outlined required\" should equal the value \"Testing Talks Online\"",
+            "name": "the \"basic\" table should not equal the following:",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:60"
+              "location": "src\\step-definitions\\assertions\\verify-table-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 17259599
+              "duration": 11071599
             }
           },
           {
@@ -152,7 +177,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 344506800
+              "duration": 350175100
             }
           }
         ],
@@ -173,11 +198,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-autocomplete-inputs",
+    "id": "as-a-user-i-can-interact-with-tables",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with autocomplete inputs",
+    "name": "As a user I can interact with tables",
     "tags": [],
-    "uri": "src\\features\\playground\\inputs.feature"
+    "uri": "src\\features\\playground\\tables.feature"
   }
 ]
