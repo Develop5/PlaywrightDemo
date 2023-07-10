@@ -21,18 +21,20 @@ Then(
 
         console.log(elementIdentifier + " tbody tr")
 
-        const dataBefore = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
-            return rows.map(row => {
-                const cells = row.querySelectorAll('td')
-                return Array.from(cells).map(cell => cell.textContent)
-            })
-         })
-
         console.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
         console.log("\ncucumber table >>>>>>> \n", JSON.stringify(dataTable.raw()), "\n")
 
-
         await waitFor( async () => {
+
+            const dataBefore = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
+                return rows.map(row => {
+                    const cells = row.querySelectorAll('td')
+                    return Array.from(cells).map(cell => cell.textContent)
+                })
+            })
+            // If the browser is not quick enough (e.g. production), the data cannot be retrieved
+            // Therefore it must go inside the waitFor cycle, to retry until timeout is exceeded
+    
             return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate
         })
     }
