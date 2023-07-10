@@ -20,7 +20,6 @@ var environment = (0, _parseEnv.env)('NODE_ENV');
 _dotenv.default.config({
   path: (0, _parseEnv.env)('COMMON_CONFIG_FILE')
 });
-console.log("  >>>>>>>>>>>>>>>> " + "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment));
 _dotenv.default.config({
   path: "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment, ".env")
 });

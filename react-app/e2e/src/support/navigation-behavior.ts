@@ -5,7 +5,6 @@ export const navigateToPage = async (
     page: Page,
     pageId: PageId,
     { pagesConfig, hostsConfig }: GlobalConfig
-
 ): Promise<void> => {
     const {
         UI_AUTOMATION_HOST: hostName = 'localhost',

@@ -7,8 +7,8 @@ Feature: As a user I can interact with tables
         And I click the "playground" button
         When I am directed to the "playground" page
 
-        And I wait "1" seconds
-        #Added because of firefox
+        #And I wait "1" seconds
+        ##Added because of firefox
 
         Then the "basic" table should equal the following:
             | 159 | 6   | 24 | 4   |

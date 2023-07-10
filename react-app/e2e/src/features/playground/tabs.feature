@@ -21,6 +21,6 @@ Feature: As a user I can interact with tabs
         And the "edit" on the "2nd" tab should be displayed
         And the "delete" on the "2nd" tab should be displayed
 
-        And I wait "1" seconds
-        #Added because of firefox
+        #And I wait "1" seconds
+        ##Added because of firefox
 

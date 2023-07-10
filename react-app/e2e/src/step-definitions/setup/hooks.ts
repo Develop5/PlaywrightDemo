@@ -9,6 +9,7 @@ Before(async function(this: ScenarioWorld, scenario) {
 
     console.log(`Running cucumber scenario ${scenario.pickle.name}`)
     const contextOptions = {
+        ignoreHTTPSError: true,                 // Firefox tests are fragile in these https
         recordVideo: {
             dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,
         }

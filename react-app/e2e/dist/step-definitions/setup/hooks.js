@@ -16,6 +16,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           automationBrowser = (0, _parseEnv.env)('UI_AUTOMATION_BROWSER');
           console.log("Running cucumber scenario ".concat(scenario.pickle.name));
           contextOptions = {
+            ignoreHTTPSError: true,
+            // Firefox tests are fragile in these https
             recordVideo: {
               dir: "".concat((0, _parseEnv.env)('VIDEO_PATH')).concat(scenario.pickle.name)
             }

@@ -269,11 +269,9 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 103. Running our automation suite on a production environment - part 2
+        Chapter 105. Preparing our automation suite to run on production (Stabilization) - part 1
 
-        Production:
-        hub.testingtalks.com.au 
-        Run in no headless mode and watch the url
+        Avoid fragile tests. Firefox has problems when accessing to https sites
 
     &nbsp;
     Time:  
