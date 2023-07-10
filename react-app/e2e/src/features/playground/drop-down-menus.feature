@@ -12,13 +12,10 @@ Feature: As a user I can interact with drop down menus
         And the "drop down logout" should contain the text "Logout"
         And I click the "drop down profile" button
         And I click the "drop down button" button
-        
         #And I wait "1" seconds
         ##Added because of firefox
-        ##Keep this line just in case it is needed some later
-        
+        ##Keep this line just in case it is needed some later. Not used anymore
         And I click the "drop down my account" button
-
         And I click the "drop down button" button
         And I click the "drop down logout" button
         And the "drop down profile" should not be displayed

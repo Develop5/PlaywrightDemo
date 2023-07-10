@@ -6,10 +6,6 @@ Feature: As a user I can interact with tables
         Given I am on the "home" page
         And I click the "playground" button
         When I am directed to the "playground" page
-
-        #And I wait "1" seconds
-        ##Added because of firefox
-
         Then the "basic" table should equal the following:
             | 159 | 6   | 24 | 4   |
             | 237 | 9   | 37 | 4.3 |
