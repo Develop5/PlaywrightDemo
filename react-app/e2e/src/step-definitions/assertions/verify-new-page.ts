@@ -16,7 +16,7 @@ Then(
 
         const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
         
-        await page.waitForTimeout(3000)
+        await page.waitForTimeout(2000)     // It was longer before, just adapting to tutorial now
 
         await waitFor( async () => {
             let pages = context.pages();
