@@ -20,7 +20,7 @@ Then(
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
-        const elementIframe = await getIframeElement(page, iframeIdentifier)
+        const elementIframe = await getIframeElement(page, iframeIdentifier)  // Fragile if slowly
 
         await waitFor( async () => {
             const result = await page.waitForSelector(iframeIdentifier, {
