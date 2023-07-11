@@ -1,9 +1,8 @@
 Feature: As a user I can interact with login forms
 
-    @dev
     @smoke
     @regression
-    Scenario: As a user I can populate login details leveraging environment variables - localhost
+    Scenario: As a user I can populate login details leveraging environment variables
         Given I am on the "home" page
         And I click the "playground" button
         When I am directed to the "playground" page
