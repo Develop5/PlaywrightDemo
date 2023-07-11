@@ -269,11 +269,13 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 109. Preparing our automation suite to run on production (Stabilization) - part 5
+        Chapter 110. Storing login details in our Environment Specific ENV files - part 1
+
+        You don't want to see your secrets in your commits
 
 
     &nbsp;
-    Time:  
+    Time:  0:02
 &nbsp;
 
 
