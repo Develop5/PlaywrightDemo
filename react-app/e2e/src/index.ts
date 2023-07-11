@@ -4,6 +4,7 @@ import {
     GlobalConfig,
     HostsConfig,
     PagesConfig,
+    EmailsConfig,
     PageElementMappings,
 } from './env/global'
 
@@ -16,6 +17,7 @@ dotenv.config({path: `${env('ENV_PATH')}${environment}.env`})
 
 const hostsConfig: HostsConfig = getJsonFromFile(env('HOST_URL_PATH'))
 const pagesConfig: PagesConfig = getJsonFromFile(env('PAGE_URL_PATH'))
+const emailsConfig: EmailsConfig = getJsonFromFile(env('EMAILS_URL_PATH'))
 const mappingFiles = fs.readdirSync(`${process.cwd()}${env('PAGE_ELEMENT_PATH')}`)
 
 
@@ -31,6 +33,7 @@ const pageElementMappings: PageElementMappings = mappingFiles.reduce(
 const worldParameters: GlobalConfig = {
     hostsConfig,
     pagesConfig,
+    emailsConfig,
     pageElementMappings,
 }
 

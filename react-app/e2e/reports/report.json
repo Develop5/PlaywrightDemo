@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2081894500
+              "duration": 1933606599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4057605299
+              "duration": 659996399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 264839399
+              "duration": 176325699
             }
           },
           {
@@ -53,59 +53,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1838999
+              "duration": 3523399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "I fill in the \"email\" input with \"admin@testingtalkhub.com.au\"",
+            "line": 20,
+            "name": "I fill in the \"email\" input with \"$.TEST_EMAIL\"",
             "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
+              "location": "src\\step-definitions\\forms.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 769290700
+              "duration": 609865999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "I fill in the \"password\" input with \"Password1234\"",
+            "line": 21,
+            "name": "I fill in the \"password\" input with \"$.TEST_PASSWORD\"",
             "match": {
-              "location": "src\\step-definitions\\forms.ts:12"
+              "location": "src\\step-definitions\\forms.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 49627700
+              "duration": 168776800
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 22,
             "name": "the \"email\" should contain the value \"admin@testingtalkhub.com.au\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 24645600
+              "duration": 36959100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 23,
             "name": "the \"password\" should contain the value \"Password1234\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 20286100
+              "duration": 21352599
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 398344300
+              "duration": 561617399
             }
           }
         ],
