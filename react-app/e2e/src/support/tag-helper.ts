@@ -10,5 +10,5 @@ export const generateCucumberRuntimeTag = (
         .filter(e => e !== runtimeEnv)
         .map(e => `(@${runtimeTag} and not @${e})`)
         .join(' and ')
-    return `${commonConfig} --tags '${tagExpression}'`        // OJO >>. En el original hay más comillas
+    return `${commonConfig} --tags '${tagExpression}'`
 }
