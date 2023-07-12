@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2308311199
+              "duration": 2022677599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 777559799
+              "duration": 784932799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 395004399
+              "duration": 381152099
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2397600
+              "duration": 2012299
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173222499
+              "duration": 171960299
             }
           },
           {
@@ -79,20 +79,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34331799
+              "duration": 40466700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "the \"email\" should contain the value \"admin@testingtalkhub.com.au\"",
+            "name": "the \"email\" should contain the value \"admin@testingtalskhub.com.au\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 23861200
+              "duration": 21419699
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17251300
+              "duration": 19713299
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31540199
+              "duration": 32108099
             }
           }
         ],

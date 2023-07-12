@@ -9,7 +9,7 @@ Feature: As a user I can interact with login forms
         When I am directed to the "playground" page
         And I fill in the "email" input with "$.TEST_EMAIL"
         And I fill in the "password" input with "$.TEST_PASSWORD"
-        Then the "email" should contain the value "admin@testingtalkhub.com.au"
+        Then the "email" should contain the value "admin@testingtalskhub.com.au"
         And the "password" should contain the value "Password1234"
 
 
