@@ -269,10 +269,14 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 112. Storing login details in our Environment Specific ENV files - part 3
+        Chapter 114. Cucumber Example Tables to run test scenarios on a specific environment - part 1
 
-        You don't want to see your secrets in your commits
+        Cucumber example tables. Emulation (browser, mobile device). Customized console.logs
+        Tables - 2 things: different scenarios and different versions of the same test.
 
+        Difference between Data Tables and Example Tables.-
+        Example tables: Cucumber run a complete test the number of time equal to the number of data sets in the example table
+        Data table: Only for a single steps and not the entire automation.
 
     &nbsp;
     Time:  0:02
