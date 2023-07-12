@@ -10,7 +10,7 @@ var generateCucumberRuntimeTag = function generateCucumberRuntimeTag(commonConfi
   var tagExpression = availableEnvList.filter(function (e) {
     return e !== runtimeEnv;
   }).map(function (e) {
-    return "(@".concat(runtimeTag, " and not ").concat(e, ")");
+    return "(@".concat(runtimeTag, " and not @").concat(e, ")");
   }).join(' and ');
   return "".concat(commonConfig, " --tags '").concat(tagExpression, "'"); // OJO >>. En el original hay más comillas
 };
