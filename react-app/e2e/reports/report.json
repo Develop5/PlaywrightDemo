@@ -5,8 +5,8 @@
       {
         "description": "",
         "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-can-populate-login-details-leveraging-environment-variables",
-        "keyword": "Scenario",
-        "line": 6,
+        "keyword": "Scenario Outline",
+        "line": 16,
         "name": "As a user I can populate login details leveraging environment variables",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2022677599
+              "duration": 2013093600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 784932799
+              "duration": 788762800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 381152099
+              "duration": 419701300
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2012299
+              "duration": 2368600
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 171960299
+              "duration": 173164299
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40466700
+              "duration": 42338600
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21419699
+              "duration": 20950700
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19713299
+              "duration": 15773699
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32108099
+              "duration": 32969300
             }
           }
         ],
