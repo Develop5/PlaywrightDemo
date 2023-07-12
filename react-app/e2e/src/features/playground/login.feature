@@ -11,8 +11,14 @@ Feature: As a user I can interact with login forms
         And I fill in the "password" input with "$.TEST_PASSWORD"
         Then the "email" should contain the value "admin@testingtalskhub.com.au"
         And the "password" should contain the value "<password>"
+
+        @localhost
         Examples:
             | password     |
             | Password1234 |
 
+        @production
+        Examples:
+            | password  |
+            | 4S42xAr12 |
 
