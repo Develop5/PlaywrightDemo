@@ -269,14 +269,13 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 116. Cucumber Example Tables to run test scenarios on a specific environment - part 3
+        Chapter 117. Introducing Device Emulation with Playwright - part 1
 
-        Cucumber example tables. Emulation (browser, mobile device). Customized console.logs
-        Tables - 2 things: different scenarios and different versions of the same test.
+        Playwright allows mobile simulation: viewport, device scale factor, locale, timezone, touch support, color skin, geolocation, etc.
+        This is emulation, not a simulator.
+        Not Android simulator or similar.
+        We emulate the look, feel and function of a website.
 
-        Difference between Data Tables and Example Tables.-
-        Example tables: Cucumber run a complete test the number of time equal to the number of data sets in the example table
-        Data table: Only for a single steps and not the entire automation.
 
     &nbsp;
     Time:  0:02
