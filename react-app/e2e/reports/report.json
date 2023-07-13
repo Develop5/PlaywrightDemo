@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-can-populate-login-details-leveraging-environment-variables",
+        "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-autocomplete-inputs",
         "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "As a user I can populate login details leveraging environment variables",
+        "line": 20,
+        "name": "As a user I can interact and assert on autocomplete inputs",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2201391999
+              "duration": 2891736999
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 787512999
+              "duration": 1052035400
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 398636099
+              "duration": 493760699
             }
           },
           {
@@ -53,59 +53,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2342299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I fill in the \"email\" input with \"$.TEST_EMAIL\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 176427899
+              "duration": 3850699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I fill in the \"password\" input with \"$.TEST_PASSWORD\"",
+            "name": "I fill in the \"movies\" input with \"The G\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 44316400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "the \"email\" should contain the value \"admin@testingtalskhub.com.au\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24654899
+              "duration": 273182399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"password\" should contain the value \"Password1234\"",
+            "name": "I click the \"the godfather\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97143899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"movies\" should contain the value \"The Godfather\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 16328199
+              "duration": 24460099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"movies\" should not contain the value \"The Godfather: Part II\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16798699
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36888599
+              "duration": 33421400
             }
           }
         ],
@@ -129,20 +129,147 @@
           {
             "name": "@regression",
             "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-autocomplete-inputs;as-a-user-i-can-interact-and-assert-on-autocomplete-inputs",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "As a user I can interact and assert on autocomplete inputs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2144742400
+            }
           },
           {
-            "name": "@localhost",
-            "line": 15
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 805022799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 464177999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2598699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the \"movies\" input with \"The D\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 250359999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the \"the dark knight\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116147200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"movies\" should contain the value \"The Dark Knight\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58297699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"movies\" should not contain the value \"The Godfather: Part II\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27514299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36890699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 5
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-login-forms",
+    "id": "as-a-user-i-can-interact-with-autocomplete-inputs",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with login forms",
+    "name": "As a user I can interact with autocomplete inputs",
     "tags": [],
-    "uri": "src\\features\\playground\\login.feature"
+    "uri": "src\\features\\playground\\inputs.feature"
   }
 ]

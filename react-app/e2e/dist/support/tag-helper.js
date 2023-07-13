@@ -12,6 +12,6 @@ var generateCucumberRuntimeTag = function generateCucumberRuntimeTag(commonConfi
   }).map(function (e) {
     return "(@".concat(runtimeTag, " and not @").concat(e, ")");
   }).join(' and ');
-  return "".concat(commonConfig, " --tags '").concat(tagExpression, "'"); // OJO >>. En el original hay más comillas
+  return "".concat(commonConfig, " --tags '").concat(tagExpression, "'");
 };
 exports.generateCucumberRuntimeTag = generateCucumberRuntimeTag;
