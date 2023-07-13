@@ -269,14 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 117. Introducing Device Emulation with Playwright - part 1
-
-        Playwright allows mobile simulation: viewport, device scale factor, locale, timezone, touch support, color skin, geolocation, etc.
-        This is emulation, not a simulator.
-        Not Android simulator or similar.
-        We emulate the look, feel and function of a website.
-
-        Emulation parameters need to be set within a context
+        Chapter 119. Customising and improving our console logs - part 1
 
 
     &nbsp;
