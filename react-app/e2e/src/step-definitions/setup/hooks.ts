@@ -1,14 +1,16 @@
-import {Before, After, ITestCaseHookParameter, setDefaultTimeout} from "@cucumber/cucumber";
+import {Before, After, setDefaultTimeout} from "@cucumber/cucumber";
 import { ScenarioWorld } from './world';
 import { env, envNumber } from '../../env/parseEnv';
+import { getViewPort } from '../../support/browser-behavior';
 
 setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
 Before(async function(this: ScenarioWorld, scenario) {
     const automationBrowser = env('UI_AUTOMATION_BROWSER')
-
     console.log(`Running cucumber scenario ${scenario.pickle.name}`)
+
     const contextOptions = {
+        viewport: getViewPort(),
         ignoreHTTPSError: true,                 // Firefox tests are fragile in these https
         recordVideo: {
             dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,

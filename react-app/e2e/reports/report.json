@@ -4,95 +4,108 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-expect-validation-on-the-login-input-for-an-incorrect-email",
+        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-can-populate-login-details-leveraging-environment-variables",
         "keyword": "Scenario Outline",
-        "line": 37,
-        "name": "As a user I expect validation on the login input for an incorrect email",
+        "line": 18,
+        "name": "As a user I can populate login details leveraging environment variables",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1991235999
+              "duration": 835351199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 28,
+            "line": 7,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 798104600
+              "duration": 815679999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 8,
             "name": "I click the \"playground\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 458531500
+              "duration": 453249500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 30,
+            "line": 9,
             "name": "I am directed to the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2686900
+              "duration": 2165799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
-            "name": "I fill in the \"email\" input with \"cam.testingtalks\"",
+            "line": 10,
+            "name": "I fill in the \"email\" input with \"$.TEST_EMAIL\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 198857499
+              "duration": 187638699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
-            "name": "I fill in the \"password\" input with \"Password1234\"",
+            "line": 11,
+            "name": "I fill in the \"password\" input with \"$.TEST_PASSWORD\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 56176600
+              "duration": 54736499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
-            "name": "the \"email error\" should contain the text \"Please include an '@' in the email address.\"",
+            "line": 12,
+            "name": "the \"email\" should contain the value \"admin@testingtalskhub.com.au\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 15639399
+              "duration": 33783500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"password\" should contain the value \"Password1234\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25597499
             }
           },
           {
@@ -100,258 +113,26 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40472200
+              "duration": 152116200
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 24
+            "line": 3
           },
           {
             "name": "@smoke",
-            "line": 25
+            "line": 4
           },
           {
             "name": "@regression",
-            "line": 26
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-expect-validation-on-the-login-input-for-an-incorrect-email",
-        "keyword": "Scenario Outline",
-        "line": 38,
-        "name": "As a user I expect validation on the login input for an incorrect email",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1338508100
-            }
+            "line": 5
           },
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "I am on the \"home\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 801574200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I click the \"playground\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 502361100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "I am directed to the \"playground\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3068799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "I fill in the \"email\" input with \"cam.testingtalks\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 243239600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "I fill in the \"password\" input with \"Password1234\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 50157999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "the \"email error\" should contain the text \"Please include an '@' in the email address.\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8737199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 27833500
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev",
-            "line": 24
-          },
-          {
-            "name": "@smoke",
-            "line": 25
-          },
-          {
-            "name": "@regression",
-            "line": 26
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-expect-validation-on-the-login-input-for-an-incorrect-email",
-        "keyword": "Scenario Outline",
-        "line": 39,
-        "name": "As a user I expect validation on the login input for an incorrect email",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 695008299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "I am on the \"home\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 935058799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I click the \"playground\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 496356800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "I am directed to the \"playground\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2792200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "I fill in the \"email\" input with \"cam.\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 209536400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "I fill in the \"password\" input with \"Password1234\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36020199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "the \"email error\" should contain the text \"Please include an '@' in the email address.\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10321899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 28682299
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev",
-            "line": 24
-          },
-          {
-            "name": "@smoke",
-            "line": 25
-          },
-          {
-            "name": "@regression",
-            "line": 26
+            "name": "@localhost",
+            "line": 15
           }
         ],
         "type": "scenario"

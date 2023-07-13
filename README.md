@@ -276,6 +276,8 @@ Removed from my example
         Not Android simulator or similar.
         We emulate the look, feel and function of a website.
 
+        Emulation parameters need to be set within a context
+
 
     &nbsp;
     Time:  0:02

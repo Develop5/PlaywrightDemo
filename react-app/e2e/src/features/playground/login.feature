@@ -1,5 +1,6 @@
 Feature: As a user I can interact with login forms
 
+    @dev
     @smoke
     @regression
     Scenario Outline: As a user I can populate login details leveraging environment variables
@@ -21,7 +22,7 @@ Feature: As a user I can interact with login forms
             | password  |
             | 4S42xAr12 |
 
-    @dev
+
     @smoke
     @regression
     Scenario Outline: As a user I expect validation on the login input for an incorrect email
