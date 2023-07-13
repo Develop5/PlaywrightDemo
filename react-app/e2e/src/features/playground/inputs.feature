@@ -1,6 +1,5 @@
 Feature: As a user I can interact with autocomplete inputs
 
-    @dev
     @smoke
     @regression
     Scenario Outline: As a user I can interact and assert on autocomplete inputs

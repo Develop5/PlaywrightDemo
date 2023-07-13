@@ -53,6 +53,7 @@
     "drop down logout" : "[data-id='drop-down-logout']",
     "age" : "[name='age']",
     "email" : "[data-id='email']",
-    "password" : "[data-id='password']"
+    "password" : "[data-id='password']",
+    "email error" : "[data-id='email-error']"
 
 }
