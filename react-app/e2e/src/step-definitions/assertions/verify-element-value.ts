@@ -21,6 +21,8 @@ Then(
         
         await waitFor(async() => {
             const elementText = await page.textContent(elementIdentifier)
+            logger.debug("elementText ", elementText)
+            logger.debug("expectedElementText ", expectedElementText)
             return elementText?.includes(expectedElementText) === !negate;
         })
     }

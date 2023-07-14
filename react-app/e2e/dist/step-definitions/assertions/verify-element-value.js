@@ -28,8 +28,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return page.textContent(elementIdentifier);
                 case 2:
                   elementText = _context.sent;
+                  _logger.logger.debug("elementText ", elementText);
+                  _logger.logger.debug("expectedElementText ", expectedElementText);
                   return _context.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
-                case 4:
+                case 6:
                 case "end":
                   return _context.stop();
               }
