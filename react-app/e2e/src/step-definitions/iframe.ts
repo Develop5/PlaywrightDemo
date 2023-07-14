@@ -7,6 +7,8 @@ import {
     getIframeElement,
     inputValueOnIframe
  } from "../support/html-behavior";
+import { logger } from "../logger";
+
 
 Then(
     /^I fill in the "([^"]*)" input on the "([^"]*)" iframe with "([^"]*)"$/,
@@ -16,7 +18,7 @@ Then(
             globalConfig
         } = this;
 
-        console.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
+        logger.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
@@ -47,7 +49,7 @@ Then(
             globalConfig
         } = this;
 
-        console.log(`the ${elementKey} on the ${iframeName} should ${negate?'not ':''}be displayed`);
+        logger.log(`the ${elementKey} on the ${iframeName} should ${negate?'not ':''}be displayed`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)

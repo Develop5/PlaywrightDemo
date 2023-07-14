@@ -54,7 +54,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
           page = this.screen.page, globalConfig = this.globalConfig;
-          console.log("the ".concat(elementPosition, " ").concat(elementKey, " shoul ").concat(negate ? ' not' : '', "be displayed"));
+          _logger.logger.log("the ".concat(elementPosition, " ").concat(elementKey, " shoul ").concat(negate ? ' not' : '', "be displayed"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           index = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
           _context4.next = 6;
@@ -92,7 +92,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context6.prev = _context6.next) {
         case 0:
           page = this.screen.page, globalConfig = this.globalConfig;
-          console.log("I should ".concat(negate ? 'not ' : '', "see the ").concat(count, " ").concat(elementKey));
+          _logger.logger.log("I should ".concat(negate ? 'not ' : '', "see the ").concat(count, " ").concat(elementKey));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context6.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {

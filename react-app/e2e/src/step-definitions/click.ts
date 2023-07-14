@@ -7,6 +7,7 @@ import {
 import { waitFor } from '../support/wait-for-behavior';
 import { getElementLocator } from '../support/web-element-helper';
 import { ElementKey } from '../env/global';
+import { logger } from '../logger';
 
 When(
     /^I click the "([^"]*)" (?:button|link|icon|element)$/,
@@ -15,7 +16,7 @@ When(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`I click the ${elementKey} (?:button|link|icon|element)`)
+        logger.log(`I click the ${elementKey} (?:button|link|icon|element)`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         await waitFor(async() => {
             const result = await page.waitForSelector(elementIdentifier, {
@@ -38,7 +39,7 @@ When(
             globalConfig,
         } = this;
 
-        console.log(`I click the ${elementPosition} ${elementKey} button|link|icon|element`)
+        logger.log(`I click the ${elementPosition} ${elementKey} button|link|icon|element`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
 

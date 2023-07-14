@@ -6,6 +6,7 @@ import { ElementKey } from "../env/global";
 import { 
     scrollIntoView 
 }  from "../support/html-behavior";
+import { logger } from "../logger";
 
 Then(
     /^I scroll to the "([^"]*)"$/,
@@ -15,7 +16,7 @@ Then(
             globalConfig,
         } = this;
     
-        console.log(`I scroll to the ${elementKey} `)
+        logger.log(`I scroll to the ${elementKey} `)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 

@@ -8,7 +8,7 @@ setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
 Before(async function(this: ScenarioWorld, scenario) {
     const automationBrowser = env('UI_AUTOMATION_BROWSER')
-    console.log(`Running cucumber scenario ${scenario.pickle.name}`)
+    logger.log(`Running cucumber scenario ${scenario.pickle.name}`)
 
     const contextOptions = {
         viewport: getViewPort(),

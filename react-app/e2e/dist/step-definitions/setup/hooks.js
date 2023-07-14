@@ -16,7 +16,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context.prev = _context.next) {
         case 0:
           automationBrowser = (0, _parseEnv.env)('UI_AUTOMATION_BROWSER');
-          console.log("Running cucumber scenario ".concat(scenario.pickle.name));
+          _logger.logger.log("Running cucumber scenario ".concat(scenario.pickle.name));
           contextOptions = {
             viewport: (0, _browserBehavior.getViewPort)(),
             ignoreHTTPSError: true,

@@ -7,6 +7,8 @@ import {
     checkElement,
     uncheckElement,
  } from "../support/html-behavior";
+import { logger } from "../logger";
+
 
 Then(
     /^I (check)?(uncheck)? the "([^"]*)" (?:check box|radio button|switch)$/,
@@ -16,7 +18,7 @@ Then(
             globalConfig,
         } = this;
 
-        console.log(`I ${unchecked?'uncheck ':'check'} the ${elementKey} check box|radio button|switch`);
+        logger.log(`I ${unchecked?'uncheck ':'check'} the ${elementKey} check box|radio button|switch`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 

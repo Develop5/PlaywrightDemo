@@ -35,7 +35,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-    console.log(`the ${elementKey} should ${negate?'not ':''} equal the text ${expectedElementText}`)
+    logger.log(`the ${elementKey} should ${negate?'not ':''} equal the text ${expectedElementText}`)
     const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
     await waitFor(async() => {
         const elementText = await page.textContent(elementIdentifier)
@@ -50,7 +50,7 @@ Then(
             screen: {page},
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${elementValue}`);
+        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${elementValue}`);
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor(async() => {
@@ -67,7 +67,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-    console.log(`the ${elementKey} should ${negate?'not ':''} equal the value ${elementValue}`)
+    logger.log(`the ${elementKey} should ${negate?'not ':''} equal the value ${elementValue}`)
     const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
     await waitFor(async() => {
         const elementAttribute = await getValue(page, elementIdentifier)
@@ -83,7 +83,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-    console.log(`the ${elementKey} should ${negate?'not ':''} be enabled`)
+    logger.log(`the ${elementKey} should ${negate?'not ':''} be enabled`)
     const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
     await waitFor(async() => {
         const isElementEnabled = await page.isEnabled(elementIdentifier)
@@ -99,7 +99,7 @@ Then(
             globalConfig,
         } = this
 
-        console.log(`the ${elementPosition} ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`)
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
 
@@ -118,7 +118,7 @@ Then(
             globalConfig,
         } = this
 
-        console.log(`the ${elementKey} ${attribute} should ${negate?'not ':''}contain the text ${expectedElementText}`)
+        logger.log(`the ${elementKey} ${attribute} should ${negate?'not ':''}contain the text ${expectedElementText}`)
     
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 

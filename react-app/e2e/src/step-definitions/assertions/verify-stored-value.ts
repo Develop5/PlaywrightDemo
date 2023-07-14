@@ -3,6 +3,8 @@ import { ElementKey } from '../../env/global'
 import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
 import { waitFor } from '../../support/wait-for-behavior'
+import { logger } from '../../logger'
+
 
 // The text in the screen should equal the value stored in a global variable
 Then(
@@ -14,7 +16,7 @@ Then(
             globalVariables,
         } = this;
 
-        console.log(`the ${elementKey} should ${negate?'not ':''}equal the ${globalVariables[variableKey]} stored in global variables`)
+        logger.log(`the ${elementKey} should ${negate?'not ':''}equal the ${globalVariables[variableKey]} stored in global variables`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor( async () => {
             const elementText = await page.textContent(elementIdentifier)
@@ -33,7 +35,7 @@ Then(
             globalVariables,
         } = this;
 
-        console.log(`the ${elementKey} should ${negate?' not':''}contain the ${globalVariables[variableKey]} stored in global variables`)
+        logger.log(`the ${elementKey} should ${negate?' not':''}contain the ${globalVariables[variableKey]} stored in global variables`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 

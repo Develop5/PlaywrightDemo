@@ -7,7 +7,7 @@ import { getElementLocator } from "../support/web-element-helper";
 import {
     inputValeOnPage
 } from "../support/html-behavior";
-
+import { logger } from "../logger";
 
 Then(
     /^I fill in the "([^"]*)" input on the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" (?:tab|window) with "([^"]*)"$/,
@@ -16,7 +16,7 @@ Then(
             screen: { page, context },
             globalConfig,
         } = this;
-        console.log(`I fill in the ${elementKey} input on the ${elementPosition} window|tab with ${inputValue}`)
+        logger.log(`I fill in the ${elementKey} input on the ${elementPosition} window|tab with ${inputValue}`)
         const pageIndex = Number(elementPosition.match(/\d/d)?.join('')) -1
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
