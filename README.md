@@ -269,7 +269,7 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 119. Customising and improving our console logs - part 1
+        Chapter 121. Customising and improving our console logs - part 3
 
 
     &nbsp;

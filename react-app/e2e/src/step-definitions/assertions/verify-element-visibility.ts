@@ -4,7 +4,7 @@ import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
 import { waitFor } from '../../support/wait-for-behavior'
 import { ElementType } from 'react'
-
+import { logger } from '../../logger'
 
 
 Then(
@@ -14,7 +14,7 @@ Then(
             screen: {page},
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not ':''} be displayed`)
+        logger.log(`the ${elementKey} should ${negate?'not ':''} be displayed`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const locator = page.locator(elementIdentifier)
         await waitFor(async () => {

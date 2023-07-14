@@ -7,6 +7,7 @@ import {
     getValue,
     getAttributeText
  } from '../../support/html-behavior'
+ import { logger } from '../../logger'
 
 Then(
     /^the "([^"]*)" should( not)? contain the text "(.*)"$/,
@@ -15,7 +16,7 @@ Then(
             screen: {page},
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`);
+        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`);
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor(async() => {

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 923518799
+              "duration": 949097500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 554877600
+              "duration": 564452399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54641300
+              "duration": 53900200
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "the \"contacts header\" should contain the text \"Contacts\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:11"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 11463999
+              "duration": 10001900
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44270399
+              "duration": 40038799
             }
           }
         ],
