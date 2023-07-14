@@ -269,11 +269,11 @@ Removed from my example
 
 *I am here:*
 - [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
-        Chapter 122. Customising and improving our console logs - part 4
+        Chapter 124. Creating our own waitFor enabled waitForSelector function leveraging playwright
 
 
     &nbsp;
-    Time:  0:02
+    Time: 
 &nbsp;
 
 
