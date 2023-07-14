@@ -2,6 +2,7 @@ import {Before, After, setDefaultTimeout} from "@cucumber/cucumber";
 import { ScenarioWorld } from './world';
 import { env, envNumber } from '../../env/parseEnv';
 import { getViewPort } from '../../support/browser-behavior';
+import { logger } from "../../logger";
 
 setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
@@ -21,7 +22,7 @@ Before(async function(this: ScenarioWorld, scenario) {
 });
 
 After(async function(this:ScenarioWorld, scenario) {
-    console.log(`Closing cucumber scenario ${scenario.pickle.name}`)
+    logger.log(`Closing cucumber scenario ${scenario.pickle.name}`)
       const {
           screen: {page, browser}
       } = this;
