@@ -1,4 +1,8 @@
 import { logger } from "../logger";
+import { Page } from "playwright";
+import { ElementLocator } from "../env/global";
+import { envNumber } from "../env/parseEnv";
+
 
 export const waitFor = async <T>(
     predicate: () => T | Promise<T>,
@@ -14,8 +18,21 @@ export const waitFor = async <T>(
 
         await sleep(wait)
         logger.log(`Waiting ${wait}ms`);
-
     }
     throw new Error(`Wait time of ${timeout} as exceeded`);
+}
 
+export const waitForSelector = async (
+    page: Page,
+    elementIdentifier: ElementLocator
+): Promise<boolean> => {
+    try {
+        await page.waitForSelector(elementIdentifier, {
+            state: 'visible',
+            timeout: envNumber('SELECTOR_TIMEOUT')
+        })
+        return true
+    } catch (e) {
+        return false
+    }
 }
