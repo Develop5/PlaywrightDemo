@@ -105,3 +105,11 @@ export const scrollIntoView = async (
     const element = page.locator(elementIdentifier)
     await element.scrollIntoViewIfNeeded()
 }
+
+export const elementChecked = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<boolean | null> => {
+    const checked = await page.isChecked(elementIdentifier)
+    return checked
+}

@@ -268,7 +268,9 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 13: Automation Testing on an environment. Handling Login Details with ENV variables
+- [ ] Section 16: Improving our automation failure errors - part 2
+        (Long ago I forgot updating the section)
+
         Chapter 128. Refactoring and improving our assertion step definitions - part 1
 
 
