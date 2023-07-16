@@ -1,5 +1,8 @@
 import { Then } from '@cucumber/cucumber'
-import { waitFor } from '../support/wait-for-behavior'
+import { 
+    waitFor,
+    waitForSelector
+} from '../support/wait-for-behavior'
 import { getElementLocator } from '../support/web-element-helper'
 import { ScenarioWorld } from './setup/world'
 import { ElementKey } from '../env/global'
@@ -25,14 +28,14 @@ Then (
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor(async() => {
-            const result = await page.waitForSelector(elementIdentifier, {
-                state: 'visible'
-            })
-            if (result) {
+
+            const elementStable = await waitForSelector(page, elementIdentifier)
+
+            if (elementStable) {
                 const parsedInput = parseInput(input, globalConfig)
                 await inputValue(page, elementIdentifier, parsedInput)
             }
-            return result;
+            return elementStable;
         })
     }
 )
@@ -50,14 +53,13 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor( async() => {
-            const result = await page.waitForSelector(elementIdentifier, {
-                state: 'visible'
-            })
 
-            if (result) {
+            const elementStable = await waitForSelector(page, elementIdentifier)
+
+            if (elementStable) {
                 await selectValue(page, elementIdentifier, option)
             }
-            return result;
+            return elementStable;
         })
 
     }

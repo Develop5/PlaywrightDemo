@@ -1,5 +1,8 @@
 import { Then } from "@cucumber/cucumber";
-import { waitFor } from "../support/wait-for-behavior";
+import { 
+    waitFor,
+    waitForSelector 
+} from "../support/wait-for-behavior";
 import { getElementLocator } from "../support/web-element-helper";
 import { ScenarioWorld } from "./setup/world";
 import { ElementKey } from "../env/global";
@@ -22,20 +25,18 @@ Then(
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
-
+        
         await waitFor( async () => {
-            const elementIframe = await getIframeElement(page, iframeIdentifier)
+            
+            const iframeStable = await waitForSelector(page, iframeIdentifier)
 
-            const result = await page.waitForSelector(iframeIdentifier, {
-                state: 'visible'
-            })
-
-            if (result) {
+            if (iframeStable) {
+                const elementIframe = await getIframeElement(page, iframeIdentifier)
                 if (elementIframe) {
                     await inputValueOnIframe(elementIframe, elementIdentifier, inputValue)
                 }
             }
-            return result;
+            return iframeStable;
         })
     }
 )
@@ -56,6 +57,9 @@ Then(
         const elementIframe = await getIframeElement(page, iframeIdentifier)
 
         await waitFor( async () => {
+
+            // >>>>>>>>>>>> Was not touch. Does it need to be fixed with a stable variable?
+
             const elementText = await elementIframe?.textContent(elementIdentifier)
             return elementText?.includes(expectedElementText) === !negate;
         })

@@ -26,10 +26,6 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            //const result = await page.waitForSelector(elementIdentifier, {
-            //    state: 'visible',
-            //})
-
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             console.log('TESTING')
