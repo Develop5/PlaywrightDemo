@@ -20,8 +20,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           _logger.logger.log("I fill in the ".concat(elementKey, " input on the ").concat(elementPosition, " window|tab with ").concat(inputValue));
           pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/d)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-          console.log('>>>>>>>>>>     Do not know     <<<<<<<<<<<<<');
-          _context2.next = 7;
+          _context2.next = 6;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
             var pages, elementStable;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -47,7 +46,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               }
             }, _callee);
           })));
-        case 7:
+        case 6:
         case "end":
           return _context2.stop();
       }

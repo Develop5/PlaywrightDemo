@@ -1,6 +1,5 @@
 Feature: As a user I can interact with tabs
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I can interact and asset on new tabs
