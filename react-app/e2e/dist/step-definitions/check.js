@@ -20,18 +20,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context2.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-            var result;
+            var elementStable;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
                   _context.next = 2;
-                  return page.waitForSelector(elementIdentifier, {
-                    state: 'visible'
-                  });
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
-                  result = _context.sent;
+                  elementStable = _context.sent;
                   console.log('TESTING');
-                  if (!result) {
+                  if (!elementStable) {
                     _context.next = 12;
                     break;
                   }
@@ -48,7 +46,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   _context.next = 12;
                   return (0, _htmlBehavior.checkElement)(page, elementIdentifier);
                 case 12:
-                  return _context.abrupt("return", result);
+                  return _context.abrupt("return", elementStable);
                 case 13:
                 case "end":
                   return _context.stop();
