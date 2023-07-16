@@ -26,6 +26,9 @@ Then(
             const result = await page.waitForSelector(elementIdentifier, {
                 state: 'visible',
             })
+
+            console.log('TESTING')
+
             if (result) { // I check check and viceversa
                 if (!!unchecked) {
                     await uncheckElement(page, elementIdentifier)

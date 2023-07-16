@@ -30,25 +30,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   });
                 case 2:
                   result = _context.sent;
+                  console.log('TESTING');
                   if (!result) {
-                    _context.next = 11;
+                    _context.next = 12;
                     break;
                   }
                   if (!unchecked) {
-                    _context.next = 9;
+                    _context.next = 10;
                     break;
                   }
-                  _context.next = 7;
+                  _context.next = 8;
                   return (0, _htmlBehavior.uncheckElement)(page, elementIdentifier);
-                case 7:
-                  _context.next = 11;
+                case 8:
+                  _context.next = 12;
                   break;
-                case 9:
-                  _context.next = 11;
+                case 10:
+                  _context.next = 12;
                   return (0, _htmlBehavior.checkElement)(page, elementIdentifier);
-                case 11:
-                  return _context.abrupt("return", result);
                 case 12:
+                  return _context.abrupt("return", result);
+                case 13:
                 case "end":
                   return _context.stop();
               }
