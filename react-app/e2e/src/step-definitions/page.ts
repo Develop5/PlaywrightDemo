@@ -27,6 +27,8 @@ Then(
             let pages = context.pages();
 
             const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex)
+            console.log('TESTING')
+
             if (elementStable) {
                 await inputValeOnPage(pages, pageIndex, elementIdentifier, inputValue)
             }

@@ -20,7 +20,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           _logger.logger.log("I fill in the ".concat(elementKey, " input on the ").concat(elementPosition, " window|tab with ").concat(inputValue));
           pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/d)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-          _context2.next = 6;
+          console.log('>>>>>>>>>>     Do not know     <<<<<<<<<<<<<');
+          _context2.next = 7;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
             var pages, elementStable;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -31,21 +32,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return (0, _waitForBehavior.waitForSelectorOnPage)(page, elementIdentifier, pages, pageIndex);
                 case 3:
                   elementStable = _context.sent;
+                  console.log('TESTING');
                   if (!elementStable) {
-                    _context.next = 7;
+                    _context.next = 8;
                     break;
                   }
-                  _context.next = 7;
+                  _context.next = 8;
                   return (0, _htmlBehavior.inputValeOnPage)(pages, pageIndex, elementIdentifier, inputValue);
-                case 7:
-                  return _context.abrupt("return", elementStable);
                 case 8:
+                  return _context.abrupt("return", elementStable);
+                case 9:
                 case "end":
                   return _context.stop();
               }
             }, _callee);
           })));
-        case 6:
+        case 7:
         case "end":
           return _context2.stop();
       }

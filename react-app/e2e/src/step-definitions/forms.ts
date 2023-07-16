@@ -51,11 +51,10 @@ Then(
         logger.log(`I select the ${option} option from the ${elementKey}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-
+        
         await waitFor( async() => {
-
             const elementStable = await waitForSelector(page, elementIdentifier)
-
+            
             if (elementStable) {
                 await selectValue(page, elementIdentifier, option)
             }

@@ -1,6 +1,6 @@
 {
     "header logo" : "[data-id='header-logo']",
-    "search" : "[data-id='search']",
+    "search" : "[data-id='XXXsearch']",
     "contact" : "[data-id='contact']",
     "full name label" : "[data-id='full-name-label']",
     "gender label" : "[data-id='gender-label']",
