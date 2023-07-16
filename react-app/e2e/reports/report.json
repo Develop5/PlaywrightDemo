@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 867367799
+              "duration": 881241400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 528413800
+              "duration": 527060300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 353708499
+              "duration": 309877399
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1007300
+              "duration": 1165399
             }
           },
           {
@@ -66,21 +66,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 528499199
+              "duration": 518951800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I check the \"greens\" check box",
+            "name": "I check the \"green\" check box",
             "match": {
               "location": "src\\step-definitions\\check.ts:13"
             },
             "result": {
               "status": "failed",
-              "duration": 2273900,
-              "error_message": "page.waitForSelector: selector: expected string, got undefined\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:26:39)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:4:12)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:25:35\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\support\\wait-for-behavior.ts:12:31\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\support\\wait-for-behavior.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\support\\wait-for-behavior.ts:4:12)\n    at waitFor (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\support\\wait-for-behavior.ts:6:17)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:25:22)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\src\\step-definitions\\check.ts:18:12)"
+              "duration": 25011021799,
+              "error_message": "Error: function timed out, ensure the promise resolves within 25000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\e2e\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -153,7 +153,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 243318399
+              "duration": 105276099
             },
             "embeddings": [
               {
