@@ -20,18 +20,28 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context2.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-            var elementText;
+            var elementStable, elementText;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
                   _context.next = 2;
-                  return page.textContent(elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context.sent;
+                  if (!elementStable) {
+                    _context.next = 12;
+                    break;
+                  }
+                  _context.next = 6;
+                  return (0, _htmlBehavior.getElementText)(page, elementIdentifier);
+                case 6:
                   elementText = _context.sent;
                   _logger.logger.debug("elementText ", elementText);
                   _logger.logger.debug("expectedElementText ", expectedElementText);
                   return _context.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
-                case 6:
+                case 12:
+                  return _context.abrupt("return", elementStable);
+                case 13:
                 case "end":
                   return _context.stop();
               }
@@ -58,16 +68,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context4.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-            var elementText;
+            var elementStable, elementText;
             return _regeneratorRuntime().wrap(function _callee3$(_context3) {
               while (1) switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return page.textContent(elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context3.sent;
+                  if (!elementStable) {
+                    _context3.next = 10;
+                    break;
+                  }
+                  _context3.next = 6;
+                  return (0, _htmlBehavior.getElementText)(page, elementIdentifier);
+                case 6:
                   elementText = _context3.sent;
                   return _context3.abrupt("return", elementText === expectedElementText === !negate);
-                case 4:
+                case 10:
+                  return _context3.abrupt("return", elementStable);
+                case 11:
                 case "end":
                   return _context3.stop();
               }
@@ -94,16 +114,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context6.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-            var elementText;
+            var elementStable, elementText;
             return _regeneratorRuntime().wrap(function _callee5$(_context5) {
               while (1) switch (_context5.prev = _context5.next) {
                 case 0:
                   _context5.next = 2;
-                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context5.sent;
+                  if (!elementStable) {
+                    _context5.next = 10;
+                    break;
+                  }
+                  _context5.next = 6;
+                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                case 6:
                   elementText = _context5.sent;
                   return _context5.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(elementValue)) === !negate);
-                case 4:
+                case 10:
+                  return _context5.abrupt("return", elementStable);
+                case 11:
                 case "end":
                   return _context5.stop();
               }
@@ -130,16 +160,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context8.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
-            var elementAttribute;
+            var elementStable, elementAttribute;
             return _regeneratorRuntime().wrap(function _callee7$(_context7) {
               while (1) switch (_context7.prev = _context7.next) {
                 case 0:
                   _context7.next = 2;
-                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context7.sent;
+                  if (!elementStable) {
+                    _context7.next = 10;
+                    break;
+                  }
+                  _context7.next = 6;
+                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                case 6:
                   elementAttribute = _context7.sent;
                   return _context7.abrupt("return", elementAttribute === elementValue === !negate);
-                case 4:
+                case 10:
+                  return _context7.abrupt("return", elementStable);
+                case 11:
                 case "end":
                   return _context7.stop();
               }
@@ -166,16 +206,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context10.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
-            var isElementEnabled;
+            var elementStable, isElementEnabled;
             return _regeneratorRuntime().wrap(function _callee9$(_context9) {
               while (1) switch (_context9.prev = _context9.next) {
                 case 0:
                   _context9.next = 2;
-                  return page.isEnabled(elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context9.sent;
+                  if (!elementStable) {
+                    _context9.next = 10;
+                    break;
+                  }
+                  _context9.next = 6;
+                  return (0, _htmlBehavior.elementEnabled)(page, elementIdentifier);
+                case 6:
                   isElementEnabled = _context9.sent;
                   return _context9.abrupt("return", isElementEnabled === !negate);
-                case 4:
+                case 10:
+                  elementStable;
+                case 11:
                 case "end":
                   return _context9.stop();
               }
@@ -194,26 +244,36 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 (0, _cucumber.Then)(/^the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" "([^"]*)" should( not)? contain the text "(.*)"$/, /*#__PURE__*/function () {
   var _ref11 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12(elementPosition, elementKey, negate, expectedElementText) {
     var _elementPosition$matc;
-    var page, globalConfig, elementIdentifier, pageIndex;
+    var page, globalConfig, elementIdentifier, index;
     return _regeneratorRuntime().wrap(function _callee12$(_context12) {
       while (1) switch (_context12.prev = _context12.next) {
         case 0:
           page = this.screen.page, globalConfig = this.globalConfig;
           _logger.logger.log("the ".concat(elementPosition, " ").concat(elementKey, " should ").concat(negate ? 'not ' : '', " contain the text ").concat(expectedElementText));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-          pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
+          index = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
           _context12.next = 6;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
-            var elementText;
+            var elementStable, elementText;
             return _regeneratorRuntime().wrap(function _callee11$(_context11) {
               while (1) switch (_context11.prev = _context11.next) {
                 case 0:
                   _context11.next = 2;
-                  return page.textContent("".concat(elementIdentifier, ">>nth=").concat(pageIndex));
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context11.sent;
+                  if (!elementStable) {
+                    _context11.next = 10;
+                    break;
+                  }
+                  _context11.next = 6;
+                  return (0, _htmlBehavior.getElementTextAtIndex)(page, elementIdentifier, index);
+                case 6:
                   elementText = _context11.sent;
                   return _context11.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
-                case 4:
+                case 10:
+                  return _context11.abrupt("return", elementStable);
+                case 11:
                 case "end":
                   return _context11.stop();
               }
@@ -240,16 +300,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context14.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13() {
-            var attributeText;
+            var elementStable, attributeText;
             return _regeneratorRuntime().wrap(function _callee13$(_context13) {
               while (1) switch (_context13.prev = _context13.next) {
                 case 0:
                   _context13.next = 2;
-                  return (0, _htmlBehavior.getAttributeText)(page, elementIdentifier, attribute);
+                  return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
                 case 2:
+                  elementStable = _context13.sent;
+                  if (!elementStable) {
+                    _context13.next = 10;
+                    break;
+                  }
+                  _context13.next = 6;
+                  return (0, _htmlBehavior.getAttributeText)(page, elementIdentifier, attribute);
+                case 6:
                   attributeText = _context13.sent;
                   return _context13.abrupt("return", (attributeText === null || attributeText === void 0 ? void 0 : attributeText.includes(expectedElementText)) === !negate);
-                case 4:
+                case 10:
+                  return _context13.abrupt("return", elementStable);
+                case 11:
                 case "end":
                   return _context13.stop();
               }

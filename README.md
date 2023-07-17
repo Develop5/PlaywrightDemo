@@ -271,7 +271,7 @@ Removed from my example
 - [ ] Section 16: Improving our automation failure errors - part 2
         (Long ago I forgot updating the section)
 
-        Chapter 128. Refactoring and improving our assertion step definitions - part 1
+        Chapter 129. Refactoring and improving our assertion step definitions - part 2
 
 
     &nbsp;

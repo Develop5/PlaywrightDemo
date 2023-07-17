@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-checkboxes;as-a-user-i-can-interact-and-assert-on-checkboxes",
+        "id": "as-a-user-i-can-interact-with-hidden-and-dsplayed-text;as-a-user-i-can-interact-and-assert-on-hidden-and-displayed-text",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on checkboxes",
+        "name": "As a user I can interact and assert on hidden and displayed text",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 881614500
+              "duration": 893685599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2606028600
+              "duration": 3822667800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 455639600
+              "duration": 387137899
             }
           },
           {
@@ -53,98 +53,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2039299
+              "duration": 2275200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"blue\" check box should not be checked",
+            "name": "the \"show hide text\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:12"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 653595800
+              "duration": 2050924500
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 11,
-            "name": "I check the \"green\" check box",
+            "name": "the \"show hide text\" should contain the text \"This is visible\"",
             "match": {
-              "location": "src\\step-definitions\\check.ts:16"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 462135700
+              "duration": 20063600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I check the \"grey\" check box",
+            "name": "I click the \"show hide button\" button",
             "match": {
-              "location": "src\\step-definitions\\check.ts:16"
+              "location": "src\\step-definitions\\click.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 315545599
+              "duration": 350311500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"red\" check box should not be checked",
+            "name": "the \"show hide text\" should not be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:12"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 13123699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"purple\" check box should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11268199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I uncheck the \"green\" check box",
-            "match": {
-              "location": "src\\step-definitions\\check.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 263858000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"green\" check box should not be checked",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element.checked.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12487900
+              "duration": 5177200
             }
           },
           {
@@ -152,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 20276299
+              "duration": 22798900
             }
           }
         ],
@@ -173,11 +134,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-checkboxes",
+    "id": "as-a-user-i-can-interact-with-hidden-and-dsplayed-text",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with checkboxes",
+    "name": "As a user I can interact with hidden and dsplayed text",
     "tags": [],
-    "uri": "src\\features\\playground\\checkboxes.feature"
+    "uri": "src\\features\\playground\\hidden-text.feature"
   }
 ]
