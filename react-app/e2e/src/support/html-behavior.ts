@@ -1,4 +1,4 @@
-import { Page, Frame } from 'playwright'
+import { Page, Frame, ElementHandle } from 'playwright'
 import { ElementLocator } from '../env/global'
 
 export const clickElement = async (
@@ -137,4 +137,30 @@ export const getElementTextAtIndex = async(
 ): Promise< string | null > => {
     const textAtIndex = await page.textContent(`${elementIdentifier}>>nth=${index}`)
     return textAtIndex
+}
+
+export const getElement = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< ElementHandle<SVGElement|HTMLElement> | null > => {
+    const element = await page.$(elementIdentifier)
+    return element
+}
+
+export const getElementAtIndex = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+    index: number,
+): Promise< ElementHandle<SVGElement|HTMLElement> | null > => {
+    const elementAtIndex = await page.$(`${elementIdentifier}>>nth=${index}`)
+    return elementAtIndex
+}
+
+
+export const getElements = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< ElementHandle<SVGElement|HTMLElement>[] > => {
+    const elements = await page.$$(elementIdentifier)
+    return elements
 }

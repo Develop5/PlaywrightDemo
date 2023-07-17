@@ -271,7 +271,9 @@ Removed from my example
 - [ ] Section 16: Improving our automation failure errors - part 2
         (Long ago I forgot updating the section)
 
-        Chapter 129. Refactoring and improving our assertion step definitions - part 2
+        Chapter 130. Refactoring and improving our assertion step definitions - part 3
+        In verify-element-visibility.ts we don't need to wait for a stable element
+        We only need to remove those direct calls to Playwright functions and create our owns in html-behavior.ts, as in the previous assertions
 
 
     &nbsp;

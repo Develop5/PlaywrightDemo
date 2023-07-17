@@ -5,7 +5,13 @@ import { ScenarioWorld } from '../setup/world'
 import { waitFor } from '../../support/wait-for-behavior'
 import { ElementType } from 'react'
 import { logger } from '../../logger'
+import { 
+    getElement,
+    getElementAtIndex,
+    getElements,
+ } from '../../support/html-behavior'
 
+// We do not need to wait until an element is stable when checking visibility
 
 Then(
     /^the "([^"]*)" should( not)? be displayed$/,
@@ -16,9 +22,8 @@ Then(
         } = this;
         logger.log(`the ${elementKey} should ${negate?'not ':''} be displayed`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-        const locator = page.locator(elementIdentifier)
         await waitFor(async () => {
-            const isElementVisible = (await page.$(elementIdentifier)) != null
+            const isElementVisible = getElement(page, elementIdentifier) != null
             return isElementVisible === !negate;
         })
     }
@@ -38,7 +43,7 @@ Then(
         const index = Number(elementPosition.match(/\d/g)?.join('')) -1;
 
         await waitFor( async () => {
-            const isElementVisible = (await page.$(`${elementIdentifier}>>nth=${index}`)) != null
+            const isElementVisible = (await getElementAtIndex(page, elementIdentifier, index)) != null
             return isElementVisible === !negate
         })
     }
@@ -58,7 +63,7 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor( async () => {
-            const element = await page.$$(elementIdentifier) 
+            const element = await getElements(page, elementIdentifier) 
             return (Number(count) === element.length) === !negate
         })
     }

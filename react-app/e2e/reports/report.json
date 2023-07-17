@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-hidden-and-dsplayed-text;as-a-user-i-can-interact-and-assert-on-hidden-and-displayed-text",
+        "id": "as-a-user-i-can-interact-with-avatars;as-a-user-i-can-interact-and-assert-on-avatars",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on hidden and displayed text",
+        "name": "As a user I can interact and assert on avatars",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 893685599
+              "duration": 970646600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3822667800
+              "duration": 2640093199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 387137899
+              "duration": 434679399
             }
           },
           {
@@ -53,59 +53,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2275200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the \"show hide text\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2050924500
+              "duration": 2207500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "the \"show hide text\" should contain the text \"This is visible\"",
+            "line": 10,
+            "name": "the \"1st\" \"avatar\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:18"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 20063600
+              "duration": 2052910800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"2nd\" \"avatar\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8291599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I click the \"show hide button\" button",
+            "name": "the \"small avatar\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\click.ts:15"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 350311500
+              "duration": 3338799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"show hide text\" should not be displayed",
+            "name": "I should see \"2\" \"avatar\" displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:10"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:54"
             },
             "result": {
               "status": "passed",
-              "duration": 5177200
+              "duration": 27748800
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22798900
+              "duration": 24792400
             }
           }
         ],
@@ -134,11 +134,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-hidden-and-dsplayed-text",
+    "id": "as-a-user-i-can-interact-with-avatars",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with hidden and dsplayed text",
+    "name": "As a user I can interact with avatars",
     "tags": [],
-    "uri": "src\\features\\playground\\hidden-text.feature"
+    "uri": "src\\features\\playground\\avatars.feature"
   }
 ]
