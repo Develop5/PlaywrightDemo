@@ -34,7 +34,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     break;
                   }
                   _context.next = 6;
-                  return (0, _waitForBehavior.waitForElementInIframe)(elementIframe, elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelectorInIframe)(elementIframe, elementIdentifier);
                 case 6:
                   elementStable = _context.sent;
                   if (!elementStable) {
@@ -120,35 +120,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref3.apply(this, arguments);
   };
 }());
-
-// Adding this step definition "contain" because I did not have it on iFrame
-// Well, it was in iframes.ts, wrongly
-/*
-Then(
-    /^the "([^"]*)" on the "([^"]*)" iframe should( not)? contain the text "([^"]*)"$/,
-    async function (this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean, expectedElementText: string) {
-        const {
-            screen: { page },
-            globalConfig
-        } = this;
-
-        logger.log(`the ${elementKey} on the ${iframeName} should ${negate?'not ':''}be displayed`);
-
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-        const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
-        const elementIframe = await getIframeElement(page, iframeIdentifier)
-
-        await waitFor( async () => {
-
-            // >>>>>>>>>>>> Was not touch. Does it need to be fixed with a stable variable?
-
-            const elementText = await elementIframe?.textContent(elementIdentifier)
-            return elementText?.includes(expectedElementText) === !negate;
-        })
-    }
-)
-*/
-
 (0, _cucumber.Then)(/^the "([^"]*)" on the "([^"]*)" iframe should( not)? contain the text "([^"]*)"$/, /*#__PURE__*/function () {
   var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(elementKey, iframeName, negate, expectedElementText) {
     var page, globalConfig, elementIdentifier, iframeIdentifier;
@@ -174,7 +145,7 @@ Then(
                     break;
                   }
                   _context5.next = 6;
-                  return (0, _waitForBehavior.waitForElementInIframe)(elementIframe, elementIdentifier);
+                  return (0, _waitForBehavior.waitForSelectorInIframe)(elementIframe, elementIdentifier);
                 case 6:
                   elementStable = _context5.sent;
                   if (!elementStable) {
