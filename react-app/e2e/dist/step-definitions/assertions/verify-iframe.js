@@ -21,7 +21,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           iframeIdentifier = (0, _webElementHelper.getElementLocator)(page, iframeName, globalConfig);
           _context2.next = 6;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-            var elementIframe, isElementVisible;
+            var elementIframe, elementStable, isElementVisible;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
@@ -29,13 +29,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return (0, _htmlBehavior.getIframeElement)(page, iframeIdentifier);
                 case 2:
                   elementIframe = _context.sent;
-                  _context.next = 5;
-                  return elementIframe === null || elementIframe === void 0 ? void 0 : elementIframe.$(elementIdentifier);
-                case 5:
+                  if (!elementIframe) {
+                    _context.next = 16;
+                    break;
+                  }
+                  _context.next = 6;
+                  return (0, _waitForBehavior.waitForElementInIframe)(elementIframe, elementIdentifier);
+                case 6:
+                  elementStable = _context.sent;
+                  if (!elementStable) {
+                    _context.next = 15;
+                    break;
+                  }
+                  _context.next = 10;
+                  return _htmlBehavior.getElementWithinIframe;
+                case 10:
                   _context.t0 = _context.sent;
                   isElementVisible = _context.t0 != null;
                   return _context.abrupt("return", isElementVisible === !negate);
-                case 8:
+                case 15:
+                  return _context.abrupt("return", elementStable);
+                case 16:
                 case "end":
                   return _context.stop();
               }
@@ -63,7 +77,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           iframeIdentifier = (0, _webElementHelper.getElementLocator)(page, iframeName, globalConfig);
           _context4.next = 6;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-            var elementIframe, elementText;
+            var elementIframe, elementStable, elementText;
             return _regeneratorRuntime().wrap(function _callee3$(_context3) {
               while (1) switch (_context3.prev = _context3.next) {
                 case 0:
@@ -71,12 +85,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return (0, _htmlBehavior.getIframeElement)(page, iframeIdentifier);
                 case 2:
                   elementIframe = _context3.sent;
-                  _context3.next = 5;
-                  return elementIframe === null || elementIframe === void 0 ? void 0 : elementIframe.textContent(elementIdentifier);
-                case 5:
+                  if (!elementIframe) {
+                    _context3.next = 15;
+                    break;
+                  }
+                  _context3.next = 6;
+                  return (0, _waitForBehavior.waitForSelectorInIframe)(elementIframe, elementIdentifier);
+                case 6:
+                  elementStable = _context3.sent;
+                  if (!elementStable) {
+                    _context3.next = 14;
+                    break;
+                  }
+                  _context3.next = 10;
+                  return (0, _htmlBehavior.getTextWithinIframeElement)(elementIframe, elementIdentifier);
+                case 10:
                   elementText = _context3.sent;
                   return _context3.abrupt("return", elementText === expectedElementText === !negate);
-                case 7:
+                case 14:
+                  return _context3.abrupt("return", elementStable);
+                case 15:
                 case "end":
                   return _context3.stop();
               }
@@ -90,5 +118,89 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   }));
   return function (_x5, _x6, _x7, _x8, _x9) {
     return _ref3.apply(this, arguments);
+  };
+}());
+
+// Adding this step definition "contain" because I did not have it on iFrame
+// Well, it was in iframes.ts, wrongly
+/*
+Then(
+    /^the "([^"]*)" on the "([^"]*)" iframe should( not)? contain the text "([^"]*)"$/,
+    async function (this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean, expectedElementText: string) {
+        const {
+            screen: { page },
+            globalConfig
+        } = this;
+
+        logger.log(`the ${elementKey} on the ${iframeName} should ${negate?'not ':''}be displayed`);
+
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
+        const elementIframe = await getIframeElement(page, iframeIdentifier)
+
+        await waitFor( async () => {
+
+            // >>>>>>>>>>>> Was not touch. Does it need to be fixed with a stable variable?
+
+            const elementText = await elementIframe?.textContent(elementIdentifier)
+            return elementText?.includes(expectedElementText) === !negate;
+        })
+    }
+)
+*/
+
+(0, _cucumber.Then)(/^the "([^"]*)" on the "([^"]*)" iframe should( not)? contain the text "([^"]*)"$/, /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(elementKey, iframeName, negate, expectedElementText) {
+    var page, globalConfig, elementIdentifier, iframeIdentifier;
+    return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+      while (1) switch (_context6.prev = _context6.next) {
+        case 0:
+          page = this.screen.page, globalConfig = this.globalConfig;
+          _logger.logger.log("the ".concat(elementKey, " on the ").concat(iframeName, " iframe should ").concat(negate ? 'not ' : '', " contain the text ").concat(expectedElementText));
+          elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+          iframeIdentifier = (0, _webElementHelper.getElementLocator)(page, iframeName, globalConfig);
+          _context6.next = 6;
+          return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+            var elementIframe, elementStable, elementText;
+            return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+              while (1) switch (_context5.prev = _context5.next) {
+                case 0:
+                  _context5.next = 2;
+                  return (0, _htmlBehavior.getIframeElement)(page, iframeIdentifier);
+                case 2:
+                  elementIframe = _context5.sent;
+                  if (!elementIframe) {
+                    _context5.next = 15;
+                    break;
+                  }
+                  _context5.next = 6;
+                  return (0, _waitForBehavior.waitForElementInIframe)(elementIframe, elementIdentifier);
+                case 6:
+                  elementStable = _context5.sent;
+                  if (!elementStable) {
+                    _context5.next = 14;
+                    break;
+                  }
+                  _context5.next = 10;
+                  return (0, _htmlBehavior.getTextWithinIframeElement)(elementIframe, elementIdentifier);
+                case 10:
+                  elementText = _context5.sent;
+                  return _context5.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
+                case 14:
+                  return _context5.abrupt("return", elementStable);
+                case 15:
+                case "end":
+                  return _context5.stop();
+              }
+            }, _callee5);
+          })));
+        case 6:
+        case "end":
+          return _context6.stop();
+      }
+    }, _callee6, this);
+  }));
+  return function (_x10, _x11, _x12, _x13, _x14) {
+    return _ref5.apply(this, arguments);
   };
 }());

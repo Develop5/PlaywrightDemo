@@ -164,3 +164,19 @@ export const getElements = async(
     const elements = await page.$$(elementIdentifier)
     return elements
 }
+
+export const getElementWithinIframe = async(
+    elementIframe: Frame,
+    elementIdentifier: ElementLocator,
+): Promise< ElementHandle< SVGElement | HTMLElement > | null > => {
+    const visibleOnIframeElement = await elementIframe?.$(elementIdentifier)
+    return visibleOnIframeElement
+}
+
+export const getTextWithinIframeElement = async(
+    elementIframe: Frame,
+    elementIdentifier: ElementLocator,
+): Promise< string | null > => {
+    const textOnIframeEleemnt = await elementIframe?.textContent(elementIdentifier)
+    return textOnIframeEleemnt
+}

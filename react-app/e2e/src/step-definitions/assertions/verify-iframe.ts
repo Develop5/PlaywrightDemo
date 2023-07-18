@@ -1,9 +1,17 @@
 import { Then } from "@cucumber/cucumber";
-import { waitFor } from "../../support/wait-for-behavior";
+import { 
+    waitFor,
+    waitForElementInIframe,
+    waitForSelectorInIframe
+} from "../../support/wait-for-behavior";
 import { ScenarioWorld } from "../setup/world";
 import { getElementLocator } from "../../support/web-element-helper";
 import { ElementKey } from "../../env/global";
-import { getIframeElement } from "../../support/html-behavior";
+import { 
+    getIframeElement,
+    getElementWithinIframe,
+    getTextWithinIframeElement,
+} from "../../support/html-behavior";
 import { logger } from "../../logger";
 
 Then(
@@ -20,12 +28,18 @@ Then(
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig);
 
         await waitFor( async () => {
-
-            // Move to inside, to avoid fragility or flakiness
             const elementIframe = await getIframeElement(page, iframeIdentifier);
 
-            const isElementVisible = (await elementIframe?.$(elementIdentifier)) != null;
-            return isElementVisible === !negate
+            if (elementIframe) {
+                const elementStable = await waitForElementInIframe(elementIframe, elementIdentifier)
+                
+                if(elementStable) {
+                    const isElementVisible = (await getElementWithinIframe) !=null
+                    return isElementVisible === !negate;
+                } else {
+                    return elementStable
+                }
+            }
         })
     }
 )
@@ -44,12 +58,49 @@ Then(
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig);
 
         await waitFor( async () => {
-            // Move to inside, to avoid fragility or flakiness
             const elementIframe = await getIframeElement(page, iframeIdentifier);
 
-            const elementText = await elementIframe?.textContent(elementIdentifier);
-            return (elementText === expectedElementText) === !negate
+            if (elementIframe) {
+                const elementStable = await waitForSelectorInIframe(elementIframe, elementIdentifier)
+                
+                if(elementStable) {
+                    const elementText = await getTextWithinIframeElement(elementIframe, elementIdentifier);
+                    return (elementText === expectedElementText) === !negate
+                } else {
+                    return elementStable
+                }
+            }
         })
     }
 )
 
+
+Then(
+    /^the "([^"]*)" on the "([^"]*)" iframe should( not)? contain the text "([^"]*)"$/,
+    async function(this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean, expectedElementText: string) {
+        const {
+            screen: { page },
+            globalConfig,
+        } = this;
+
+        logger.log(`the ${elementKey} on the ${iframeName} iframe should ${negate?'not ':''} contain the text ${expectedElementText}`)
+
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+        const iframeIdentifier = getElementLocator(page, iframeName, globalConfig);
+
+        await waitFor( async () => {
+            const elementIframe = await getIframeElement(page, iframeIdentifier);
+
+            if (elementIframe) {
+                const elementStable = await waitForElementInIframe(elementIframe, elementIdentifier)
+                
+                if(elementStable) {
+                    const elementText = await getTextWithinIframeElement(elementIframe, elementIdentifier)
+                    return elementText?.includes(expectedElementText) === !negate;
+                } else {
+                    return elementStable
+                }
+            }
+        })
+    }
+)

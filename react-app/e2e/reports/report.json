@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-avatars;as-a-user-i-can-interact-and-assert-on-avatars",
+        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on avatars",
+        "name": "As a user I can interact and assert on IFrames",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 970646600
+              "duration": 870583400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2640093199
+              "duration": 3406776199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 434679399
+              "duration": 434314799
             }
           },
           {
@@ -53,59 +53,137 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2207500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "the \"1st\" \"avatar\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2052910800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"2nd\" \"avatar\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8291599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"small avatar\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3338799
+              "duration": 1792900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I should see \"2\" \"avatar\" displayed",
+            "name": "I scroll to the \"basic iframe\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:54"
+              "location": "src\\step-definitions\\scroll.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 27748800
+              "duration": 943944700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
+            "match": {
+              "location": "src\\step-definitions\\iframe.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 407088699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28843100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42801500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45323899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29267099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43333999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40863799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29616899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21355300
             }
           },
           {
@@ -113,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 24792400
+              "duration": 30868500
             }
           }
         ],
@@ -134,11 +212,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-avatars",
+    "id": "as-a-user-i-can-interact-with-iframes",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with avatars",
+    "name": "As a user I can interact with IFrames",
     "tags": [],
-    "uri": "src\\features\\playground\\avatars.feature"
+    "uri": "src\\features\\playground\\iframes.feature"
   }
 ]
