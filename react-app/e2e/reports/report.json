@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 967669200
+              "duration": 906633700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2628571200
+              "duration": 2285379700
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 421738999
+              "duration": 465150499
             }
           },
           {
@@ -53,137 +53,150 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1959299
+              "duration": 1941599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 10,
             "name": "I scroll to the \"basic iframe\"",
             "match": {
               "location": "src\\step-definitions\\scroll.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1052507000
+              "duration": 1258918099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
+            "line": 11,
             "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
             "match": {
               "location": "src\\step-definitions\\iframe.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 101410999
+              "duration": 248627399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 12,
             "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 44235099
+              "duration": 52255999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 13,
             "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 46670499
+              "duration": 41379099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 14,
             "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 26803000
+              "duration": 43692599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 15,
             "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 43107899
+              "duration": 42407099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 16,
             "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 33783499
+              "duration": 58034500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 17,
             "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 46004899
+              "duration": 36056699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 18,
             "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 38537599
+              "duration": 52403999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 19,
+            "name": "the \"edit\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31397800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
             "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 27401000
+              "duration": 24098899
             }
           },
           {
@@ -191,7 +204,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22033900
+              "duration": 20979699
             }
           }
         ],
