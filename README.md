@@ -271,12 +271,12 @@ Removed from my example
 - [ ] Section 16: Improving our automation failure errors - part 2
         (Long ago I forgot updating the section)
 
-        Chapter 131. Refactoring and improving our assertion step definitions - part 4
-        iframes
+        Chapter 131. Refactoring and improving our assertion step definitions - part 5
+        Now: verify-new-page.ts
 
 
     &nbsp;
-    Time: 
+    Time:   0:24
 &nbsp;
 
 
