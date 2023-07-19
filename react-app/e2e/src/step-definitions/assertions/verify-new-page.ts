@@ -24,7 +24,7 @@ Then(
 
         const pageIndex = Number(elementPosition.match(/\d/g)?.join(''))-1
 
-        await page.waitForTimeout(2000)
+        await page.waitForTimeout(2000)        // This is important. Without it, title is not found
         
         await waitFor( async () => {
             let pages = context.pages();
