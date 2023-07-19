@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
+        "id": "as-a-user-i-can-interact-with-windows;as-a-uer-i-can-interact-and-assert-on-new-windows",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on IFrames",
+        "name": "As a uer I can interact and assert on new windows",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 906633700
+              "duration": 1146016000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2285379700
+              "duration": 3676864700
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 465150499
+              "duration": 434633000
             }
           },
           {
@@ -53,150 +53,176 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1941599
+              "duration": 2221500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I scroll to the \"basic iframe\"",
+            "name": "I click the \"open window\" button",
             "match": {
-              "location": "src\\step-definitions\\scroll.ts:14"
+              "location": "src\\step-definitions\\click.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1258918099
+              "duration": 1470372599
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 11,
-            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
+            "name": "the \"2nd\" window should contain the title \"Contacts\"",
             "match": {
-              "location": "src\\step-definitions\\iframe.ts:16"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 248627399
+              "duration": 2027694800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
+            "name": "the \"1st\" window should contain the title \"Playground\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 52255999
+              "duration": 2017134299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
+            "name": "I fill in the \"search\" input on the \"2nd\" window with \"Sloane Juarez\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
+              "location": "src\\step-definitions\\page.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 41379099
+              "duration": 95043200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
+            "name": "the \"contact\" on the \"2nd\" window should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 43692599
+              "duration": 17993700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
+            "name": "the \"full name label\" on the \"2nd\" window should contain the text \"Name:\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 42407099
+              "duration": 20164799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
+            "name": "the \"name\" on the \"2nd\" window should equal the text \"Sloane Juarez\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 58034500
+              "duration": 27240700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
+            "name": "the \"gender label\" on the \"2nd\" window should contain the text \"Gender:\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:77"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 36056699
+              "duration": 13172100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
+            "name": "the \"gender\" on the \"2nd\" window should equal the text \"Female\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:46"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 52403999
+              "duration": 18713900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "the \"edit\" on the \"basic iframe\" iframe should be displayed",
+            "name": "the \"address label\" on the \"2nd\" window should contain the text \"Address:\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
             },
             "result": {
               "status": "passed",
-              "duration": 31397800
+              "duration": 27209700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
+            "name": "the \"address\" on the \"2nd\" window should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-iframe.ts:16"
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 24098899
+              "duration": 19594600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"edit\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18933799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"delete\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5891999
             }
           },
           {
@@ -204,7 +230,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 20979699
+              "duration": 23123399
             }
           }
         ],
@@ -225,11 +251,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-iframes",
+    "id": "as-a-user-i-can-interact-with-windows",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with IFrames",
+    "name": "As a user I can interact with windows",
     "tags": [],
-    "uri": "src\\features\\playground\\iframes.feature"
+    "uri": "src\\features\\playground\\windows.feature"
   }
 ]

@@ -276,7 +276,7 @@ Removed from my example
 
 
     &nbsp;
-    Time:   0:24
+    Time:  
 &nbsp;
 
 
