@@ -273,6 +273,11 @@ Removed from my example
 
         Chapter 133. Refactoring and improving our assertion step definitions - part 6
 
+        All assertion steps refactored with total consistency in calling respective functions to handle our assertions using playwright within our html-behavior.ts
+        Also leveraged our waitForSelector accross all assertion steps to ensure better stability 
+
+        >>> Errors detected in the regression. Fix them
+
 
     &nbsp;
     Time:  

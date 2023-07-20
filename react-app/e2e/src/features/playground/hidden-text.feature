@@ -1,5 +1,6 @@
 Feature: As a user I can interact with hidden and dsplayed text
 
+    @dev
     @smoke
     @regression
     Scenario: As a user I can interact and assert on hidden and displayed text
@@ -9,4 +10,6 @@ Feature: As a user I can interact with hidden and dsplayed text
         And the "show hide text" should be displayed
         Then the "show hide text" should contain the text "This is visible"
         And I click the "show hide button" button
+
+        # The following step fails
         And the "show hide text" should not be displayed

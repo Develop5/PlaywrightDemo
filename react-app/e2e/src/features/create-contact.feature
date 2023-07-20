@@ -1,5 +1,6 @@
 Feature: As a user I expect to be able to create contacts
 
+@dev
 @smoke
 @regression
 Scenario: As a user I expect to be able to create a new contact
@@ -24,8 +25,12 @@ Scenario: As a user I expect to be able to create a new contact
     And the "address label" should contain the text "Address:"
     And the "address" should equal the text "123 Fake Street, Melbourne"
     And the "edit" should be displayed
+
+    # It fails AFTER the following step
     And the "delete" should be displayed
 
+
+    @dev
     @smoke
     @regression
     Scenario: As a user I do not expect saved contacts to persist after a page refresh
@@ -40,7 +45,6 @@ Scenario: As a user I expect to be able to create a new contact
         And I fill in the "city" input with "Shelbyville"
         And I click the "save" button
         And I am directed to the "home" page
-
         And I fill in the "search" input with "Tanya Hardie"
         And the "search" should not equal the text "Tanya Hardies"
         And the "full name label" should contain the text "Name:"
@@ -51,7 +55,8 @@ Scenario: As a user I expect to be able to create a new contact
         And the "address" should equal the text "152 Margi Court, Shelbyville"
         And the "edit" should be displayed
         And the "delete" should be displayed
-
         And I refresh the "home" page
         And I fill in the "search" input with "Tanya Hardie"
+
+        # The following step fails
         Then the "contact" should not be displayed
