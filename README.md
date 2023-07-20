@@ -277,6 +277,8 @@ Removed from my example
         Also leveraged our waitForSelector accross all assertion steps to ensure better stability 
 
         >>> Errors detected in the regression. Fix them
+            Failing features with #@dev
+            Star working with the one marked as @dev
 
 
     &nbsp;

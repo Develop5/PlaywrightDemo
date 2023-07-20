@@ -23,7 +23,7 @@ Then(
         logger.log(`the ${elementKey} should ${negate?'not ':''} be displayed`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
-            const isElementVisible = getElement(page, elementIdentifier) != null
+            const isElementVisible = await getElement(page, elementIdentifier) != null
             return isElementVisible === !negate;
         })
     }

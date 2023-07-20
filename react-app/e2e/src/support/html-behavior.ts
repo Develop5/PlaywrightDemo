@@ -142,7 +142,7 @@ export const getElementTextAtIndex = async(
 export const getElement = async(
     page: Page,
     elementIdentifier: ElementLocator,
-): Promise< ElementHandle<SVGElement|HTMLElement> | null > => {
+): Promise<ElementHandle<SVGElement | HTMLElement> | null > => {
     const element = await page.$(elementIdentifier)
     return element
 }

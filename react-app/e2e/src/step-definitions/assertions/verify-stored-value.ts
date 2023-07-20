@@ -52,7 +52,6 @@ Then(
 
         await waitFor( async() => {
 
-
             const elementStable = await waitForSelector(page, elementIdentifier )
             const variableValue = globalVariables[variableKey];
             

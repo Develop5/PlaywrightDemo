@@ -26,9 +26,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  isElementVisible = (0, _htmlBehavior.getElement)(page, elementIdentifier) != null;
-                  return _context.abrupt("return", isElementVisible === !negate);
+                  _context.next = 2;
+                  return (0, _htmlBehavior.getElement)(page, elementIdentifier);
                 case 2:
+                  _context.t0 = _context.sent;
+                  isElementVisible = _context.t0 != null;
+                  return _context.abrupt("return", isElementVisible === !negate);
+                case 5:
                 case "end":
                   return _context.stop();
               }
