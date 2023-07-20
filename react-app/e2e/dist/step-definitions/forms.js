@@ -35,7 +35,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                   parsedInput = (0, _inputHelper.parseInput)(input, globalConfig);
                   _context.next = 7;
-                  return (0, _htmlBehavior.inputValue)(page, elementIdentifier, parsedInput);
+                  return (0, _htmlBehavior.inputElementValue)(page, elementIdentifier, parsedInput);
                 case 7:
                   return _context.abrupt("return", elementStable);
                 case 8:
@@ -78,7 +78,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     break;
                   }
                   _context3.next = 6;
-                  return (0, _htmlBehavior.selectValue)(page, elementIdentifier, option);
+                  return (0, _htmlBehavior.selectElementValue)(page, elementIdentifier, option);
                 case 6:
                   return _context3.abrupt("return", elementStable);
                 case 7:

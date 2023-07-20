@@ -271,10 +271,7 @@ Removed from my example
 - [ ] Section 16: Improving our automation failure errors - part 2
         (Long ago I forgot updating the section)
 
-        Chapter 133. Refactoring and improving our assertion step definitions - part 6
-
-        All assertion steps refactored with total consistency in calling respective functions to handle our assertions using playwright within our html-behavior.ts
-        Also leveraged our waitForSelector accross all assertion steps to ensure better stability 
+        Chapter 134. Code clean up and consistency improvements - part 1
 
 
     &nbsp;

@@ -127,7 +127,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     break;
                   }
                   _context5.next = 6;
-                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                  return (0, _htmlBehavior.getElementValue)(page, elementIdentifier);
                 case 6:
                   elementText = _context5.sent;
                   return _context5.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(elementValue)) === !negate);
@@ -173,7 +173,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     break;
                   }
                   _context7.next = 6;
-                  return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                  return (0, _htmlBehavior.getElementValue)(page, elementIdentifier);
                 case 6:
                   elementAttribute = _context7.sent;
                   return _context7.abrupt("return", elementAttribute === elementValue === !negate);

@@ -7,7 +7,7 @@ import {
     waitForSelector 
 } from '../../support/wait-for-behavior'
 import { 
-    getValue,
+    getElementValue,
     getAttributeText,
     getElementText,
     elementEnabled,
@@ -76,7 +76,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if (elementStable) {
-                const elementText = await getValue(page, elementIdentifier)
+                const elementText = await getElementValue(page, elementIdentifier)
                 return elementText?.includes(elementValue) === !negate;
             } else {
                 return elementStable
@@ -99,7 +99,7 @@ Then(
         const elementStable = await waitForSelector(page, elementIdentifier)
 
         if (elementStable) {
-            const elementAttribute = await getValue(page, elementIdentifier)
+            const elementAttribute = await getElementValue(page, elementIdentifier)
             return (elementAttribute === elementValue) === !negate;
         } else {
             return elementStable

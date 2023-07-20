@@ -7,7 +7,7 @@ import {
 import { getElementLocator } from "../support/web-element-helper";
 import { ElementKey } from "../env/global";
 import { 
-    scrollIntoView 
+    scrollElementIntoView 
 }  from "../support/html-behavior";
 import { logger } from "../logger";
 
@@ -28,7 +28,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if (elementStable) {
-                await scrollIntoView(page, elementIdentifier)
+                await scrollElementIntoView(page, elementIdentifier)
             }
             return elementStable;
         })

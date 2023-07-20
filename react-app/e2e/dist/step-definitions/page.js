@@ -37,7 +37,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     break;
                   }
                   _context.next = 8;
-                  return (0, _htmlBehavior.inputValeOnPage)(pages, pageIndex, elementIdentifier, inputValue);
+                  return (0, _htmlBehavior.inputValueOnPage)(pages, pageIndex, elementIdentifier, inputValue);
                 case 8:
                   return _context.abrupt("return", elementStable);
                 case 9:

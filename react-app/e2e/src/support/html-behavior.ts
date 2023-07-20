@@ -17,7 +17,7 @@ export const clickElementAtIndex = async (
     await element?.click()
 }
 
-export const inputValue = async (
+export const inputElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
     input: string,
@@ -26,7 +26,7 @@ export const inputValue = async (
     await page.fill(elementIdentifier, input)
 }
 
-export const selectValue = async (
+export const selectElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
     option: string,
@@ -42,33 +42,11 @@ export const checkElement = async (
     await page.check(elementIdentifier);
 }
 
-export const getValue = async (
-    page: Page,
-    elementIdentifier: ElementLocator,
-): Promise< string | null > => {
-    // To void flakyness, we need to wait for the element to be ready in the page
-    await page.waitForSelector(elementIdentifier)
-    const value = await page.$eval< string, HTMLSelectElement >(elementIdentifier, el => {
-        return el.value;
-    })
-    return value;
-}
-
 export const uncheckElement = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise< void > => {
     await page.uncheck(elementIdentifier)
-}
-
-export const getIframeElement = async (
-    page: Page,
-    iframeIdentifier: ElementLocator
-): Promise< Frame | undefined | null > => {
-    await page.waitForSelector(iframeIdentifier)
-    const elementHandle = await page.$(iframeIdentifier)
-    const elementIframe = await elementHandle?.contentFrame()
-    return elementIframe
 }
 
 export const inputValueOnIframe = async (
@@ -79,7 +57,7 @@ export const inputValueOnIframe = async (
     await elementIframe.fill(elementIdentifier, inputValue)
 }
 
-export const inputValeOnPage = async (
+export const inputValueOnPage = async (
     pages: Array<Page>,
     pageIndex: number,
     elementIdentifier: ElementLocator,
@@ -89,54 +67,12 @@ export const inputValeOnPage = async (
     await pages[pageIndex].fill(elementIdentifier, inputValue)
 }
 
-export const getAttributeText = async (
-    page: Page,
-    elementIdentifier: ElementLocator,
-    attribute: string
-): Promise< string | null > => {
-    const attributeText = page.locator(elementIdentifier).getAttribute(attribute)
-    return attributeText
-}
-
-export const scrollIntoView = async (
+export const scrollElementIntoView = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise< void > => {
     const element = page.locator(elementIdentifier)
     await element.scrollIntoViewIfNeeded()
-}
-
-export const elementChecked = async(
-    page: Page,
-    elementIdentifier: ElementLocator,
-): Promise< boolean | null > => {
-    const checked = await page.isChecked(elementIdentifier)
-    return checked
-}
-
-export const getElementText = async(
-    page: Page,
-    elementIdentifier: ElementLocator,
-): Promise< string | null > => {
-    const text = await page.textContent(elementIdentifier)
-    return text
-}
-
-export const elementEnabled = async(
-    page: Page,
-    elementIdentifier: ElementLocator,
-): Promise< boolean | null > => {
-    const enabled = await page.isEnabled(elementIdentifier)
-    return enabled
-}
-
-export const getElementTextAtIndex = async(
-    page: Page,
-    elementIdentifier: ElementLocator,
-    index: number 
-): Promise< string | null > => {
-    const textAtIndex = await page.textContent(`${elementIdentifier}>>nth=${index}`)
-    return textAtIndex
 }
 
 export const getElement = async(
@@ -145,6 +81,14 @@ export const getElement = async(
 ): Promise<ElementHandle<SVGElement | HTMLElement> | null > => {
     const element = await page.$(elementIdentifier)
     return element
+}
+
+export const getElements = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< ElementHandle<SVGElement|HTMLElement>[] > => {
+    const elements = await page.$$(elementIdentifier)
+    return elements
 }
 
 export const getElementAtIndex = async(
@@ -156,13 +100,25 @@ export const getElementAtIndex = async(
     return elementAtIndex
 }
 
-
-export const getElements = async(
+export const getElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
-): Promise< ElementHandle<SVGElement|HTMLElement>[] > => {
-    const elements = await page.$$(elementIdentifier)
-    return elements
+): Promise< string | null > => {
+    await page.waitForSelector(elementIdentifier)
+    const value = await page.$eval< string, HTMLSelectElement >(elementIdentifier, el => {
+        return el.value;
+    })
+    return value;
+}
+
+export const getIframeElement = async (
+    page: Page,
+    iframeIdentifier: ElementLocator
+): Promise< Frame | undefined | null > => {
+    await page.waitForSelector(iframeIdentifier)
+    const elementHandle = await page.$(iframeIdentifier)
+    const elementIframe = await elementHandle?.contentFrame()
+    return elementIframe
 }
 
 export const getElementWithinIframe = async(
@@ -210,6 +166,32 @@ export const getElementTextWithinPage = async(
     return textWithinPage
 }
 
+export const getAttributeText = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    attribute: string
+): Promise< string | null > => {
+    const attributeText = page.locator(elementIdentifier).getAttribute(attribute)
+    return attributeText
+}
+
+export const getElementText = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< string | null > => {
+    const text = await page.textContent(elementIdentifier)
+    return text
+}
+
+export const getElementTextAtIndex = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+    index: number 
+): Promise< string | null > => {
+    const textAtIndex = await page.textContent(`${elementIdentifier}>>nth=${index}`)
+    return textAtIndex
+}
+
 export const getTableData = async(
     page: Page,
     elementIdentifier: ElementLocator,
@@ -222,3 +204,28 @@ export const getTableData = async(
     })
     return JSON.stringify(table)
 }
+
+export const elementEnabled = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< boolean | null > => {
+    const enabled = await page.isEnabled(elementIdentifier)
+    return enabled
+}
+
+export const elementChecked = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< boolean | null > => {
+    const checked = await page.isChecked(elementIdentifier)
+    return checked
+}
+
+
+
+
+
+
+
+
+

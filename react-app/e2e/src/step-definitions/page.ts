@@ -8,7 +8,7 @@ import { ElementLocator } from "../env/global";
 import { ElementKey } from "../env/global";
 import { getElementLocator } from "../support/web-element-helper";
 import {
-    inputValeOnPage
+    inputValueOnPage
 } from "../support/html-behavior";
 import { logger } from "../logger";
 
@@ -30,7 +30,7 @@ Then(
             console.log('TESTING')
 
             if (elementStable) {
-                await inputValeOnPage(pages, pageIndex, elementIdentifier, inputValue)
+                await inputValueOnPage(pages, pageIndex, elementIdentifier, inputValue)
             }
             return elementStable
         })

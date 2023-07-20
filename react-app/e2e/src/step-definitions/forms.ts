@@ -7,8 +7,8 @@ import { getElementLocator } from '../support/web-element-helper'
 import { ScenarioWorld } from './setup/world'
 import { ElementKey } from '../env/global'
 import { 
-    inputValue,
-    selectValue
+    inputElementValue,
+    selectElementValue
  } from '../support/html-behavior'
  import { 
     parseInput, 
@@ -33,7 +33,7 @@ Then (
 
             if (elementStable) {
                 const parsedInput = parseInput(input, globalConfig)
-                await inputValue(page, elementIdentifier, parsedInput)
+                await inputElementValue(page, elementIdentifier, parsedInput)
             }
             return elementStable;
         })
@@ -56,7 +56,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
             
             if (elementStable) {
-                await selectValue(page, elementIdentifier, option)
+                await selectElementValue(page, elementIdentifier, option)
             }
             return elementStable;
         })
