@@ -8,7 +8,6 @@ Feature: As a user I expect to be able to navigate to home page
         Then the "contacts header" should contain the text "Contacts"
         
 
-    #@dev
     @smoke
     @regression
     Scenario: As a user I don't expect to see a contact that does not exist
