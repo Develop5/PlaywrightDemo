@@ -209,3 +209,16 @@ export const getElementTextWithinPage = async(
     const textWithinPage = await pages[pageIndex].textContent(elementIdentifier)
     return textWithinPage
 }
+
+export const getTableData = async(
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise< string > => {
+    const table = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
+        return rows.map(row => {
+            const cells = row.querySelectorAll('td')
+            return Array.from(cells).map(cell => cell.textContent)
+        })
+    })
+    return JSON.stringify(table)
+}

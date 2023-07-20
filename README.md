@@ -272,7 +272,6 @@ Removed from my example
         (Long ago I forgot updating the section)
 
         Chapter 133. Refactoring and improving our assertion step definitions - part 6
-        Now: verify-stored-value.ts
 
 
     &nbsp;

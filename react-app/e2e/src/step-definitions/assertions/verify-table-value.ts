@@ -2,8 +2,12 @@ import { DataTable, Then } from '@cucumber/cucumber'
 import { ElementKey } from '../../env/global'
 import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
-import { waitFor } from '../../support/wait-for-behavior'
+import { 
+    waitFor, 
+    waitForSelector 
+} from '../../support/wait-for-behavior'
 import { logger } from '../../logger'
+import { getTableData } from '../../support/html-behavior'
 
 
 Then(
@@ -26,17 +30,17 @@ Then(
 
         await waitFor( async () => {
 
-            const dataBefore = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
-                return rows.map(row => {
-                    const cells = row.querySelectorAll('td')
-                    return Array.from(cells).map(cell => cell.textContent)
-                })
-            })
-            // If the browser is not quick enough (e.g. production), the data cannot be retrieved
-            // Therefore it must go inside the waitFor cycle, to retry until timeout is exceeded
-    
-            logger.log("\nhtml table >>>>>>> \n", JSON.stringify(dataBefore), "\n")
-            return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate
+            const elementStable = await waitForSelector(page, elementIdentifier)
+
+            if (elementStable) {
+                const tableData = await getTableData(page, elementIdentifier)
+                return tableData === JSON.stringify(dataTable.raw()) === !negate 
+
+            } else {
+                return elementStable
+            }
+
+
         })
     }
 )

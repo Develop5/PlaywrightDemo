@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-windows;as-a-uer-i-can-interact-and-assert-on-new-windows",
+        "id": "as-a-user-i-can-interact-with-stored-values;as-a-user-i-can-interact-and-assert-on-stored-values",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a uer I can interact and assert on new windows",
+        "name": "As a user I can interact and assert on stored values",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1146016000
+              "duration": 1865942200
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3676864700
+              "duration": 2613331499
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 434633000
+              "duration": 426445800
             }
           },
           {
@@ -53,176 +53,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2221500
+              "duration": 2038500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "I click the \"open window\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1470372599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 11,
-            "name": "the \"2nd\" window should contain the title \"Contacts\"",
+            "name": "I retrieve the \"first value\" text and store it as \"first value\" in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:16"
+              "location": "src\\step-definitions\\stored.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2027694800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"1st\" window should contain the title \"Playground\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2017134299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I fill in the \"search\" input on the \"2nd\" window with \"Sloane Juarez\"",
-            "match": {
-              "location": "src\\step-definitions\\page.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 95043200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"contact\" on the \"2nd\" window should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17993700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"full name label\" on the \"2nd\" window should contain the text \"Name:\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20164799
+              "duration": 668639000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "the \"name\" on the \"2nd\" window should equal the text \"Sloane Juarez\"",
+            "name": "the \"second value\" should equal the \"first value\" stored in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 27240700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"gender label\" on the \"2nd\" window should contain the text \"Gender:\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13172100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"gender\" on the \"2nd\" window should equal the text \"Female\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18713900
+              "duration": 32578000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "the \"address label\" on the \"2nd\" window should contain the text \"Address:\"",
+            "name": "the \"fourth value\" should not equal the \"first value\" stored in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:58"
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 27209700
+              "duration": 81942799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "the \"address\" on the \"2nd\" window should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
+            "name": "the \"fourth value\" should contain the \"first value\" stored in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:91"
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 19594600
+              "duration": 29039300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "the \"edit\" on the \"2nd\" window should be displayed",
+            "name": "the \"fifth value\" should contain the \"first value\" stored in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 18933799
+              "duration": 26965899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "the \"delete\" on the \"2nd\" window should be displayed",
+            "name": "the \"third value\" should not contain the \"first value\" stored in global variables",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-new-page.ts:37"
+              "location": "src\\step-definitions\\assertions\\verify-stored-value.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 5891999
+              "duration": 20966899
             }
           },
           {
@@ -230,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23123399
+              "duration": 23852899
             }
           }
         ],
@@ -251,11 +160,217 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-windows",
+    "id": "as-a-user-i-can-interact-with-stored-values",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with windows",
+    "name": "As a user I can interact with stored values",
     "tags": [],
-    "uri": "src\\features\\playground\\windows.feature"
+    "uri": "src\\features\\playground\\stored-values.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-tables;as-a-user-i-can-interact-and-assert-on-tables",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As a user I can interact and assert on tables",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1274832700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2828163100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 435242399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2104300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "159",
+                      "6",
+                      "24",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "237",
+                      "9",
+                      "37",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "262",
+                      "16",
+                      "24",
+                      "6"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "305",
+                      "3.7",
+                      "67",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "356",
+                      "16",
+                      "49",
+                      "3.9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the \"basic\" table should equal the following:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-table-value.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 745859399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "159",
+                      "6",
+                      "24",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "237",
+                      "9",
+                      "37",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "262",
+                      "16",
+                      "24",
+                      "6"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "305",
+                      "3.4",
+                      "67",
+                      "4.3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "356",
+                      "16",
+                      "49",
+                      "3.9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"basic\" table should not equal the following:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-table-value.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18150399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24015499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-tables",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with tables",
+    "tags": [],
+    "uri": "src\\features\\playground\\tables.feature"
   }
 ]
