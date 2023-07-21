@@ -46,7 +46,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context.stop();
               }
             }, _callee);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context2.stop();
@@ -93,7 +95,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context3.stop();
               }
             }, _callee3);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context4.stop();

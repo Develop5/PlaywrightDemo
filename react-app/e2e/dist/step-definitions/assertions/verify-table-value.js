@@ -46,7 +46,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context.stop();
               }
             }, _callee);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 7:
         case "end":
           return _context2.stop();

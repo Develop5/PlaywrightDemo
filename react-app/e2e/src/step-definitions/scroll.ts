@@ -31,7 +31,9 @@ Then(
                 await scrollElementIntoView(page, elementIdentifier)
             }
             return elementStable;
-        })
+        },
+        globalConfig,
+        { target: elementKey })
 
     }
 )

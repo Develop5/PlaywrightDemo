@@ -1,7 +1,7 @@
 import { Then } from "@cucumber/cucumber";
-import { 
+import {
     waitFor,
-    waitForSelector 
+    waitForSelector
 } from "../../support/wait-for-behavior";
 import { elementChecked } from "../../support/html-behavior";
 import { ScenarioWorld } from "../setup/world";
@@ -16,22 +16,23 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-
-        logger.log(`the ${elementKey} check box|radio button|switch should ${negate?'not ':''}be checked`)
-
+        
+        logger.log(`the ${elementKey} check box|radio button|switch should ${negate ? 'not ' : ''}be checked`)
+        
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-
+        
         await waitFor(async () => {
-
+            
             const elementStable = await waitForSelector(page, elementIdentifier)
-
+            
             if (elementStable) {
                 const isElementChecked = await elementChecked(page, elementIdentifier)
                 return isElementChecked === !negate;
             } else {
                 return elementStable
             }
-        })
-        
+        },
+        globalConfig,
+        { target: elementKey })
     }
 )

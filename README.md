@@ -272,6 +272,7 @@ Removed from my example
 
         Chapter 13137. Mapping automation friendly errors messages to replace native errors - part 1
 
+        Creating a customized handle error function that produce more understandable error messages
 
     &nbsp;
     Time:   0:53

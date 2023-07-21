@@ -46,7 +46,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context.stop();
               }
             }, _callee);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context2.stop();
@@ -92,7 +94,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context3.stop();
               }
             }, _callee3);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context4.stop();
@@ -138,7 +142,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context5.stop();
               }
             }, _callee5);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context6.stop();
@@ -184,7 +190,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context7.stop();
               }
             }, _callee7);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context8.stop();
@@ -230,7 +238,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context9.stop();
               }
             }, _callee9);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context10.stop();
@@ -278,7 +288,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context11.stop();
               }
             }, _callee11);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 6:
         case "end":
           return _context12.stop();
@@ -324,7 +336,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _context13.stop();
               }
             }, _callee13);
-          })));
+          })), globalConfig, {
+            target: elementKey
+          });
         case 5:
         case "end":
           return _context14.stop();

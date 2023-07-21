@@ -13,7 +13,6 @@ const getLookupVariable = (input: string, lookupTrigger: string, config: GlobalC
     const lookupValue = config.emailsConfig[key] ?? process.env[key]
     // It means that we will find the value in the localhost.env or the specific environment file
     // or in the general environment variable file
-    
 
     if (!lookupValue) {
         throw Error(`Could not get ${input} lookup trigger`)

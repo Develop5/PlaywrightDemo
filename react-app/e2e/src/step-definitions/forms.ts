@@ -36,7 +36,9 @@ Then (
                 await inputElementValue(page, elementIdentifier, parsedInput)
             }
             return elementStable;
-        })
+        },
+        globalConfig,
+        { target: elementKey })
     }
 )
 
@@ -59,7 +61,9 @@ Then(
                 await selectElementValue(page, elementIdentifier, option)
             }
             return elementStable;
-        })
+        },
+        globalConfig,
+        { target: elementKey })
 
     }
 )

@@ -36,7 +36,9 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        },
+        globalConfig,
+        { target: elementKey });
     }
 )
 
@@ -59,7 +61,9 @@ Then(
         } else {
             return elementStable
         }
-    })
+    },
+    globalConfig,
+    { target: elementKey })
 })
 
 Then(
@@ -81,7 +85,9 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        },
+        globalConfig,
+        { target: elementKey })
     }
 )
 
@@ -104,7 +110,9 @@ Then(
         } else {
             return elementStable
         }
-    })
+    },
+    globalConfig,
+    { target: elementKey })
 })
 
 
@@ -127,7 +135,9 @@ Then(
         } else {
             elementStable
         }
-    })
+    },
+    globalConfig,
+    { target: elementKey })
 })
 
 Then(
@@ -152,7 +162,9 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        },
+        globalConfig,
+        { target: elementKey })
     }
 )
 
@@ -178,6 +190,8 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        },
+        globalConfig,
+        { target: elementKey })
     }
 )

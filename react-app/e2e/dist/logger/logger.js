@@ -13,8 +13,9 @@ function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _ty
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var DEBUG = 'debug';
 var LOG = 'log';
+var ERROR = 'error';
 var OFF = 'off';
-var LOG_LEVELS = [DEBUG, LOG, OFF];
+var LOG_LEVELS = [DEBUG, LOG, ERROR, OFF];
 var logFuncAtLevels = function logFuncAtLevels(logLevels) {
   var logFunction = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : console;
   return function (logLevel) {

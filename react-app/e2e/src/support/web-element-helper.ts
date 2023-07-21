@@ -7,10 +7,17 @@ export const getElementLocator = (
     elementKey: ElementKey,
     globalConfig: GlobalConfig,
 ): ElementLocator => {
-
-    const currentPage = getCurrentPageId(page, globalConfig);
-    
     const { pageElementMappings } = globalConfig;
 
-    return pageElementMappings[currentPage]?.[elementKey] || pageElementMappings.common?.[elementKey]
+    const currentPage = getCurrentPageId(page, globalConfig);
+
+    const elementIdentifier =  pageElementMappings[currentPage]?.[elementKey] || pageElementMappings.common?.[elementKey]
+
+    if (!elementIdentifier) {
+        // Show emoticons in the message
+        throw Error(`🧨  Unable to find the ${elementKey} mapping 🧨 `)
+    } 
+
+    return elementIdentifier
+
 }
