@@ -268,14 +268,13 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 16: Improving our automation failure errors - part 2
-        (Long ago I forgot updating the section)
+- [ ] Section 17: Improving our automation failure errors - part 3 (section 1)
 
-        Chapter 135. Code clean up and consistency improvements - part 2
+        Chapter 13137. Mapping automation friendly errors messages to replace native errors - part 1
 
 
     &nbsp;
-    Time:  
+    Time:   0:53
 &nbsp;
 
 
