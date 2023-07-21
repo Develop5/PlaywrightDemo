@@ -104,7 +104,6 @@ export const getElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise< string | null > => {
-    await page.waitForSelector(elementIdentifier)
     const value = await page.$eval< string, HTMLSelectElement >(elementIdentifier, el => {
         return el.value;
     })
@@ -115,7 +114,6 @@ export const getIframeElement = async (
     page: Page,
     iframeIdentifier: ElementLocator
 ): Promise< Frame | undefined | null > => {
-    await page.waitForSelector(iframeIdentifier)
     const elementHandle = await page.$(iframeIdentifier)
     const elementIframe = await elementHandle?.contentFrame()
     return elementIframe

@@ -48,8 +48,6 @@ var clickElementAtIndex = /*#__PURE__*/function () {
     return _ref2.apply(this, arguments);
   };
 }();
-
-//inputValue ahora inputElementValue
 exports.clickElementAtIndex = clickElementAtIndex;
 var inputElementValue = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(page, elementIdentifier, input) {
@@ -71,8 +69,6 @@ var inputElementValue = /*#__PURE__*/function () {
     return _ref3.apply(this, arguments);
   };
 }();
-
-//selectValue ahora selectElementValue
 exports.inputElementValue = inputElementValue;
 var selectElementValue = /*#__PURE__*/function () {
   var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(page, elementIdentifier, option) {
@@ -148,8 +144,6 @@ var inputValueOnIframe = /*#__PURE__*/function () {
     return _ref7.apply(this, arguments);
   };
 }();
-
-//inputValeOnPage ahora inputValueOnPage
 exports.inputValueOnIframe = inputValueOnIframe;
 var inputValueOnPage = /*#__PURE__*/function () {
   var _ref8 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(pages, pageIndex, elementIdentifier, inputValue) {
@@ -171,8 +165,6 @@ var inputValueOnPage = /*#__PURE__*/function () {
     return _ref8.apply(this, arguments);
   };
 }();
-
-//scrollIntoView ahora scrollElementIntoView
 exports.inputValueOnPage = inputValueOnPage;
 var scrollElementIntoView = /*#__PURE__*/function () {
   var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(page, elementIdentifier) {
@@ -259,8 +251,6 @@ var getElementAtIndex = /*#__PURE__*/function () {
     return _ref12.apply(this, arguments);
   };
 }();
-
-//getValue ahora getElementValue
 exports.getElementAtIndex = getElementAtIndex;
 var getElementValue = /*#__PURE__*/function () {
   var _ref13 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13(page, elementIdentifier) {
@@ -269,16 +259,13 @@ var getElementValue = /*#__PURE__*/function () {
       while (1) switch (_context13.prev = _context13.next) {
         case 0:
           _context13.next = 2;
-          return page.waitForSelector(elementIdentifier);
-        case 2:
-          _context13.next = 4;
           return page.$eval(elementIdentifier, function (el) {
             return el.value;
           });
-        case 4:
+        case 2:
           value = _context13.sent;
           return _context13.abrupt("return", value);
-        case 6:
+        case 4:
         case "end":
           return _context13.stop();
       }
@@ -296,18 +283,15 @@ var getIframeElement = /*#__PURE__*/function () {
       while (1) switch (_context14.prev = _context14.next) {
         case 0:
           _context14.next = 2;
-          return page.waitForSelector(iframeIdentifier);
-        case 2:
-          _context14.next = 4;
           return page.$(iframeIdentifier);
-        case 4:
+        case 2:
           elementHandle = _context14.sent;
-          _context14.next = 7;
+          _context14.next = 5;
           return elementHandle === null || elementHandle === void 0 ? void 0 : elementHandle.contentFrame();
-        case 7:
+        case 5:
           elementIframe = _context14.sent;
           return _context14.abrupt("return", elementIframe);
-        case 9:
+        case 7:
         case "end":
           return _context14.stop();
       }
