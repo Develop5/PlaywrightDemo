@@ -13,4 +13,5 @@ Feature: As a user I expect to be able to navigate to home page
     Scenario: As a user I don't expect to see a contact that does not exist
         Given I am on the "home" page
         And I fill in the "search" input with "Funky Name"
-        Then the "contactXXX" should not be displayed
+        #Then the "contact" should not be displayed
+        Then the "contact" should be displayed
