@@ -271,7 +271,7 @@ Removed from my example
 - [ ] Section 16: Improving our automation failure errors - part 2
         (Long ago I forgot updating the section)
 
-        Chapter 134. Code clean up and consistency improvements - part 1
+        Chapter 135. Code clean up and consistency improvements - part 2
 
 
     &nbsp;
