@@ -63,7 +63,7 @@ var waitFor = /*#__PURE__*/function () {
           _context.next = 18;
           return sleep(wait);
         case 18:
-          _logger.logger.debug("Waiting ".concat(wait, "ms")); // Now, to detect failures while preparing
+          _logger.logger.debug("Waiting ".concat(wait, "ms"));
           _context.next = 4;
           break;
         case 21:

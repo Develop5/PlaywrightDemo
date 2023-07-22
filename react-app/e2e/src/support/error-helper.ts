@@ -18,6 +18,7 @@ export const parseErrorMessage = (
     const targetErrorIndex = errList
         .map(err => RegExp(err.originalErrMsgRegexString))
         .findIndex(errRegex => errRegex.test(errorSummary),)
+
     return targetErrorIndex > -1
         ? errList[targetErrorIndex].parsedErrMsg.replace(/{}/g, targetName).replace(/<>/g, targetType)
         : errorSummary;

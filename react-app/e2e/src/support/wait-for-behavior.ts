@@ -54,7 +54,7 @@ export const waitFor = async <T>(
             }
     
             await sleep(wait)
-            logger.debug(`Waiting ${wait}ms`);      // Now, to detect failures while preparing
+            logger.debug(`Waiting ${wait}ms`);
         }
         throw new Error(`Wait time of ${timeout}ms for ${notAvailableContext || target} exceeded`);
     } catch (error) {

@@ -17,8 +17,6 @@ Feature: As a user I can interact with autocomplete inputs
         | The D  | the dark knight | The Dark Knight |
         
 
-
-    @dev
     @smoke
     @regression
     Scenario: As a user I can interact and assert on inputs
