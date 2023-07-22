@@ -275,7 +275,7 @@ Removed from my example
         Creating a customized handle error function that produce more understandable error messages
 
     &nbsp;
-    Time:   0:53
+    Time:   2:19
 &nbsp;
 
 

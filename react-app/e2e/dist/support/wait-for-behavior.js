@@ -17,7 +17,9 @@ var waitFor = /*#__PURE__*/function () {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          _ref2 = options || {}, _ref2$timeout = _ref2.timeout, timeout = _ref2$timeout === void 0 ? 20000 : _ref2$timeout, _ref2$wait = _ref2.wait, wait = _ref2$wait === void 0 ? 2000 : _ref2$wait, _ref2$target = _ref2.target, target = _ref2$target === void 0 ? '' : _ref2$target, _ref2$type = _ref2.type, type = _ref2$type === void 0 ? 'element' : _ref2$type;
+          // 10000 because we need the error to hit waitFor before timeout set in common.env
+          // That's why it was changed to a lower value
+          _ref2 = options || {}, _ref2$timeout = _ref2.timeout, timeout = _ref2$timeout === void 0 ? 10000 : _ref2$timeout, _ref2$wait = _ref2.wait, wait = _ref2$wait === void 0 ? 2000 : _ref2$wait, _ref2$target = _ref2.target, target = _ref2$target === void 0 ? '' : _ref2$target, _ref2$type = _ref2.type, type = _ref2$type === void 0 ? 'element' : _ref2$type;
           sleep = function sleep(ms) {
             return new Promise(function (resolve) {
               return setTimeout(resolve, ms);
@@ -38,7 +40,7 @@ var waitFor = /*#__PURE__*/function () {
             _context.next = 10;
             break;
           }
-          return _context.abrupt("return", results);
+          return _context.abrupt("return");
         case 10:
           _context.next = 12;
           return sleep(wait);
@@ -47,19 +49,16 @@ var waitFor = /*#__PURE__*/function () {
           _context.next = 4;
           break;
         case 15:
-          _context.next = 20;
-          break;
-        case 17:
-          _context.prev = 17;
+          throw new Error("Wait time of ".concat(timeout, "ms for ").concat(target, " exceeded"));
+        case 18:
+          _context.prev = 18;
           _context.t0 = _context["catch"](3);
           (0, _errorHelper.handleError)(globalConfig.errorsConfig, _context.t0, target, type);
-        case 20:
-          throw new Error("Wait time of ".concat(timeout, " as exceeded"));
         case 21:
         case "end":
           return _context.stop();
       }
-    }, _callee, null, [[3, 17]]);
+    }, _callee, null, [[3, 18]]);
   }));
   return function waitFor(_x, _x2, _x3) {
     return _ref.apply(this, arguments);

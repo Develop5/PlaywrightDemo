@@ -14,23 +14,25 @@ export const waitFor = async <T>(
     predicate: () => T | Promise<T>,
     globalConfig: GlobalConfig,
     options?: { timeout?:number; wait?: number; target?: WaitForTarget; type?: WaitForTargetType }
-): Promise<T> => {
-    const { timeout = 20000, wait=2000, target = '', type = 'element'  } = options || {};
+): Promise<void> => {
+    // 10000 because we need the error to hit waitFor before timeout set in common.env
+    // That's why it was changed to a lower value
+    const { timeout = 10000, wait=2000, target = '', type = 'element'  } = options || {};
+ 
     const sleep = (ms: number) => new Promise( resolve => setTimeout(resolve, ms));
     const startDate = new Date();
     try {
         while (new Date().getTime() - startDate.getTime() < timeout) {
             const results = await predicate();
-            if(results) return results;
+            if(results) return
     
             await sleep(wait)
             logger.log(`Waiting ${wait}ms`);
         }
+        throw new Error(`Wait time of ${timeout}ms for ${target} exceeded`);
     } catch (error) {
         handleError(globalConfig.errorsConfig, error as Error, target, type )
     }
-
-    throw new Error(`Wait time of ${timeout} as exceeded`);
 }
 
 export const waitForSelector = async (
