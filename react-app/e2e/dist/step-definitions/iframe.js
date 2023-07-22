@@ -66,7 +66,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               }
             }, _callee);
           })), globalConfig, {
-            target: elementKey
+            target: iframeKey
           });
         case 6:
         case "end":

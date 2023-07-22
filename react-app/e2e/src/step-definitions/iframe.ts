@@ -44,13 +44,10 @@ Then(
 
             } else {
                 return {result: waitForResult.ELEMENT_NOT_AVAILABLE, replace: iframeKey}
-
             }
-
-
         },
         globalConfig,
-        { target: elementKey })
+        { target: iframeKey })
     }
 )
 
