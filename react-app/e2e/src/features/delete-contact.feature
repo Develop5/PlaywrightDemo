@@ -1,6 +1,5 @@
 Feature: As a user I expect to be able to delete a new contact
 
-@dev
 @regression
 Scenario: As a user I can delete a new contact
     Given I am on the "home" page
