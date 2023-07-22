@@ -11,7 +11,9 @@
     "outlined read only" : "[id='outlined-read-only-input']",
     "outlined error" : "[id='outlined-error-helper-text-label']",
     "outlined error text" : "[id='outlined-error-helper-text-helper-text']",
-    "blue" : "[data-id='blue-radio-button']",
+
+    "blue" : "[data-id='blue-radio-buttonXXXXXXX']",
+    
     "purple" : "[data-id='purple-radio-button']",
     "green" : "[data-id='green-radio-button']",
     "grey" : "[data-id='grey-radio-button']",
