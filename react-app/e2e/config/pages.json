@@ -9,6 +9,6 @@
     },
     "playground": {
         "route" : "/playground",
-        "regex" : "^/playground"
+        "regex" : "^/playgroundXXXXXXX"
     }
 }
