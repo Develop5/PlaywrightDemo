@@ -270,12 +270,12 @@ Removed from my example
 *I am here:*
 - [ ] Section 18: Improving our automation failure errors - part 3 (section 2)
 
-        Chapter 142. Introducing waitForResult to handle our assertion error cases - part 1
+        Chapter 149. Validating our new automation test failure errors - part 1
 
-        We need to be able to differentiate:
-        1- The mapping does not exist
-        2- The element is not in the Dom
-        3- Any eval assertion to fail
+        Possible scenarios:
+            1. The mapping does not exist
+            2. The elementIdentifier is not found in the Dom
+            3. The assertion itself fails
 
 
     &nbsp;
