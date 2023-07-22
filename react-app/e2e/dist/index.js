@@ -32,7 +32,7 @@ var errorsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('ERRORS_URL
 var getEnvList = function getEnvList() {
   var envList = Object.keys(hostsConfig);
   if (envList.length === 0) {
-    // Emoticon for error
+    // Emoticon for error. Dynamite emoticon
     throw Error("\uD83E\uDDE8 No environments mapped in your ".concat((0, _parseEnv.env)('HOST_URL_PATH')));
   }
   return envList;

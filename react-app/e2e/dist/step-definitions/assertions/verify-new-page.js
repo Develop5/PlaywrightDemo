@@ -33,14 +33,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return (0, _htmlBehavior.getTitleWithinPage)(page, pages, pageIndex);
                 case 3:
                   pageTitle = _context.sent;
-                  return _context.abrupt("return", (pageTitle === null || pageTitle === void 0 ? void 0 : pageTitle.includes(expectedTitle)) === !negate);
-                case 5:
+                  if (!((pageTitle === null || pageTitle === void 0 ? void 0 : pageTitle.includes(expectedTitle)) === !negate)) {
+                    _context.next = 8;
+                    break;
+                  }
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
+                case 8:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 9:
                 case "end":
                   return _context.stop();
               }
             }, _callee);
           })), globalConfig, {
-            type: "title"
+            type: "title",
+            failureMessage: "\uD83E\uDDE8 Expected page to ".concat(negate ? 'not ' : '', "contain the title ").concat(expectedTitle, " \uD83E\uDDE8 ")
           });
         case 7:
         case "end":
@@ -75,14 +82,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 3:
                   _context3.t0 = _context3.sent;
                   isElementVisible = _context3.t0 != null;
-                  return _context3.abrupt("return", isElementVisible === !negate);
-                case 6:
+                  if (!(isElementVisible === !negate)) {
+                    _context3.next = 9;
+                    break;
+                  }
+                  return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
+                case 9:
+                  return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 10:
                 case "end":
                   return _context3.stop();
               }
             }, _callee3);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " on page to ").concat(negate ? 'not ' : '', "be displayed \uD83E\uDDE8")
           });
         case 6:
         case "end":
@@ -117,23 +131,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 3:
                   elementStable = _context5.sent;
                   if (!elementStable) {
-                    _context5.next = 11;
+                    _context5.next = 15;
                     break;
                   }
                   _context5.next = 7;
                   return (0, _htmlBehavior.getElementTextWithinPage)(page, elementIdentifier, pages, pageIndex);
                 case 7:
                   elementText = _context5.sent;
-                  return _context5.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
-                case 11:
-                  return _context5.abrupt("return", elementStable);
+                  if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate)) {
+                    _context5.next = 12;
+                    break;
+                  }
+                  return _context5.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 12:
+                  return _context5.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 13:
+                  _context5.next = 16;
+                  break;
+                case 15:
+                  return _context5.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 16:
                 case "end":
                   return _context5.stop();
               }
             }, _callee5);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " on page to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText, "  \uD83E\uDDE8 ")
           });
         case 6:
         case "end":
@@ -168,23 +192,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 3:
                   elementStable = _context7.sent;
                   if (!elementStable) {
-                    _context7.next = 11;
+                    _context7.next = 15;
                     break;
                   }
                   _context7.next = 7;
                   return (0, _htmlBehavior.getElementTextWithinPage)(page, elementIdentifier, pages, pageIndex);
                 case 7:
                   elementText = _context7.sent;
-                  return _context7.abrupt("return", elementText === expectedElementText === !negate);
-                case 11:
-                  return _context7.abrupt("return", elementStable);
+                  if (!(elementText === expectedElementText === !negate)) {
+                    _context7.next = 12;
+                    break;
+                  }
+                  return _context7.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 12:
+                  return _context7.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 13:
+                  _context7.next = 16;
+                  break;
+                case 15:
+                  return _context7.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 16:
                 case "end":
                   return _context7.stop();
               }
             }, _callee7);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " on page to ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText, "  \uD83E\uDDE8 ")
           });
         case 6:
         case "end":

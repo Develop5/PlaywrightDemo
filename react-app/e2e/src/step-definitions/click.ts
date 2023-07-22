@@ -20,16 +20,19 @@ When(
             screen: { page },
             globalConfig,
         } = this;
-        logger.log(`I click the ${elementKey} (?:button|link|icon|element)`)
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        await waitFor(async() => {
 
+        logger.log(`I click the ${elementKey} (?:button|link|icon|element)`)
+
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+
+        await waitFor(async() => {
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if(elementStable) {
                 await clickElement(page, elementIdentifier);
                 return waitForResult.PASS
             }
+            
             return waitForResult.ELEMENT_NOT_AVAILABLE;
         },
         globalConfig,

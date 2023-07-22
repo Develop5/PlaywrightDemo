@@ -29,23 +29,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 2:
                   elementStable = _context.sent;
                   if (!elementStable) {
-                    _context.next = 10;
+                    _context.next = 14;
                     break;
                   }
                   _context.next = 6;
                   return (0, _htmlBehavior.elementChecked)(page, elementIdentifier);
                 case 6:
                   isElementChecked = _context.sent;
-                  return _context.abrupt("return", isElementChecked === !negate);
-                case 10:
-                  return _context.abrupt("return", elementStable);
+                  if (!(isElementChecked === !negate)) {
+                    _context.next = 11;
+                    break;
+                  }
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 11:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 12:
+                  _context.next = 15;
+                  break;
+                case 14:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 15:
                 case "end":
                   return _context.stop();
               }
             }, _callee);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "to be checked \uD83E\uDDE8 ")
           });
         case 5:
         case "end":

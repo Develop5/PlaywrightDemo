@@ -29,14 +29,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 2:
                   elementStable = _context.sent;
                   if (!elementStable) {
-                    _context.next = 6;
+                    _context.next = 7;
                     break;
                   }
                   _context.next = 6;
                   return (0, _htmlBehavior.scrollElementIntoView)(page, elementIdentifier);
                 case 6:
-                  return _context.abrupt("return", elementStable);
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 7:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 8:
                 case "end":
                   return _context.stop();
               }

@@ -28,7 +28,6 @@ Then(
 
         await waitFor( async () => {
             const elementStable = await waitForSelector(page, elementIdentifier)
-            console.log('TESTING')
 
             if (elementStable) { // I check check and viceversa
                 if (!!unchecked) {

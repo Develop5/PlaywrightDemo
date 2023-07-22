@@ -28,19 +28,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 case 2:
                   elementStable = _context.sent;
                   if (!elementStable) {
-                    _context.next = 8;
+                    _context.next = 10;
                     break;
                   }
                   _context.next = 6;
                   return page.textContent(elementIdentifier);
                 case 6:
                   elementText = _context.sent;
-                  if (elementText != null) {
-                    globalVariables[variableKey] = elementText;
+                  if (!(elementText != null)) {
+                    _context.next = 10;
+                    break;
                   }
-                case 8:
-                  return _context.abrupt("return", elementStable);
-                case 9:
+                  globalVariables[variableKey] = elementText;
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
+                case 10:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 11:
                 case "end":
                   return _context.stop();
               }

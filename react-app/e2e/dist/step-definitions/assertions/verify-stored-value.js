@@ -31,23 +31,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   elementStable = _context.sent;
                   variableValue = globalVariables[variableKey];
                   if (!elementStable) {
-                    _context.next = 11;
+                    _context.next = 15;
                     break;
                   }
                   _context.next = 7;
                   return (0, _htmlBehavior.getElementText)(page, elementIdentifier);
                 case 7:
                   elementText = _context.sent;
-                  return _context.abrupt("return", elementText === variableValue === !negate);
-                case 11:
-                  return _context.abrupt("return", elementStable);
+                  if (!(elementText === variableValue === !negate)) {
+                    _context.next = 12;
+                    break;
+                  }
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 12:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 13:
+                  _context.next = 16;
+                  break;
+                case 15:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 16:
                 case "end":
                   return _context.stop();
               }
             }, _callee);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the ").concat(variableKey, " in globalVariables  \uD83E\uDDE8 ")
           });
         case 5:
         case "end":
@@ -80,23 +90,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   elementStable = _context3.sent;
                   variableValue = globalVariables[variableKey];
                   if (!elementStable) {
-                    _context3.next = 11;
+                    _context3.next = 15;
                     break;
                   }
                   _context3.next = 7;
                   return (0, _htmlBehavior.getElementText)(page, elementIdentifier);
                 case 7:
                   elementText = _context3.sent;
-                  return _context3.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(variableValue)) === !negate);
-                case 11:
-                  return _context3.abrupt("return", elementStable);
+                  if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(variableValue)) === !negate)) {
+                    _context3.next = 12;
+                    break;
+                  }
+                  return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 12:
+                  return _context3.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 13:
+                  _context3.next = 16;
+                  break;
+                case 15:
+                  return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 16:
                 case "end":
                   return _context3.stop();
               }
             }, _callee3);
           })), globalConfig, {
-            target: elementKey
+            target: elementKey,
+            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the ").concat(variableKey, " in globalVariables  \uD83E\uDDE8 ")
           });
         case 5:
         case "end":

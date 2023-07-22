@@ -31,15 +31,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return (0, _waitForBehavior.waitForSelectorOnPage)(page, elementIdentifier, pages, pageIndex);
                 case 3:
                   elementStable = _context.sent;
-                  console.log('TESTING');
                   if (!elementStable) {
                     _context.next = 8;
                     break;
                   }
-                  _context.next = 8;
+                  _context.next = 7;
                   return (0, _htmlBehavior.inputValueOnPage)(pages, pageIndex, elementIdentifier, inputValue);
+                case 7:
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
                 case 8:
-                  return _context.abrupt("return", elementStable);
+                  return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
                 case 9:
                 case "end":
                   return _context.stop();
