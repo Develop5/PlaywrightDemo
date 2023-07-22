@@ -1,9 +1,9 @@
-import { logger } from "../logger"
 import { 
     WaitForTarget, 
     WaitForTargetType, 
     ErrorsConfig 
 } from "../env/global"
+import { logger } from "../logger"
 
 export const getErrorSummary = (errDetail: string): string => {
     return errDetail.split('\n')[0];
@@ -15,9 +15,12 @@ export const parseErrorMessage = (
     targetName: string,
     targetType: string
 ): string => {
+
+
     const targetErrorIndex = errList
         .map(err => RegExp(err.originalErrMsgRegexString))
         .findIndex(errRegex => errRegex.test(errorSummary),)
+
     return targetErrorIndex > -1
         ? errList[targetErrorIndex].parsedErrMsg.replace(/{}/g, targetName).replace(/<>/g, targetType)
         : errorSummary;

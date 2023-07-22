@@ -23,7 +23,7 @@ const logFuncAtLevels =
             }
         }
 
-const getLogLevel = (logLevel: LogLevel): LogLevel[] => {
+const getLogLevel = (logLevel : LogLevel): LogLevel[] => {
     const dynamicLogLevelIndex = LOG_LEVELS.indexOf(logLevel);
     return LOG_LEVELS.slice(dynamicLogLevelIndex)
 }
@@ -49,7 +49,7 @@ export const stringIsOfOptions = <T extends string>(logLevel: string, options: r
     if (logLevelIsT(logLevel, options)) {
         return logLevel as T
     }
-    throw Error(`🧨Logger '${logLevel}' needs to be one of ${options}`)
+    throw Error(`🧨 Logger '${logLevel}' needs to be one of ${options} 🧨`)
 }
 
 let loggerSingleton: Logger | null = null;

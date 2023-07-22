@@ -50,7 +50,7 @@ var stringIsOfOptions = function stringIsOfOptions(logLevel, options) {
   if (logLevelIsT(logLevel, options)) {
     return logLevel;
   }
-  throw Error("\uD83E\uDDE8Logger '".concat(logLevel, "' needs to be one of ").concat(options));
+  throw Error("\uD83E\uDDE8 Logger '".concat(logLevel, "' needs to be one of ").concat(options, " \uD83E\uDDE8"));
 };
 exports.stringIsOfOptions = stringIsOfOptions;
 var loggerSingleton = null;

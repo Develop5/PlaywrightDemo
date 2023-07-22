@@ -1,4 +1,7 @@
-import { Page, Frame } from "playwright";
+import { 
+    Page, 
+    Frame 
+} from "playwright";
 import { 
     ElementLocator,
     GlobalConfig,

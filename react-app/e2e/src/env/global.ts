@@ -17,9 +17,9 @@ export type ErrorConfig = {
 }
 
 export type GlobalConfig = {
+    pageElementMappings: PageElementMappings; 
     hostsConfig: HostsConfig;
     pagesConfig: PagesConfig;
     errorsConfig: ErrorsConfig;
-    pageElementMappings: PageElementMappings; 
     emailsConfig: EmailsConfig;
 };
