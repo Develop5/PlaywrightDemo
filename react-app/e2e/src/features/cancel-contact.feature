@@ -5,7 +5,7 @@ Feature: As a user I expect to be able to cancel the creation of a new contact
     Scenario: As a user I can cancel creating a new contact
         Given I am on the "home" page
         And I click the "create" button
-        Then I am directed to the "create contact" page
+        When I am directed to the "create contact" page
         And the "create contact header" should contain the text "Create Contact"
         And I fill in the "name" input with "Tony Bongo"
         And I select the "Male" option from the "gender"
