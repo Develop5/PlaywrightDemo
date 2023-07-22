@@ -60,3 +60,7 @@ Feature: As a user I expect to be able to create contacts
 
         # The following step fails
         Then the "contact" should not be displayed
+
+
+
+    Scenario: As a user I can create a verify multiple new contacts

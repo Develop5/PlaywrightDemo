@@ -21,3 +21,9 @@ Feature: As a user I expect to be able to delete a new contact
         And I fill in the "search" input with "Tina Bradley"
         And the "contact" should not be displayed
         And the "no items mesage" should contain the text "There are no items to display"
+
+
+    Scenario: As a user I can back of deleting a new contact
+
+
+    Scenario: As a user I can delete the second searched contact

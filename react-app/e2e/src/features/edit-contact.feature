@@ -36,3 +36,6 @@ Feature: As a user I expect to be able to edit a new contact
         And the "address" should equal the text "800 Puma Terrace, Shelbyville"
         And the "edit" should be displayed
         And the "delete" should be displayed
+
+
+    Scenario: As a user I can hit a validation error on each field on edit contact
