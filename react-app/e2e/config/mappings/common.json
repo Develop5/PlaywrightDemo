@@ -16,6 +16,7 @@
     "save" : "[data-id='save-button']",
     "cancel" : "[data-id='cancel-button']",
     "playground"  : "[data-id='playground-button']",
-    "no items mesage" : "[data-id='no-items-message']"
+    "no items mesage" : "[data-id='no-items-message']",
+    "error message" : "[data-id='error-message']"
 
 }

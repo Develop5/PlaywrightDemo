@@ -1,7 +1,6 @@
 Feature: As a user I expect to be able to search a new contact
 
 
-    #dev
     @regression
     Scenario: As a user I don't expect to see a contact that does not exist
         Given I am on the "home" page
