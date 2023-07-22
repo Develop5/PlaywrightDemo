@@ -15,6 +15,7 @@
     "city" : "[data-id='city']",
     "save" : "[data-id='save-button']",
     "cancel" : "[data-id='cancel-button']",
-    "playground"  : "[data-id='playground-button']"
+    "playground"  : "[data-id='playground-button']",
+    "no items mesage" : "[data-id='no-items-message']"
 
 }

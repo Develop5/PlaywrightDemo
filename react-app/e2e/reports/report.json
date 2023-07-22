@@ -4,186 +4,251 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-cancel-the-creation-of-a-new-contact;as-a-user-i-can-cancel-creating-a-new-contact",
+        "id": "as-a-user-i-expect-to-be-able-to-delete-a-new-contact;as-a-user-i-can-delete-a-new-contact",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "As a user I can cancel creating a new contact",
+        "line": 5,
+        "name": "As a user I can delete a new contact",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2683500599
+              "duration": 1603081300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 6,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 799766399
+              "duration": 786916800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 7,
             "name": "I click the \"create\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 87964499
+              "duration": 118667200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 8,
             "name": "I am directed to the \"create contact\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 1847500
+              "duration": 2518100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 9,
             "name": "the \"create contact header\" should contain the text \"Create Contact\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 15830700
+              "duration": 18768299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I fill in the \"name\" input with \"Tina Bradley\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35815999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I select the \"Female\" option from the \"gender\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35133899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I fill in the \"name\" input with \"Tony Bongo\"",
+            "name": "I fill in the \"phone\" input with \"153-555-0113\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 37673900
+              "duration": 29845999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I select the \"Male\" option from the \"gender\"",
+            "name": "I fill in the \"street\" input with \"760 Puma Terrace\"",
             "match": {
-              "location": "src\\step-definitions\\forms.ts:53"
+              "location": "src\\step-definitions\\forms.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 34455999
+              "duration": 26960600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "I fill in the \"phone\" input with \"121-555-0113\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 27228000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I fill in the \"street\" input with \"730 Puma Terrace\"",
-            "match": {
-              "location": "src\\step-definitions\\forms.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 26875100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
             "name": "I fill in the \"city\" input with \"Springfield\"",
             "match": {
               "location": "src\\step-definitions\\forms.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 25167700
+              "duration": 25334400
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "I click the \"cancel\" button",
+            "line": 15,
+            "name": "I click the \"save\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 75475199
+              "duration": 82611100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 16,
             "name": "I am directed to the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 799700
+              "duration": 713499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I fill in the \"search\" input with \"Tina Bradley\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35387400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"contact\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13727699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click accept on the alert dialog",
+            "match": {
+              "location": "src\\step-definitions\\alerts.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3583900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "I fill in the \"search\" input with \"Tony Bongo\"",
+            "name": "I click the \"delete\" button",
             "match": {
-              "location": "src\\step-definitions\\forms.ts:25"
+              "location": "src\\step-definitions\\click.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 34287700
+              "duration": 55525500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
+            "name": "I fill in the \"search\" input with \"Tina Bradley\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33961599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
             "name": "the \"contact\" should not be displayed",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 6211500
+              "duration": 4648200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the \"no items mesage\" should contain the text \"There are no items to display\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13318799
             }
           },
           {
@@ -191,32 +256,28 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1901800699
+              "duration": 33518100
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 4
-          },
-          {
-            "name": "@smoke",
-            "line": 5
+            "line": 3
           },
           {
             "name": "@regression",
-            "line": 6
+            "line": 4
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-expect-to-be-able-to-cancel-the-creation-of-a-new-contact",
+    "id": "as-a-user-i-expect-to-be-able-to-delete-a-new-contact",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I expect to be able to cancel the creation of a new contact",
+    "name": "As a user I expect to be able to delete a new contact",
     "tags": [],
-    "uri": "src\\features\\cancel-contact.feature"
+    "uri": "src\\features\\delete-contact.feature"
   }
 ]
