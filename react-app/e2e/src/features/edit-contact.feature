@@ -1,6 +1,5 @@
 Feature: As a user I expect to be able to edit a new contact
 
-    @dev
     @regression
     Scenario: As a user I can edit a new contact
         Given I am on the "home" page
