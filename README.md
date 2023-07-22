@@ -268,14 +268,11 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 18: Improving our automation failure errors - part 3 (section 2)
+- [ ] Section 19: Automating with Random Form Data. E2E Automation Testing and Tagging our suite
 
-        Chapter 149. Validating our new automation test failure errors - part 1
+        Chapter 152. Populate form fields with random test data during our automation test - part 1
 
-        Possible scenarios:
-            1. The mapping does not exist
-            2. The elementIdentifier is not found in the Dom
-            3. The assertion itself fails
+        Randomly generating data in our form fields
 
 
     &nbsp;
