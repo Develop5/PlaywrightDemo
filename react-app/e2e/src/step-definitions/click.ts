@@ -6,6 +6,7 @@ import {
 } from '../support/html-behavior';
 import { 
     waitFor,
+    waitForResult,
     waitForSelector 
 } from '../support/wait-for-behavior';
 import { getElementLocator } from '../support/web-element-helper';
@@ -27,8 +28,9 @@ When(
 
             if(elementStable) {
                 await clickElement(page, elementIdentifier);
+                return waitForResult.PASS
             }
-            return elementStable;
+            return waitForResult.ELEMENT_NOT_AVAILABLE;
         },
         globalConfig,
         { target: elementKey })
@@ -53,8 +55,9 @@ When(
 
             if (elementStable) {
                 await clickElementAtIndex(page, elementIdentifier, pageIndex)
+                return waitForResult.PASS
             }
-            return elementStable;
+            return waitForResult.ELEMENT_NOT_AVAILABLE;
         },
         globalConfig,
         { target: elementKey })

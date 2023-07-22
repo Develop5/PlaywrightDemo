@@ -2,7 +2,7 @@ import { Then } from '@cucumber/cucumber'
 import { ElementKey } from '../../env/global'
 import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
-import { waitFor } from '../../support/wait-for-behavior'
+import { waitFor, waitForResult, waitForSelector } from '../../support/wait-for-behavior'
 import { ElementType } from 'react'
 import { logger } from '../../logger'
 import { 
@@ -11,7 +11,6 @@ import {
     getElements,
  } from '../../support/html-behavior'
 
-// We do not need to wait until an element is stable when checking visibility
 
 Then(
     /^the "([^"]*)" should( not)? be displayed$/,
@@ -24,10 +23,18 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
             const isElementVisible = await getElement(page, elementIdentifier) != null
-            return isElementVisible === !negate;
+            if (isElementVisible === !negate) {
+                return waitForResult.PASS
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}be displayed 🧨 `
+            }
+        )
     }
 )
 
@@ -39,17 +46,25 @@ Then(
             globalConfig,
         } = this;
 
-        logger.log(`the ${elementPosition} ${elementKey} shoul ${negate?' not':''}be displayed`)
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?' not':''}be displayed`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const index = Number(elementPosition.match(/\d/g)?.join('')) -1;
 
         await waitFor( async () => {
             const isElementVisible = (await getElementAtIndex(page, elementIdentifier, index)) != null
-            return isElementVisible === !negate
+            if (isElementVisible === !negate) {
+                return waitForResult.PASS
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementPosition} ${elementKey} to ${negate?'not ':''}be displayed 🧨 `
+            }
+        )
     }
 )
 
@@ -68,9 +83,17 @@ Then(
 
         await waitFor( async () => {
             const element = await getElements(page, elementIdentifier) 
-            return (Number(count) === element.length) === !negate
+            if ((Number(count) === element.length) === !negate) {
+                return waitForResult.PASS
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected${count} ${elementKey} to ${negate?'not ':''}be displayed 🧨 `
+            }
+        )
     }
 )

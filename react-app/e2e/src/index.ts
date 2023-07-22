@@ -27,7 +27,7 @@ const getEnvList = (): string[] => {
     const envList = Object.keys(hostsConfig)
 
     if (envList.length === 0) {
-        // Emoticon for error
+        // Emoticon for error. Dynamite emoticon
         throw Error(`🧨 No environments mapped in your ${env('HOST_URL_PATH')}`)
     }
     return envList;

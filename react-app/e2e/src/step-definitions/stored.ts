@@ -3,6 +3,7 @@ import { ScenarioWorld } from "./setup/world";
 import { getElementLocator } from "../support/web-element-helper";
 import { 
     waitFor,
+    waitForResult,
     waitForSelector 
 } from "../support/wait-for-behavior";
 import { ElementKey } from "../env/global";
@@ -28,9 +29,10 @@ Then(
                 const elementText = await page.textContent(elementIdentifier)
                 if (elementText != null) {
                     globalVariables[variableKey] = elementText
+                    return waitForResult.PASS
                 }
             }
-            return elementStable;
+            return waitForResult.ELEMENT_NOT_AVAILABLE;
         },
         globalConfig,
         { target: elementKey })

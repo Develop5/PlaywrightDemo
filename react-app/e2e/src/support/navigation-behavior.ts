@@ -1,5 +1,6 @@
 import { Page } from 'playwright';
 import { GlobalConfig, PageId } from '../env/global';
+import { waitForResult } from './wait-for-behavior';
 
 export const navigateToPage = async (
     page: Page,
@@ -31,9 +32,12 @@ export const currentPathMatchesPageId = (
     page: Page,
     pageId: PageId,
     globalConfig: GlobalConfig,
-): boolean => {
+): waitForResult => {
     const {pathname: currentPath} = new URL(page.url());
-    return pathMatchesPageId(currentPath, pageId, globalConfig)
+    if (pathMatchesPageId(currentPath, pageId, globalConfig)) {
+        return waitForResult.PASS
+    }
+    return waitForResult.ELEMENT_NOT_AVAILABLE
 };
 
 export const getCurrentPageId = (
@@ -42,11 +46,8 @@ export const getCurrentPageId = (
     
 ): PageId => {
     const { pagesConfig } = globalConfig;
-
     const pageConfigPageIds = Object.keys(pagesConfig)
-
     const { pathname: currentPath } = new URL(page.url())
-
     const currentPageId = pageConfigPageIds.find(pageId =>
         pathMatchesPageId(currentPath, pageId, globalConfig)
     );

@@ -1,6 +1,7 @@
 import { Then } from "@cucumber/cucumber";
 import { 
     waitFor, 
+    waitForResult, 
     waitForSelectorOnPage 
 } from "../../support/wait-for-behavior";
 import { ScenarioWorld } from "../setup/world";
@@ -30,10 +31,18 @@ Then(
         await waitFor( async () => {
             let pages = context.pages();
             const pageTitle = await getTitleWithinPage(page, pages, pageIndex)
-            return pageTitle?.includes(expectedTitle) === !negate
+            if ( pageTitle?.includes(expectedTitle) === !negate) {
+                return waitForResult.PASS
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
         },
         globalConfig,
-        { type: "title" })
+            { 
+                type: "title",
+                failureMessage: `🧨 Expected page to ${negate?'not ':''}contain the title ${expectedTitle} 🧨 `
+            }
+        )
     }
 )
 
@@ -53,10 +62,18 @@ Then(
         await waitFor( async() => {
             let pages = context.pages();
             const isElementVisible = await getElementOnPage(page, elementIdentifier, pages, pageIndex) != null;
-            return isElementVisible === !negate
+            if (isElementVisible === !negate) {
+                return waitForResult.PASS
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementKey} on page to ${negate?'not ':''}be displayed 🧨`
+            }
+        )
     }
 )
 
@@ -82,15 +99,23 @@ Then(
 
                 if (elementStable) {
                     const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
-                    return elementText?.includes(expectedElementText) === !negate
+                    if (elementText?.includes(expectedElementText) === !negate) {
+                        return waitForResult.PASS
+                    } else {
+                        return waitForResult.FAIL
+                    }
 
                 } else {
-                    return elementStable
+                    return waitForResult.ELEMENT_NOT_AVAILABLE
                 }
 
             },
             globalConfig,
-            { target: elementKey })
+                { 
+                    target: elementKey,
+                    failureMessage: `🧨 Expected ${elementKey} on page to ${negate?'not ':''}contain the text ${expectedElementText}  🧨 `
+                }
+            )
         }
 )
 
@@ -117,12 +142,19 @@ Then(
 
                 if (elementStable) {
                     const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
-                    return (elementText === expectedElementText) === !negate
+                    if ((elementText === expectedElementText) === !negate) {
+                        return waitForResult.PASS
+                    } else {
+                        return waitForResult.FAIL
+                    }
                 } else {
-                    return elementStable
+                    return waitForResult.ELEMENT_NOT_AVAILABLE
                 }
             },
             globalConfig,
-            { target: elementKey })
+                { 
+                    target: elementKey,
+                    failureMessage: `🧨 Expected ${elementKey} on page to ${negate?'not ':''}equal the text ${expectedElementText}  🧨 `
+                })
         }
 ) 

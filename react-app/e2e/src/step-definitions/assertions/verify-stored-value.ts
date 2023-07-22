@@ -4,6 +4,7 @@ import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
 import {
     waitFor, 
+    waitForResult, 
     waitForSelector 
 } from '../../support/wait-for-behavior'
 import { logger } from '../../logger'
@@ -29,13 +30,21 @@ Then(
 
             if (elementStable) {
                 const elementText = await getElementText(page, elementIdentifier)
-                return (elementText === variableValue) === !negate
+                if ((elementText === variableValue) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the ${variableKey} in globalVariables  🧨 `
+            }
+        )
     }
 )
 
@@ -59,12 +68,20 @@ Then(
             
             if (elementStable) {
                 const elementText = await getElementText(page, elementIdentifier)
-                return elementText?.includes(variableValue) === !negate
+                if (elementText?.includes(variableValue) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the ${variableKey} in globalVariables  🧨 `
+            }
+        )
     }
 )

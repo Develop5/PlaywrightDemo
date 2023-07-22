@@ -2,6 +2,7 @@ import { Then } from "@cucumber/cucumber";
 import { ScenarioWorld } from "./setup/world";
 import { 
     waitFor,
+    waitForResult,
     waitForSelectorOnPage 
 } from "../support/wait-for-behavior";
 import { ElementLocator } from "../env/global";
@@ -27,12 +28,12 @@ Then(
             let pages = context.pages();
 
             const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex)
-            console.log('TESTING')
 
             if (elementStable) {
                 await inputValueOnPage(pages, pageIndex, elementIdentifier, inputValue)
+                return waitForResult.PASS
             }
-            return elementStable
+            return waitForResult.ELEMENT_NOT_AVAILABLE
         },
         globalConfig,
         { target: elementKey })

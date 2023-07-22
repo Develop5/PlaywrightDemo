@@ -4,6 +4,7 @@ import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
 import { 
     waitFor, 
+    waitForResult, 
     waitForSelector 
 } from '../../support/wait-for-behavior'
 import { logger } from '../../logger'
@@ -34,13 +35,21 @@ Then(
 
             if (elementStable) {
                 const tableData = await getTableData(page, elementIdentifier)
-                return tableData === JSON.stringify(dataTable.raw()) === !negate 
+                if (tableData === JSON.stringify(dataTable.raw()) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
 
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey,
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}equal the ${dataTable.raw()} 🧨 `
+            }
+        )
     }
 )

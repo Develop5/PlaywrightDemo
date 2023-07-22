@@ -4,6 +4,7 @@ import { getElementLocator} from '../../support/web-element-helper'
 import { ScenarioWorld } from '../setup/world'
 import { 
     waitFor,
+    waitForResult,
     waitForSelector 
 } from '../../support/wait-for-behavior'
 import { 
@@ -32,15 +33,22 @@ Then(
                 const elementText = await getElementText(page, elementIdentifier)
                 logger.debug("elementText ", elementText)
                 logger.debug("expectedElementText ", expectedElementText)
-                return elementText?.includes(expectedElementText) === !negate;
+                if (elementText?.includes(expectedElementText) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey });
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
+            });
     }
-)
+);
 
 Then(
     /^the "([^"]*)" should( not)? equal the text "(.*)"$/,
@@ -49,31 +57,40 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-    logger.log(`the ${elementKey} should ${negate?'not ':''} equal the text ${expectedElementText}`)
-    const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        logger.log(`the ${elementKey} should ${negate?'not ':''} equal the text ${expectedElementText}`)
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
-    await waitFor(async() => {
-        const elementStable = await waitForSelector(page, elementIdentifier)
+        await waitFor(async() => {
+            const elementStable = await waitForSelector(page, elementIdentifier)
 
-        if (elementStable) {
-            const elementText = await getElementText(page, elementIdentifier)
-            return (elementText === expectedElementText === !negate)
-        } else {
-            return elementStable
-        }
-    },
-    globalConfig,
-    { target: elementKey })
-})
+            if (elementStable) {
+                const elementText = await getElementText(page, elementIdentifier)
+                if (elementText === expectedElementText === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
+        },
+        globalConfig,
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}equal the text ${expectedElementText} 🧨 ` 
+            }
+        )
+    }
+)
 
 Then(
     /^the "([^"]*)" should( not)? contain the value "(.*)"$/,
-    async function(this: ScenarioWorld, elementKey: ElementKey, negate:boolean, elementValue: string){
+    async function(this: ScenarioWorld, elementKey: ElementKey, negate:boolean, expectedelementValue: string){
         const {
             screen: {page},
             globalConfig,
         } = this;
-        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${elementValue}`);
+        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${expectedelementValue}`);
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor(async() => {
@@ -81,39 +98,56 @@ Then(
 
             if (elementStable) {
                 const elementText = await getElementValue(page, elementIdentifier)
-                return elementText?.includes(elementValue) === !negate;
+                if (elementText?.includes(expectedelementValue) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the value ${expectedelementValue} 🧨 ` 
+            }
+            )
     }
 )
 
 Then(
     /^the "([^"]*)" should( not)? equal the value "(.*)"$/,
-    async function(this: ScenarioWorld, elementKey: ElementKey, negate:boolean, elementValue: string) {
+    async function(this: ScenarioWorld, elementKey: ElementKey, negate:boolean, expectedelementValue: string) {
         const {
             screen: { page },
             globalConfig,
         } = this;
-    logger.log(`the ${elementKey} should ${negate?'not ':''} equal the value ${elementValue}`)
-    const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-    await waitFor(async() => {
+        logger.log(`the ${elementKey} should ${negate?'not ':''} equal the value ${expectedelementValue}`)
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        await waitFor(async() => {
 
-        const elementStable = await waitForSelector(page, elementIdentifier)
+            const elementStable = await waitForSelector(page, elementIdentifier)
 
-        if (elementStable) {
-            const elementAttribute = await getElementValue(page, elementIdentifier)
-            return (elementAttribute === elementValue) === !negate;
-        } else {
-            return elementStable
-        }
-    },
-    globalConfig,
-    { target: elementKey })
-})
+            if (elementStable) {
+                const elementAttribute = await getElementValue(page, elementIdentifier)
+                if ((elementAttribute === expectedelementValue) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
+        },
+        globalConfig,
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}equal the value ${expectedelementValue} 🧨 ` 
+            }
+        )
+    }
+)
 
 
 Then(
@@ -123,22 +157,31 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-    logger.log(`the ${elementKey} should ${negate?'not ':''} be enabled`)
-    const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
-    await waitFor(async() => {
+        logger.log(`the ${elementKey} should ${negate?'not ':''} be enabled`)
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        await waitFor(async() => {
 
-        const elementStable = await waitForSelector(page, elementIdentifier)
+            const elementStable = await waitForSelector(page, elementIdentifier)
 
-        if (elementStable) {
-            const isElementEnabled = await elementEnabled(page, elementIdentifier)
-            return isElementEnabled === !negate;
-        } else {
-            elementStable
-        }
-    },
-    globalConfig,
-    { target: elementKey })
-})
+            if (elementStable) {
+                const isElementEnabled = await elementEnabled(page, elementIdentifier)
+                if (isElementEnabled === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
+            } else {
+                return waitForResult.ELEMENT_NOT_AVAILABLE
+            }
+        },
+        globalConfig,
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}be enable 🧨 ` 
+            }
+        )
+    }
+)
 
 Then(
     /^the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" "([^"]*)" should( not)? contain the text "(.*)"$/,
@@ -158,13 +201,21 @@ Then(
 
             if (elementStable) {
                 const elementText = await getElementTextAtIndex(page, elementIdentifier, index);
-                return elementText?.includes(expectedElementText) === !negate;
+                if (elementText?.includes(expectedElementText) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            {
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
+            }
+        )
     }
 )
 
@@ -186,12 +237,20 @@ Then(
 
             if (elementStable) {
                 const attributeText = await getAttributeText(page, elementIdentifier, attribute)
-                return attributeText?.includes(expectedElementText) === !negate
+                if (attributeText?.includes(expectedElementText) === !negate) {
+                    return waitForResult.PASS
+                } else {
+                    return waitForResult.FAIL
+                }
             } else {
-                return elementStable
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }
         },
         globalConfig,
-        { target: elementKey })
+            { 
+                target: elementKey, 
+                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
+            }
+        )
     }
 )
