@@ -268,14 +268,17 @@ Removed from my example
 &nbsp;
 
 *I am here:*
-- [ ] Section 17: Improving our automation failure errors - part 3 (section 1)
+- [ ] Section 18: Improving our automation failure errors - part 3 (section 2)
 
-        Chapter 141. Mapping automation friendly errors messages to replace native errors - part 5
+        Chapter 142. Introducing waitForResult to handle our assertion error cases - part 1
 
-        Creating a customized handle error function that produce more understandable error messages
+        We need to be able to differentiate:
+        1- The mapping does not exist
+        2- The element is not in the Dom
+        3- Any eval assertion to fail
 
     &nbsp;
-    Time:   2:19
+    Time:   
 &nbsp;
 
 
