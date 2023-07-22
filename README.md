@@ -137,7 +137,9 @@ A set of Bash configuration files for macOS, Linux and Windows, that you can use
 The Dotfiles live right in your home directory, so you can keep them under version control, and you can use them on any computer, anywhere.
 &nbsp;
 
-They aggregates a collection of standalone dotfiles combined into a single lib directory located in your home directory ~/.dotfiles/lib. They provide convenient aliases, functions, and a few ready-to-use settings built for speed and high performance for your shell.
+They aggregates a collection of standalone dotfiles combined into a single lib directory located in your home directory ~/.dotfiles/lib. 
+
+They provide convenient aliases, functions, and a few ready-to-use settings built for speed and high performance for your shell.
 
 &nbsp;
 
@@ -171,9 +173,12 @@ https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology
 
 &nbsp;
 
-### **... More steps** ###
+### **... Further steps** ###
 
-6. yarn add @babel/cli -D
+6. 
+    ```
+    yarn add @babel/cli -D
+    ```
 
     Install babel.
     
@@ -181,7 +186,10 @@ https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology
 
 In addition, various entry point scripts live in the top-level package at @babel/cli/bin.
 
-7. yarn add @babel/preset-env -D
+7. 
+    ```
+    yarn add @babel/preset-env -D
+    ```
 
     A smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). This both makes your life easier and JavaScript bundles smaller!
 
@@ -196,14 +204,27 @@ In addition, various entry point scripts live in the top-level package at @babel
     Methodologies like the 12 Factor App specify that an application’s code and configuration are separate but combine during deployment to accommodate specific environments.
 
 
-9. yarn add cucumber-html-reporter
+9. 
+    ```
+    yarn add cucumber-html-reporter
+    ```
 
 10. To run the tests in Windows:
 
-
+```
     ./run_tests.bat dev
     ./run_tests.bat smoke
     ./run_tests.bat regression
+```
+
+11. Running tests with environment included
+
+```
+    ./run_tests.bat localhost dev
+    ./run_tests.bat localhost regression
+    ./run_tests.bat production dev
+    ./run_tests.bat production regression
+```
 
 
 &nbsp;
@@ -212,11 +233,17 @@ In addition, various entry point scripts live in the top-level package at @babel
 > In case you want to work with the Playwright Inspector:
 > PWDEBUG=1
 > If you want to track an error to here:
+
 > react-app\src\ContactItem.react.js
+
 > And change:
+
 > full-name-label
+
 > To:
+
 > full-name-labellll
+
 > Just to yield an error
 > Then do "Step Into" in Playwright Inspector until you see the error is not green anymore
 > but gray. The failure is there.
@@ -231,11 +258,12 @@ Other tips in Playwright Inspector:
 - There is a "Pick locator" button that suggests other locators.
     In the same place you can find also Element (?)
 
-
-
+&nbsp;
 
 Introduce a typo in the source code
+
 react-app\src\ContactItem.react.js
+
 Now you go to the page in the browser and you will see an extra "s" at the end of each name
 ```
 Name:<strong className="item-value" data-id="name">{item.name}s</strong>
@@ -253,6 +281,8 @@ Probably console.log() is almost the most practical tool for showing what is in 
 &nbsp;
 
 This environment variable guarantees that the report will go online to be share with other people. 
+&nbsp;
+
 This will remove the frame that comes at the end of the execution "Share your Cucumber Report wit your team at"
 ```
 CUCUMBER_PUBLISH_QUIET=true
@@ -262,22 +292,25 @@ Removed from my example
 &nbsp;
 
 Introduce "faker" into package.json
-    It generates fake data for specific attributes: emails, addresses, names and many more
-    It is used with the purpose of generating random data for our form fields
-    From our e2e folder:
+
+It generates fake data for specific attributes: emails, addresses, names and many more
+It is used with the purpose of generating random data for our form fields.
+
+From our e2e folder:
 
     ```
     yarn add faker -D
     ```
+After confirm the last stable version in package.json, execute (from e2e folder)
 
-    After confirm the last stable version in package.json, execute (from e2e folder)
     ```
     yarn install
     ```
-    But if you have still problems with faker, not recognized at import in random-data-helper.ts, go back to this version in package.json
+But if you have still problems with faker, not recognized at import in random-data-helper.ts, go back to this version in package.json
     "faker": "^5.5.3",
+&nbsp;
 
-    And run again "yarn install"
+And run again "yarn install"
 
 &nbsp;
 
@@ -287,11 +320,11 @@ Introduce "faker" into package.json
 *I am here:*
 - [ ] Section 19: Automating with Random Form Data. E2E Automation Testing and Tagging our suite
 
-        Chapter 154. Building our an end to end automation suite for our contacts app - part 3
+    Chapter 157. Tagging our automation suite in preparation for (CI) Continuous Integration
 
 
     &nbsp;
-    Time:   5:04
+    Time:   
 &nbsp;
 
 
