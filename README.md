@@ -287,9 +287,7 @@ Introduce "faker" into package.json
 *I am here:*
 - [ ] Section 19: Automating with Random Form Data. E2E Automation Testing and Tagging our suite
 
-        Chapter 152. Populate form fields with random test data during our automation test - part 1
-
-        Randomly generating data in our form fields
+        Chapter 154. Building our an end to end automation suite for our contacts app - part 1
 
 
     &nbsp;
