@@ -261,6 +261,23 @@ But then you need to Authorize SmartBear to enter to [Public Cucumber Reports](h
 Removed from my example
 &nbsp;
 
+Introduce "faker" into package.json
+    It generates fake data for specific attributes: emails, addresses, names and many more
+    It is used with the purpose of generating random data for our form fields
+    From our e2e folder:
+
+    ```
+    yarn add faker -D
+    ```
+
+    After confirm the last stable version in package.json, execute (from e2e folder)
+    ```
+    yarn install
+    ```
+    But if you have still problems with faker, not recognized at import in random-data-helper.ts, go back to this version in package.json
+    "faker": "^5.5.3",
+
+    And run again "yarn install"
 
 &nbsp;
 

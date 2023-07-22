@@ -3,8 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.stringIsOfOptions = exports.getLogger = void 0;
+exports.getLogger = void 0;
 var _parseEnv = require("../env/parseEnv");
+var _optionsHelper = require("../support/options-helper");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -43,21 +44,11 @@ var createLogger = function createLogger(logLevel) {
     }));
   }, {});
 };
-var logLevelIsT = function logLevelIsT(logLevel, options) {
-  return options.includes(logLevel);
-};
-var stringIsOfOptions = function stringIsOfOptions(logLevel, options) {
-  if (logLevelIsT(logLevel, options)) {
-    return logLevel;
-  }
-  throw Error("\uD83E\uDDE8 Logger '".concat(logLevel, "' needs to be one of ").concat(options, " \uD83E\uDDE8"));
-};
-exports.stringIsOfOptions = stringIsOfOptions;
 var loggerSingleton = null;
 var getLogger = function getLogger() {
   if (!loggerSingleton) {
     var logLevel = (0, _parseEnv.env)('LOG_LEVEL');
-    var validLogLevel = stringIsOfOptions(logLevel, LOG_LEVELS);
+    var validLogLevel = (0, _optionsHelper.stringIsOfOptions)(logLevel, LOG_LEVELS);
     loggerSingleton = createLogger(validLogLevel);
   }
   return loggerSingleton;
