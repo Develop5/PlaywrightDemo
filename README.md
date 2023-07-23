@@ -318,14 +318,13 @@ And run again "yarn install"
 &nbsp;
 
 *I am here:*
-- [ ] Section 19: Automating with Random Form Data. E2E Automation Testing and Tagging our suite
+- [ ] Section 20: Mocking with Playwright
 
-    Chapter 157. Tagging our automation suite in preparation for (CI) Continuous Integration
+    Chapter 159. Adding the ability to intercept responses during automation tests - part 1
 
-        Putting each scenario into different tags. Split out the suite into different tags
 
     &nbsp;
-    Time:       2:14
+    Time:       
 &nbsp;
 
 
