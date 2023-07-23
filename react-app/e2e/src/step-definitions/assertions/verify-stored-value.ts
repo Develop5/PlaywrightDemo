@@ -64,7 +64,7 @@ Then(
         await waitFor( async() => {
 
             const elementStable = await waitForSelector(page, elementIdentifier )
-            const variableValue = globalVariables[variableKey];
+            const variableValue = globalVariables[variableKey]
             
             if (elementStable) {
                 const elementText = await getElementText(page, elementIdentifier)

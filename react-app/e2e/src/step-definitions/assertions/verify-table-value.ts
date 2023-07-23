@@ -18,7 +18,7 @@ Then(
         const {
             screen: { page },
             globalConfig,
-        } = this
+        } = this;
 
         
         logger.log(`the ${elementKey} table should ${negate?'not ':''}equal the following:`)

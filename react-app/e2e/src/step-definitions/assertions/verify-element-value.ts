@@ -23,7 +23,7 @@ Then(
             screen: {page},
             globalConfig,
         } = this;
-        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`);
+        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the text ${expectedElementText}`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor(async() => {
@@ -46,9 +46,9 @@ Then(
             { 
                 target: elementKey, 
                 failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
-            });
+            })
     }
-);
+)
 
 Then(
     /^the "([^"]*)" should( not)? equal the text "(.*)"$/,
@@ -90,7 +90,7 @@ Then(
             screen: {page},
             globalConfig,
         } = this;
-        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${expectedelementValue}`);
+        logger.log(`the ${elementKey} should ${negate?'not ':''} contain the value ${expectedelementValue}`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor(async() => {
@@ -200,7 +200,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if (elementStable) {
-                const elementText = await getElementTextAtIndex(page, elementIdentifier, index);
+                const elementText = await getElementTextAtIndex(page, elementIdentifier, index)
                 if (elementText?.includes(expectedElementText) === !negate) {
                     return waitForResult.PASS
                 } else {

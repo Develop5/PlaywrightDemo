@@ -1,14 +1,14 @@
-import { Then } from "@cucumber/cucumber";
+import { Then } from "@cucumber/cucumber"
 import {
     waitFor,
     waitForResult,
     waitForSelector
-} from "../../support/wait-for-behavior";
-import { elementChecked } from "../../support/html-behavior";
-import { ScenarioWorld } from "../setup/world";
-import { getElementLocator } from "../../support/web-element-helper";
-import { ElementKey } from "../../env/global";
-import { logger } from "../../logger";
+} from "../../support/wait-for-behavior"
+import { elementChecked } from "../../support/html-behavior"
+import { ScenarioWorld } from "../setup/world"
+import { getElementLocator } from "../../support/web-element-helper"
+import { ElementKey } from "../../env/global"
+import { logger } from "../../logger"
 
 Then(
     /^the "([^"]*)" (?:check box|radio button|switch) should( not)? be checked$/,
@@ -16,7 +16,7 @@ Then(
         const {
             screen: { page },
             globalConfig,
-        } = this;
+        } = this
         
         logger.log(`the ${elementKey} check box|radio button|switch should ${negate ? 'not ' : ''}be checked`)
         

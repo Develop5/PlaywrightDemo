@@ -1,19 +1,19 @@
-import { Then } from "@cucumber/cucumber";
+import { Then } from "@cucumber/cucumber"
 import { 
     waitFor,
     waitForResult,
     waitForSelectorInIframe,
     waitForSelectorOnPage
-} from "../../support/wait-for-behavior";
-import { ScenarioWorld } from "../setup/world";
-import { getElementLocator } from "../../support/web-element-helper";
-import { ElementKey } from "../../env/global";
+} from "../../support/wait-for-behavior"
+import { ScenarioWorld } from "../setup/world"
+import { getElementLocator } from "../../support/web-element-helper"
+import { ElementKey } from "../../env/global"
 import { 
     getIframeElement,
     getElementWithinIframe,
     getTextWithinIframeElement,
-} from "../../support/html-behavior";
-import { logger } from "../../logger";
+} from "../../support/html-behavior"
+import { logger } from "../../logger"
 
 Then(
     /^the "([^"]*)" on the "([^"]*)" iframe should( not)? be displayed$/,
@@ -25,11 +25,11 @@ Then(
 
         logger.log(`the ${elementKey} on the ${iframeKey} iframe should ${negate?'not ':''} be displayed`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig)
 
         await waitFor( async () => {
-            const elementIframe = await getIframeElement(page, iframeIdentifier);
+            const elementIframe = await getIframeElement(page, iframeIdentifier)
 
                 if(elementIframe) {
                     const isElementVisible = (await getElementWithinIframe) !=null
@@ -62,11 +62,11 @@ Then(
 
         logger.log(`the ${elementKey} on the ${iframeKey} iframe should ${negate?'not ':''} contain the text ${expectedElementText}`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig)
 
         await waitFor( async () => {
-            const elementIframe = await getIframeElement(page, iframeIdentifier);
+            const elementIframe = await getIframeElement(page, iframeIdentifier)
 
                 if(elementIframe) {
 
@@ -108,17 +108,17 @@ Then(
 
         logger.log(`the ${elementKey} on the ${iframeKey} iframe should ${negate?'not ':''} equal the text ${expectedElementText}`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig)
 
         await waitFor( async () => {
-            const elementIframe = await getIframeElement(page, iframeIdentifier);
+            const elementIframe = await getIframeElement(page, iframeIdentifier)
                 
                 if (elementIframe) {
                     const elementStable = await waitForSelectorInIframe(elementIframe, elementIdentifier)
 
                     if (elementIframe) {
-                        const elementText = await getTextWithinIframeElement(elementIframe, elementIdentifier);
+                        const elementText = await getTextWithinIframeElement(elementIframe, elementIdentifier)
                         if ((elementText === expectedElementText) === !negate) {
                             return {result: waitForResult.PASS} 
                         } else {
