@@ -322,9 +322,10 @@ And run again "yarn install"
 
     Chapter 157. Tagging our automation suite in preparation for (CI) Continuous Integration
 
+        Putting each scenario into different tags
 
     &nbsp;
-    Time:   
+    Time:       2:14
 &nbsp;
 
 

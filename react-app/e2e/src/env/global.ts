@@ -1,4 +1,3 @@
-// Changing the order of types
 export type PageId = string;
 export type ElementKey = string;
 export type ElementLocator = string;

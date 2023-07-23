@@ -31,6 +31,7 @@ Feature: As a user I can interact with autocomplete inputs
         And I fill in the "outlined required" input with "Testing Talks Online"
         And the "outlined required" should equal the value "Testing Talks Online"
 
+
     @smoke
     @regression
     Scenario: As a user I can interact and assert on input validation

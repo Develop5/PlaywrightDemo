@@ -32,7 +32,7 @@ Feature: As a user I expect to be able to validate a new contact
         And the "edit" should be displayed
         And the "delete" should be displayed
 
-    @dev
+
     @regression
     Scenario: As a user I can hit a validation error on each field on edit contact
         Given I am on the "home" page

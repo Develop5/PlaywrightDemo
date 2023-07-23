@@ -33,7 +33,6 @@ Feature: As a user I expect to be able to search a new contact
         And the "delete" should be displayed
 
 
-    @dev
     @regression
     Scenario: As a user I can search for a edited contact
         Given I am on the "home" page

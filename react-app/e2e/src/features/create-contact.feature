@@ -58,6 +58,7 @@ Feature: As a user I expect to be able to create contacts
 
         Then the "contact" should not be displayed
 
+
     @regression
     Scenario: As a user I can create a verify multiple new contacts
         Given I am on the "home" page

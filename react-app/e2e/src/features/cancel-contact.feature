@@ -19,6 +19,7 @@ Feature: As a user I expect to be able to cancel the creation of a new contact
         And I fill in the "search" input with "Tony Bongo"
         And the "contact" should not be displayed
 
+
     @regression
     Scenario: As a user I can cancel and edit to a new contact
         Given I am on the "home" page
