@@ -33,7 +33,7 @@ var getEnvList = function getEnvList() {
   var envList = Object.keys(hostsConfig);
   if (envList.length === 0) {
     // Emoticon for error. Dynamite emoticon
-    throw Error("\uD83E\uDDE8 No environments mapped in your ".concat((0, _parseEnv.env)('HOST_URL_PATH')));
+    throw Error("\uD83E\uDDE8 No environments mapped in your ".concat((0, _parseEnv.env)('HOST_URL_PATH'), " \uD83E\uDDE8 "));
   }
   return envList;
 };

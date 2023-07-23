@@ -1,18 +1,18 @@
-import { Then } from "@cucumber/cucumber";
+import { Then } from "@cucumber/cucumber"
 import { 
     waitFor,
     waitForResult,
     waitForSelector, 
     waitForSelectorInIframe
-} from "../support/wait-for-behavior";
-import { getElementLocator } from "../support/web-element-helper";
-import { ScenarioWorld } from "./setup/world";
-import { ElementKey } from "../env/global";
+} from "../support/wait-for-behavior"
+import { getElementLocator } from "../support/web-element-helper"
+import { ScenarioWorld } from "./setup/world"
+import { ElementKey } from "../env/global"
 import { 
     getIframeElement,
     inputValueOnIframe
- } from "../support/html-behavior";
-import { logger } from "../logger";
+ } from "../support/html-behavior"
+import { logger } from "../logger"
 
 
 Then(
@@ -23,7 +23,7 @@ Then(
             globalConfig
         } = this;
 
-        logger.log(`I fill in the ${elementKey} input on the ${iframeKey} iframe with ${inputValue}`);
+        logger.log(`I fill in the ${elementKey} input on the ${iframeKey} iframe with ${inputValue}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeKey, globalConfig)

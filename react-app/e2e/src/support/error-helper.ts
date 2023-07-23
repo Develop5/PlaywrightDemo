@@ -6,7 +6,7 @@ import {
 import { logger } from "../logger"
 
 export const getErrorSummary = (errDetail: string): string => {
-    return errDetail.split('\n')[0];
+    return errDetail.split('\n')[0]
 }
 
 export const parseErrorMessage = (

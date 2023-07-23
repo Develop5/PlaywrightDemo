@@ -45,7 +45,7 @@ Then(
             globalConfig,
         } = this;
 
-        logger.log(`the ${elementPosition} ${elementKey} should ${negate?' not':''}be displayed`)
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?'not ':''}be displayed`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const index = Number(elementPosition.match(/\d/g)?.join('')) -1;

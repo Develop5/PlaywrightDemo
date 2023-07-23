@@ -1,16 +1,16 @@
-import { Then } from "@cucumber/cucumber";
-import { ScenarioWorld } from "./setup/world";
+import { Then } from "@cucumber/cucumber"
+import { ScenarioWorld } from "./setup/world"
 import { 
     waitFor,
     waitForResult,
     waitForSelector 
-} from "../support/wait-for-behavior";
-import { getElementLocator } from "../support/web-element-helper";
-import { ElementKey } from "../env/global";
+} from "../support/wait-for-behavior"
+import { getElementLocator } from "../support/web-element-helper"
+import { ElementKey } from "../env/global"
 import { 
     scrollElementIntoView 
-}  from "../support/html-behavior";
-import { logger } from "../logger";
+}  from "../support/html-behavior"
+import { logger } from "../logger"
 
 Then(
     /^I scroll to the "([^"]*)"$/,
@@ -32,7 +32,7 @@ Then(
                 await scrollElementIntoView(page, elementIdentifier)
                 return waitForResult.PASS
             }
-            return waitForResult.ELEMENT_NOT_AVAILABLE;
+            return waitForResult.ELEMENT_NOT_AVAILABLE
         },
         globalConfig,
         { target: elementKey })

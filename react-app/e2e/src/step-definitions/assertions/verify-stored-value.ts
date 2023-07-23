@@ -57,7 +57,7 @@ Then(
             globalVariables,
         } = this;
 
-        logger.log(`the ${elementKey} should ${negate?' not':''}contain the ${globalVariables[variableKey]} stored in global variables`)
+        logger.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 

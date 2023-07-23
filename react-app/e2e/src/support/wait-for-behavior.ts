@@ -1,16 +1,16 @@
 import { 
     Page, 
     Frame 
-} from "playwright";
+} from "playwright"
 import { 
     ElementLocator,
     GlobalConfig,
     WaitForTarget,
     WaitForTargetType
-} from "../env/global";
-import { envNumber } from "../env/parseEnv";
-import { handleError } from "./error-helper";
-import { logger } from "../logger";
+} from "../env/global"
+import { envNumber } from "../env/parseEnv"
+import { handleError } from "./error-helper"
+import { logger } from "../logger"
 
 
 export const enum waitForResult {
@@ -31,13 +31,13 @@ export const waitFor = async <T>(
 ): Promise<void> => {
     const { timeout = 10000, wait=2000, target = '', type = 'element'  } = options || {};
  
-    const sleep = (ms: number) => new Promise( resolve => setTimeout(resolve, ms));
-    const startDate = new Date();
+    const sleep = (ms: number) => new Promise( resolve => setTimeout(resolve, ms))
+    const startDate = new Date()
     let notAvailableContext: string | undefined
 
     try {
         while (new Date().getTime() - startDate.getTime() < timeout) {
-            const result = await predicate();
+            const result = await predicate()
             let resultAs: waitForResult
 
             if((result as waitForResultWithContext).result) {
@@ -54,9 +54,9 @@ export const waitFor = async <T>(
             }
     
             await sleep(wait)
-            logger.debug(`Waiting ${wait}ms`);
+            logger.debug(`Waiting ${wait}ms`)
         }
-        throw new Error(`Wait time of ${timeout}ms for ${notAvailableContext || target} exceeded`);
+        throw new Error(`Wait time of ${timeout}ms for ${notAvailableContext || target} exceeded`)
     } catch (error) {
         handleError(globalConfig.errorsConfig, error as Error, target, type )
     }

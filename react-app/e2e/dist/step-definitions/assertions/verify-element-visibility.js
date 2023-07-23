@@ -63,7 +63,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
           page = this.screen.page, globalConfig = this.globalConfig;
-          _logger.logger.log("the ".concat(elementPosition, " ").concat(elementKey, " should ").concat(negate ? ' not' : '', "be displayed"));
+          _logger.logger.log("the ".concat(elementPosition, " ").concat(elementKey, " should ").concat(negate ? 'not ' : '', "be displayed"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           index = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
           _context4.next = 6;

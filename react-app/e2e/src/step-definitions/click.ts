@@ -1,17 +1,17 @@
-import { When } from '@cucumber/cucumber';
+import { When } from '@cucumber/cucumber'
 import { ScenarioWorld } from './setup/world'
 import {
     clickElement,
     clickElementAtIndex
-} from '../support/html-behavior';
+} from '../support/html-behavior'
 import { 
     waitFor,
     waitForResult,
     waitForSelector 
-} from '../support/wait-for-behavior';
-import { getElementLocator } from '../support/web-element-helper';
-import { ElementKey } from '../env/global';
-import { logger } from '../logger';
+} from '../support/wait-for-behavior'
+import { getElementLocator } from '../support/web-element-helper'
+import { ElementKey } from '../env/global'
+import { logger } from '../logger'
 
 When(
     /^I click the "([^"]*)" (?:button|link|icon|element)$/,
@@ -23,13 +23,13 @@ When(
 
         logger.log(`I click the ${elementKey} (?:button|link|icon|element)`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor(async() => {
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if(elementStable) {
-                await clickElement(page, elementIdentifier);
+                await clickElement(page, elementIdentifier)
                 return waitForResult.PASS
             }
             

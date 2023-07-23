@@ -18,7 +18,7 @@ export const getViewPort = (): { width: number, height: number } => {
         }
     }
 
-    return viewPort;
+    return viewPort
 }
 
 

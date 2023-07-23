@@ -88,7 +88,7 @@ Then(
                 screen: { page, context },
                 globalConfig,
             } = this;
-            logger.log(`the ${elementKey} on the ${elementPosition} window|tab should ${negate?' not':''}contain the text ${expectedElementText}`)
+            logger.log(`the ${elementKey} on the ${elementPosition} window|tab should ${negate?'not ':''}contain the text ${expectedElementText}`)
             const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
             const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
@@ -131,7 +131,7 @@ Then(
                 screen: { page, context },
                 globalConfig,
             } = this;
-            logger.log(`the ${elementKey} on the ${elementPosition} window|tab should ${negate?' not':''}equal the text ${expectedElementText}`)
+            logger.log(`the ${elementKey} on the ${elementPosition} window|tab should ${negate?'not ':''}equal the text ${expectedElementText}`)
             const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
             const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 

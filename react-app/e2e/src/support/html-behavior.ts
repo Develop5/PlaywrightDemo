@@ -31,7 +31,7 @@ export const selectElementValue = async (
     elementIdentifier: ElementLocator,
     option: string,
 ): Promise< void > => {
-    await page.focus(elementIdentifier);
+    await page.focus(elementIdentifier)
     await page.selectOption(elementIdentifier, option)
 }
 
@@ -39,7 +39,7 @@ export const checkElement = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise< void > => {
-    await page.check(elementIdentifier);
+    await page.check(elementIdentifier)
 }
 
 export const uncheckElement = async (

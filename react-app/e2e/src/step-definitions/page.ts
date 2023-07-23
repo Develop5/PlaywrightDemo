@@ -1,17 +1,17 @@
-import { Then } from "@cucumber/cucumber";
-import { ScenarioWorld } from "./setup/world";
+import { Then } from "@cucumber/cucumber"
+import { ScenarioWorld } from "./setup/world"
 import { 
     waitFor,
     waitForResult,
     waitForSelectorOnPage 
-} from "../support/wait-for-behavior";
-import { ElementLocator } from "../env/global";
-import { ElementKey } from "../env/global";
-import { getElementLocator } from "../support/web-element-helper";
+} from "../support/wait-for-behavior"
+import { ElementLocator } from "../env/global"
+import { ElementKey } from "../env/global"
+import { getElementLocator } from "../support/web-element-helper"
 import {
     inputValueOnPage
-} from "../support/html-behavior";
-import { logger } from "../logger";
+} from "../support/html-behavior"
+import { logger } from "../logger"
 
 Then(
     /^I fill in the "([^"]*)" input on the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" (?:tab|window) with "([^"]*)"$/,
@@ -25,7 +25,7 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor(async() => {
-            let pages = context.pages();
+            let pages = context.pages()
 
             const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex)
 

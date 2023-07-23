@@ -116,7 +116,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context6.prev = _context6.next) {
         case 0:
           _this$screen3 = this.screen, page = _this$screen3.page, context = _this$screen3.context, globalConfig = this.globalConfig;
-          _logger.logger.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? ' not' : '', "contain the text ").concat(expectedElementText));
+          _logger.logger.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
           pageIndex = Number((_elementPosition$matc3 = elementPosition.match(/\d/g)) === null || _elementPosition$matc3 === void 0 ? void 0 : _elementPosition$matc3.join('')) - 1;
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context6.next = 6;
@@ -177,7 +177,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) switch (_context8.prev = _context8.next) {
         case 0:
           _this$screen4 = this.screen, page = _this$screen4.page, context = _this$screen4.context, globalConfig = this.globalConfig;
-          _logger.logger.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? ' not' : '', "equal the text ").concat(expectedElementText));
+          _logger.logger.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText));
           pageIndex = Number((_elementPosition$matc4 = elementPosition.match(/\d/g)) === null || _elementPosition$matc4 === void 0 ? void 0 : _elementPosition$matc4.join('')) - 1;
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
           _context8.next = 6;
