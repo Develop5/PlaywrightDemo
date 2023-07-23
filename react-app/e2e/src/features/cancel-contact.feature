@@ -1,6 +1,6 @@
 Feature: As a user I expect to be able to cancel the creation of a new contact
 
-
+    @smoke
     @regression
     Scenario: As a user I can cancel creating a new contact
         Given I am on the "home" page
