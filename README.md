@@ -339,11 +339,21 @@ For accessibility:
     Because navigating through pages if they do not have titles is very confusing. And hides (as a helmet) other issues
     After fixing this title line, close Visual Code and open it again
 
-    2nd issue: Frames must have an accessible name
+    2nd accessibility issue to fix:     Frames must have an accessible name
     This is fixed in 
     react-app\src\components\BasicIframe.react.js
     by adding attributes to the iFrame
+
+    3rd accessibility issue to fix (issue 4):     Document should have one main landmark
+    We are missing main/main tags surrounding a pages main content
+    Sections in pages must be clear
+
+    For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
     
+
+
+
+
 &nbsp;
 
 *I am here:*
