@@ -328,7 +328,17 @@ For accessibility:
 
     With accessibility.ts we inject the accessibility engine on the page we desire to analyze
 
+    Fixing some accessibility issues:
+    In react-app\public\index.html
 
+    Populate:
+    <title></title>
+    With:
+    <title>Testing Talks Hub</title>
+
+    Because navigating through pages if they do not have titles is very confusing. And hides (as a helmet) other issues
+    After fixing this title line, close Visual Code and open it again
+    
 &nbsp;
 
 *I am here:*

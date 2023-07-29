@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.randomPassword = exports.randomInputTypes = exports.randomEmail = exports.getRandomData = void 0;
 var _faker = _interopRequireDefault(require("faker"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var randomInputTypes = ['email', 'password'];
 exports.randomInputTypes = randomInputTypes;
 var randomEmail = function randomEmail() {
-  return _faker.default.internet.exampleEmail();
+  return _faker["default"].internet.exampleEmail();
 };
 exports.randomEmail = randomEmail;
 var randomPassword = function randomPassword() {
-  return _faker.default.internet.password();
+  return _faker["default"].internet.password();
 };
 exports.randomPassword = randomPassword;
 var getRandomData = function getRandomData(randomInputType) {

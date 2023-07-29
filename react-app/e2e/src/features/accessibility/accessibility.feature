@@ -28,7 +28,7 @@ Feature: Generate accessibility reports across our website
         And I inject axe accessibility engine
         Then I generate an accessibility analysis report
 
-
+    @dev
     @accessibility
     @regression
     Scenario: Generate an accessibility report for the Playground page
