@@ -374,9 +374,7 @@ For accessibility:
 *I am here:*
 - [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
 
-    Chapter 171. Pushing our project code to a private GitHub Repository
-
-    Modifying .gitignore
+    Chapter 172. Buildkite - Turning our machine into a build agent
 
 
     &nbsp;
