@@ -21,7 +21,7 @@ export const interceptResponse = async (
         throw Error (` 🧨 Unabe to find the ${mockPayloadKey} payload json file 🧨 `)
     }
 
-    await page.route(`${mockServerHostURL}`, (route) => 
+    await page.route(`${mockServerHostURL}${mockServerRoute}`, (route) => 
         route.fulfill({
             contentType: 'application/json',
             body: JSON.stringify(mockServerPayload)

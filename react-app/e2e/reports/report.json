@@ -1,0 +1,131 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response;as-a-user-i-can-mock-a-single-user",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "As a user I can mock a single user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2072535799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 798890799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the \"api\" endpoint for \"users\" is mocked with \"single user\"",
+            "match": {
+              "location": "src\\step-definitions\\mock.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6808300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92843400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3322299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the \"1st\" \"full name\" should not contain the text \"Leanne Graham\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554860300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the \"1st\" \"full name\" should contain the text \"Todd Smith\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101190999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30182199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 22
+          },
+          {
+            "name": "@smoke",
+            "line": 23
+          },
+          {
+            "name": "@regression",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can intercept a REST api and mock the response",
+    "tags": [],
+    "uri": "src\\features\\playground\\mock.feature"
+  }
+]
