@@ -83,5 +83,7 @@ const dev = generateCucumberRuntimeTag(common, environment, getEnvList(), 'dev')
 const smoke = generateCucumberRuntimeTag(common, environment, getEnvList(), 'smoke');;
 //const regression = `${common} --tags '@regression'`;
 const regression = generateCucumberRuntimeTag(common, environment, getEnvList(), 'regression');;
+//const regression = `${common} --tags '@regression'`;
+const accessibility = generateCucumberRuntimeTag(common, environment, getEnvList(), 'accessibility');;
 
-export { dev, smoke, regression};
+export { dev, smoke, regression, accessibility};

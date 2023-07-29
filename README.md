@@ -101,7 +101,7 @@ Open settings.json (right upper icon)
 1. yarn add playwright -D
 &nbsp;
 
-    This installs playwright with packages in your devDependencies
+    This installs playwright with packages in your devDependencies ("-D")
 
 2. yarn add @playwright/test -D
 &nbsp;
@@ -209,7 +209,7 @@ In addition, various entry point scripts live in the top-level package at @babel
     yarn add cucumber-html-reporter
     ```
 
-10. To run the tests in Windows:
+10. To run the tests in Windows (initially):
 
 ```
     ./run_tests.bat dev
@@ -217,7 +217,7 @@ In addition, various entry point scripts live in the top-level package at @babel
     ./run_tests.bat regression
 ```
 
-11. Running tests with environment included
+11. Running tests with environment included (current)
 
 ```
     ./run_tests.bat localhost dev
@@ -314,14 +314,27 @@ And run again "yarn install"
 
 &nbsp;
 
+For accessibility:
+
+    Modules to test accessibility: axe-playwright and axe-html-reporter
+
+        Go to e2e and:
+        yarn add axe-playwright -D
+        yarn add axe-html-reporter -D
+
+    Axe analyzes the application and reports any issue related to accessibility and we need to find ways accessibility can be improved
+
+    yarn add exe-playwright -D
+
+    With accessibility.ts we inject the accessibility engine on the page we desire to analyze
+
 
 &nbsp;
 
 *I am here:*
-- [ ] Section 20: Mocking with Playwright
+- [ ] Section 21: Accessibility Automation Testing - Playwright + Axe Engine
 
-    Chapter 162. Building our a suite of automation tests that leverage mocking - part 2
-
+    Chapter 165. Integrating AXE engine into our automation framework - part 1
 
 
     &nbsp;
