@@ -42,7 +42,6 @@ Feature: As a user I can intercept a REST api and mock the response
         Then the "3rd" "full name" should contain the text "River Wild"
 
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I can validate only 5 users will display as expected

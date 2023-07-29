@@ -322,7 +322,6 @@ And run again "yarn install"
 
     Chapter 162. Building our a suite of automation tests that leverage mocking - part 2
 
-    Testing the upper boundary. We only have 5 users in the UI. What happens if we ask for 6?
 
 
     &nbsp;
