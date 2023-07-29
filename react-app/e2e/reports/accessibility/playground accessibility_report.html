@@ -87,7 +87,7 @@
             </h3>
             <div class="summarySection">
             </div>
-            <h5>axe-core found <span class="badge badge-warning">64</span> violations</h5>
+            <h5>axe-core found <span class="badge badge-warning">63</span> violations</h5>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -110,14 +110,6 @@
                     </tr>
                     <tr>
                         <th scope="row"><a href="#2" class="card-link">2</a></th>
-                        <td>Frames must have an accessible name</td>
-                        <td>frame-title</td>
-                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                        <td>serious</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><a href="#3" class="card-link">3</a></th>
                         <td>Heading levels should only increase by one</td>
                         <td>heading-order</td>
                         <td>Best practice</td>
@@ -125,7 +117,7 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#4" class="card-link">4</a></th>
+                        <th scope="row"><a href="#3" class="card-link">3</a></th>
                         <td>Form elements must have labels</td>
                         <td>label</td>
                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
@@ -133,7 +125,7 @@
                         <td>7</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#5" class="card-link">5</a></th>
+                        <th scope="row"><a href="#4" class="card-link">4</a></th>
                         <td>Document should have one main landmark</td>
                         <td>landmark-one-main</td>
                         <td>Best practice</td>
@@ -141,7 +133,7 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#6" class="card-link">6</a></th>
+                        <th scope="row"><a href="#5" class="card-link">5</a></th>
                         <td>Links must have discernible text</td>
                         <td>link-name</td>
                         <td>WCAG 2 Level A, WCAG 4.1.2, WCAG 2.4.4</td>
@@ -149,7 +141,7 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#7" class="card-link">7</a></th>
+                        <th scope="row"><a href="#6" class="card-link">6</a></th>
                         <td>All page content should be contained by landmarks</td>
                         <td>region</td>
                         <td>Best practice</td>
@@ -157,7 +149,7 @@
                         <td>50</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#8" class="card-link">8</a></th>
+                        <th scope="row"><a href="#7" class="card-link">7</a></th>
                         <td>Scrollable region must have keyboard access</td>
                         <td>scrollable-region-focusable</td>
                         <td>WCAG 2 Level A, WCAG 2.1.1</td>
@@ -267,87 +259,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="2">2.</a> Frames must have an accessible name
-                        </h5>
-                        <a
-                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;frame-title?application&#x3D;axeAPI"
-                            target="_blank"
-                            class="card-link violationCardTitleItem learnMore"
-                            >Learn more</a
-                        >
-                    </div>
-                    <div class="violationCardLine">
-                        <h6 class="card-subtitle mb-2 text-muted">frame-title</h6>
-                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            WCAG 2 Level A, WCAG 4.1.2
-                        </h6>
-                    </div>
-                    <div class="violationCardLine">
-                        <p class="card-text">Ensures &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name</p>
-                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            serious
-                        </h6>
-                    </div>
-                    <div class="violationCardLine">
-                        <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            Issue Tags: 
-                            <span class="badge bg-light text-dark"> cat.text-alternatives </span>
-
-                            <span class="badge bg-light text-dark"> wcag2a </span>
-
-                            <span class="badge bg-light text-dark"> wcag412 </span>
-
-                            <span class="badge bg-light text-dark"> section508 </span>
-
-                            <span class="badge bg-light text-dark"> section508.22.i </span>
-
-                            <span class="badge bg-light text-dark"> TTv5 </span>
-
-                            <span class="badge bg-light text-dark"> TT12.d </span>
-                        </h6>
-                    </div>
-                    <div class="violationNode">
-                        <table class="table table-sm table-bordered">
-                            <thead>
-                                <tr>
-                                    <th style="width: 2%">#</th>
-                                    <th style="width: 49%">Issue Description</th>
-                                    <th style="width: 49%">
-                                        To solve this violation, you need to...
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">#basic-iframe</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;iframe src&#x3D;&quot;&#x2F;&quot; class&#x3D;&quot;myClassname&quot; id&#x3D;&quot;basic-iframe&quot; width&#x3D;&quot;350px&quot; height&#x3D;&quot;450px&quot; style&#x3D;&quot;position: relative; display: initial;&quot;&gt;&lt;&#x2F;iframe&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  Element has no title attribute</li>
-                                                <li>  aria-label attribute does not exist or is empty</li>
-                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
-                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="card violationCard">
-                <div class="card-body">
-                    <div class="violationCardLine">
-                        <h5 class="card-title violationCardTitleItem">
-                            <a id="3">3.</a> Heading levels should only increase by one
+                            <a id="2">2.</a> Heading levels should only increase by one
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;heading-order?application&#x3D;axeAPI"
@@ -414,7 +326,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="4">4.</a> Form elements must have labels
+                            <a id="3">3.</a> Form elements must have labels
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;label?application&#x3D;axeAPI"
@@ -637,7 +549,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="5">5.</a> Document should have one main landmark
+                            <a id="4">4.</a> Document should have one main landmark
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;landmark-one-main?application&#x3D;axeAPI"
@@ -704,7 +616,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="6">6.</a> Links must have discernible text
+                            <a id="5">5.</a> Links must have discernible text
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;link-name?application&#x3D;axeAPI"
@@ -794,7 +706,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="7">7.</a> All page content should be contained by landmarks
+                            <a id="6">6.</a> All page content should be contained by landmarks
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;region?application&#x3D;axeAPI"
@@ -1674,7 +1586,7 @@
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">.col-xs-6.col-md-4:nth-child(25)</code></pre>
                                         <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;div class&#x3D;&quot;col-xs-6 col-md-4&quot;&gt;</code></pre>
+                                        <pre><code class="html text-wrap">&lt;div class&#x3D;&quot;col-xs-6 col-md-4&quot;&gt;&lt;div class&#x3D;&quot;caption&quot;&gt;&lt;h6&gt;&lt;span class&#x3D;&quot;caption-text&quot;&gt;Basic REST&lt;&#x2F;span&gt;&lt;&#x2F;h6&gt;&lt;&#x2F;div&gt;&lt;div class&#x3D;&quot;product tumbnail thumbnail-3 rest-name&quot;&gt;&lt;div class&#x3D;&quot;css-e53awj-MuiStack-root&quot;&gt;&lt;div class&#x3D;&quot;App&quot;&gt;&lt;div&gt;&lt;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;</code></pre>
                                     </td>
                                     <td>
                                         <div class="wrapBreakWord">
@@ -1694,7 +1606,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <h5 class="card-title violationCardTitleItem">
-                            <a id="8">8.</a> Scrollable region must have keyboard access
+                            <a id="7">7.</a> Scrollable region must have keyboard access
                         </h5>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.7&#x2F;scrollable-region-focusable?application&#x3D;axeAPI"

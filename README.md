@@ -338,6 +338,11 @@ For accessibility:
 
     Because navigating through pages if they do not have titles is very confusing. And hides (as a helmet) other issues
     After fixing this title line, close Visual Code and open it again
+
+    2nd issue: Frames must have an accessible name
+    This is fixed in 
+    react-app\src\components\BasicIframe.react.js
+    by adding attributes to the iFrame
     
 &nbsp;
 
