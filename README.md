@@ -348,7 +348,7 @@ For accessibility:
     We are missing main/main tags surrounding a pages main content
     Sections in pages must be clear
 
-    For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
+        For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
     
 
 
