@@ -365,7 +365,8 @@ For accessibility:
     We need to add aria-labels to all radio-buttons, to make them more descriptive.
     The aria-label attribute can be used to define a string that labels the interactive element on which it is set. This provides the element with its accessible name.
 
-
+    7th accessibility issue to fix (now issue 1): Elements must meet minimum color contrast ratio thresholds
+    For example, the blue line in the Index buttons has no enough contrast with the white.
 
 
 &nbsp;
