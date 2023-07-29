@@ -18,3 +18,4 @@ Feature: As a user I can intercept a REST api and mock the response
         And I click the "playground" button
         When I am directed to the "playground" page
         Then the "full name" should not be displayed
+        And I wait "20" seconds
