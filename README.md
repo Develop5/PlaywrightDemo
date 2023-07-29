@@ -357,13 +357,18 @@ For accessibility:
     Refresh the page, to make sure nothing was broken and inspect headers in playground page.
 
 
+    5th accessibility issue to fix (now issue 3):   Links must have discernible text
+    Related to header logo not having any text
+
+
+
 
 &nbsp;
 
 *I am here:*
 - [ ] Section 21: Accessibility Automation Testing - Playwright + Axe Engine
 
-    Chapter 165. Integrating AXE engine into our automation framework - part 1
+    Chapter 168. Analysing, Understanding and Fixing some Accessibility issues - part 1
 
 
     &nbsp;
