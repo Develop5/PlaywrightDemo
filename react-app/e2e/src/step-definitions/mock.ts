@@ -20,5 +20,13 @@ Given(
         
         await interceptResponse(page, mockServerKey, mockConfigKey, mockPayloadKey, globalConfig)
     
+
+        console.log('   🚀 Lourdes >>>>')
+        console.log(`mockServerKey:     ${mockServerKey}`)
+        console.log(`mockConfigKey:     ${mockConfigKey}`)
+        console.log(`mockPayloadKey:     `, JSON.stringify(`${mockPayloadKey}`))
+        console.log('   🚀  <<<<< Lourdes')
+
+
     }
 )

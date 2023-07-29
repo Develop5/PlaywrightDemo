@@ -4,95 +4,108 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response;as-a-user-i-can-mock-a-single-user",
+        "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response;as-a-user-i-can-mock-multiple-users",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "As a user I can mock a single user",
+        "line": 36,
+        "name": "As a user I can mock multiple users",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2072535799
+              "duration": 2199797300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 26,
+            "line": 37,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 798890799
+              "duration": 783408400
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "the \"api\" endpoint for \"users\" is mocked with \"single user\"",
+            "line": 38,
+            "name": "the \"api\" endpoint for \"users\" is mocked with \"multiple users\"",
             "match": {
               "location": "src\\step-definitions\\mock.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 6808300
+              "duration": 8674200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 28,
+            "line": 39,
             "name": "I click the \"playground\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 92843400
+              "duration": 86800999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 40,
             "name": "I am directed to the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 3322299
+              "duration": 2096899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 30,
-            "name": "the \"1st\" \"full name\" should not contain the text \"Leanne Graham\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 554860300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
+            "line": 41,
             "name": "the \"1st\" \"full name\" should contain the text \"Todd Smith\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
             },
             "result": {
               "status": "passed",
-              "duration": 101190999
+              "duration": 533899300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the \"2nd\" \"full name\" should contain the text \"Natalie Ford\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97168300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the \"3rd\" \"full name\" should contain the text \"River Wild\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24199599
             }
           },
           {
@@ -100,22 +113,22 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30182199
+              "duration": 35171099
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 22
+            "line": 33
           },
           {
             "name": "@smoke",
-            "line": 23
+            "line": 34
           },
           {
             "name": "@regression",
-            "line": 24
+            "line": 35
           }
         ],
         "type": "scenario"

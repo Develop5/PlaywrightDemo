@@ -18,6 +18,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           _context.next = 4;
           return (0, _mockBehavior.interceptResponse)(page, mockServerKey, mockConfigKey, mockPayloadKey, globalConfig);
         case 4:
+          console.log('   🚀 Lourdes >>>>');
+          console.log("mockServerKey:     ".concat(mockServerKey));
+          console.log("mockConfigKey:     ".concat(mockConfigKey));
+          console.log("mockPayloadKey:     ", JSON.stringify("".concat(mockPayloadKey)));
+          console.log('   🚀  <<<<< Lourdes');
+        case 9:
         case "end":
           return _context.stop();
       }

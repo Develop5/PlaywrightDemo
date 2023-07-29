@@ -22,7 +22,7 @@ var interceptResponse = /*#__PURE__*/function () {
             _context.next = 6;
             break;
           }
-          throw Error(" \uD83E\uDDE8 Unabe to find the ".concat(mockPayloadKey, " payload json file \uD83E\uDDE8 "));
+          throw Error(" \uD83E\uDDE8 Unable to find the ".concat(mockPayloadKey, " payload json file \uD83E\uDDE8 "));
         case 6:
           _context.next = 8;
           return page.route("".concat(mockServerHostURL).concat(mockServerRoute), function (route) {

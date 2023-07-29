@@ -17,17 +17,15 @@ export const interceptResponse = async (
     const mockServerRoute = mocksConfig[mockConfigKey]
     const mockServerPayload = mockPayloadMappings[mockPayloadKey]
 
+
     if (!mockServerPayload) {
-        throw Error (` 🧨 Unabe to find the ${mockPayloadKey} payload json file 🧨 `)
+        throw Error (` 🧨 Unable to find the ${mockPayloadKey} payload json file 🧨 `)
     }
 
     await page.route(`${mockServerHostURL}${mockServerRoute}`, (route) => 
         route.fulfill({
             contentType: 'application/json',
             body: JSON.stringify(mockServerPayload)
-        })
-
-
-    )
+        }))
 
 }

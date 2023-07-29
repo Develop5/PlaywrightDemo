@@ -19,7 +19,6 @@ Feature: As a user I can intercept a REST api and mock the response
         Then the "full name" should not be displayed
 
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I can mock a single user
@@ -30,4 +29,16 @@ Feature: As a user I can intercept a REST api and mock the response
         Then the "1st" "full name" should not contain the text "Leanne Graham"
         Then the "1st" "full name" should contain the text "Todd Smith"
 
+
+    @dev
+    @smoke
+    @regression
+    Scenario: As a user I can mock multiple users
+        Given I am on the "home" page  
+        And the "api" endpoint for "users" is mocked with "multiple users"
+        When I click the "playground" button
+        And I am directed to the "playground" page
+        Then the "1st" "full name" should contain the text "Todd Smith"
+        Then the "2nd" "full name" should contain the text "Natalie Ford"
+        Then the "3rd" "full name" should contain the text "River Wild"
 

@@ -6,10 +6,10 @@ import {
     HostsConfig,
     PagesConfig,
     EmailsConfig,
+    ErrorsConfig,
     MocksConfig,
     PageElementMappings,
     MockPayloadMappings,
-    ErrorsConfig,
 } from './env/global'
 
 import * as fs from "fs";
@@ -19,8 +19,8 @@ const environment = env('NODE_ENV')
 dotenv.config({path: env('COMMON_CONFIG_FILE')})
 dotenv.config({path: `${env('ENV_PATH')}${environment}.env`})
 
-const hostsConfig: HostsConfig = getJsonFromFile(env('HOST_URL_PATH'))
-const pagesConfig: PagesConfig = getJsonFromFile(env('PAGE_URL_PATH'))
+const hostsConfig: HostsConfig = getJsonFromFile(env('HOST_URLS_PATH'))
+const pagesConfig: PagesConfig = getJsonFromFile(env('PAGE_URLS_PATH'))
 const emailsConfig: EmailsConfig = getJsonFromFile(env('EMAILS_URL_PATH'))
 const errorsConfig: ErrorsConfig = getJsonFromFile(env('ERRORS_URLS_PATH'))
 const mocksConfig: MocksConfig = getJsonFromFile(env('MOCKS_URLS_PATH'))
@@ -33,14 +33,14 @@ const getEnvList = (): string[] => {
 
     if (envList.length === 0) {
         // Emoticon for error. Dynamite emoticon
-        throw Error(`🧨 No environments mapped in your ${env('HOST_URL_PATH')} 🧨 `)
+        throw Error(`🧨 No environments mapped in your ${env('HOST_URLS_PATH')} 🧨 `)
     }
     return envList;
 }
 
 
 const pageElementMappings: PageElementMappings = mappingFiles.reduce(
-    (pageElementConfigAcc: {}, file: string) => {
+    (pageElementConfigAcc, file) => {
         const key = file.replace('.json', '')
         const elementMappings = getJsonFromFile(`${env('PAGE_ELEMENTS_PATH')}${file}`)
         return {...pageElementConfigAcc, [key]: elementMappings}
@@ -49,7 +49,7 @@ const pageElementMappings: PageElementMappings = mappingFiles.reduce(
 )
 
 const mockPayloadMappings: MockPayloadMappings = payloadFiles.reduce(
-    (payloadConfigAcc: {}, file: string) => {
+    (payloadConfigAcc, file) => {
         const key = file.replace('.json', '')
         const payloadMappings = getJsonFromFile(`${env('MOCK_PAYLOAD_PATH')}${file}`)
         return {...payloadConfigAcc, [key]: payloadMappings}

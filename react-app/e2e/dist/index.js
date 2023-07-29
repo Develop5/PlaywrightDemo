@@ -24,8 +24,8 @@ _dotenv["default"].config({
 _dotenv["default"].config({
   path: "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment, ".env")
 });
-var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOST_URL_PATH'));
-var pagesConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('PAGE_URL_PATH'));
+var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOST_URLS_PATH'));
+var pagesConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('PAGE_URLS_PATH'));
 var emailsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('EMAILS_URL_PATH'));
 var errorsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('ERRORS_URLS_PATH'));
 var mocksConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('MOCKS_URLS_PATH'));
@@ -35,7 +35,7 @@ var getEnvList = function getEnvList() {
   var envList = Object.keys(hostsConfig);
   if (envList.length === 0) {
     // Emoticon for error. Dynamite emoticon
-    throw Error("\uD83E\uDDE8 No environments mapped in your ".concat((0, _parseEnv.env)('HOST_URL_PATH'), " \uD83E\uDDE8 "));
+    throw Error("\uD83E\uDDE8 No environments mapped in your ".concat((0, _parseEnv.env)('HOST_URLS_PATH'), " \uD83E\uDDE8 "));
   }
   return envList;
 };
