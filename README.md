@@ -376,6 +376,8 @@ For accessibility:
 
     Chapter 171. Pushing our project code to a private GitHub Repository
 
+    Modifying .gitignore
+
 
     &nbsp;
     Time:       
