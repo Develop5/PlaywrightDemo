@@ -4,108 +4,147 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response;as-a-user-i-can-mock-multiple-users",
+        "id": "as-a-user-i-can-intercept-a-rest-api-and-mock-the-response;as-a-user-i-can-validate-only-5-users-will-display-as-expected",
         "keyword": "Scenario",
-        "line": 36,
-        "name": "As a user I can mock multiple users",
+        "line": 48,
+        "name": "As a user I can validate only 5 users will display as expected",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2199797300
+              "duration": 2361523399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 49,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 783408400
+              "duration": 782320199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 38,
-            "name": "the \"api\" endpoint for \"users\" is mocked with \"multiple users\"",
+            "line": 50,
+            "name": "the \"api\" endpoint for \"users\" is mocked with \"six users\"",
             "match": {
               "location": "src\\step-definitions\\mock.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 8674200
+              "duration": 8898200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 39,
+            "line": 51,
             "name": "I click the \"playground\" button",
             "match": {
               "location": "src\\step-definitions\\click.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 86800999
+              "duration": 116660399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 40,
+            "line": 52,
             "name": "I am directed to the \"playground\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2096899
+              "duration": 2372900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 53,
             "name": "the \"1st\" \"full name\" should contain the text \"Todd Smith\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
             },
             "result": {
               "status": "passed",
-              "duration": 533899300
+              "duration": 546869700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
+            "line": 54,
             "name": "the \"2nd\" \"full name\" should contain the text \"Natalie Ford\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
             },
             "result": {
               "status": "passed",
-              "duration": 97168300
+              "duration": 106856600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 43,
+            "line": 55,
             "name": "the \"3rd\" \"full name\" should contain the text \"River Wild\"",
             "match": {
               "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
             },
             "result": {
               "status": "passed",
-              "duration": 24199599
+              "duration": 12926100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "the \"4th\" \"full name\" should contain the text \"Monica Louise\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10970299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "the \"5th\" \"full name\" should contain the text \"Ted Nugget\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10339400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "the \"6th\" \"full name\" should not be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7589699
             }
           },
           {
@@ -113,22 +152,22 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35171099
+              "duration": 49930099
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 33
+            "line": 45
           },
           {
             "name": "@smoke",
-            "line": 34
+            "line": 46
           },
           {
             "name": "@regression",
-            "line": 35
+            "line": 47
           }
         ],
         "type": "scenario"

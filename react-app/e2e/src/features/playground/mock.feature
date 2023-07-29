@@ -30,7 +30,6 @@ Feature: As a user I can intercept a REST api and mock the response
         Then the "1st" "full name" should contain the text "Todd Smith"
 
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I can mock multiple users
@@ -42,3 +41,18 @@ Feature: As a user I can intercept a REST api and mock the response
         Then the "2nd" "full name" should contain the text "Natalie Ford"
         Then the "3rd" "full name" should contain the text "River Wild"
 
+
+    @dev
+    @smoke
+    @regression
+    Scenario: As a user I can validate only 5 users will display as expected
+        Given I am on the "home" page  
+        And the "api" endpoint for "users" is mocked with "six users"
+        When I click the "playground" button
+        And I am directed to the "playground" page
+        Then the "1st" "full name" should contain the text "Todd Smith"
+        Then the "2nd" "full name" should contain the text "Natalie Ford"
+        Then the "3rd" "full name" should contain the text "River Wild"
+        Then the "4th" "full name" should contain the text "Monica Louise"
+        Then the "5th" "full name" should contain the text "Ted Nugget"
+        Then the "6th" "full name" should not be displayed

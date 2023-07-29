@@ -320,7 +320,9 @@ And run again "yarn install"
 *I am here:*
 - [ ] Section 20: Mocking with Playwright
 
-    Chapter 162. Building our a suite of automation tests that leverage mocking - part 1
+    Chapter 162. Building our a suite of automation tests that leverage mocking - part 2
+
+    Testing the upper boundary. We only have 5 users in the UI. What happens if we ask for 6?
 
 
     &nbsp;
