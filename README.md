@@ -372,9 +372,9 @@ For accessibility:
 &nbsp;
 
 *I am here:*
-- [ ] Section 21: Accessibility Automation Testing - Playwright + Axe Engine
+- [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
 
-    Chapter 169. Analysing, Understanding and Fixing some Accessibility issues - part 2
+    Chapter 171. Pushing our project code to a private GitHub Repository
 
 
     &nbsp;
