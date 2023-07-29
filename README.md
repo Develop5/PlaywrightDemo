@@ -320,7 +320,7 @@ And run again "yarn install"
 *I am here:*
 - [ ] Section 20: Mocking with Playwright
 
-    Chapter 159. Adding the ability to intercept responses during automation tests - part 1
+    Chapter 162. Building our a suite of automation tests that leverage mocking - part 1
 
 
     &nbsp;

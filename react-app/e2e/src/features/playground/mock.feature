@@ -1,6 +1,5 @@
 Feature: As a user I can intercept a REST api and mock the response
 
-    @dev
     @smoke
     @regression
     Scenario: As a user I expect to see the REST users
@@ -8,3 +7,14 @@ Feature: As a user I can intercept a REST api and mock the response
         And I click the "playground" button
         When I am directed to the "playground" page
         Then the "1st" "full name" should contain the text "Leanne Graham"
+
+
+    @dev
+    @smoke
+    @regression
+    Scenario: As a user I can mock no users existing
+        Given I am on the "home" page 
+        And the "api" endpoint for "users" is mocked with "no users"
+        And I click the "playground" button
+        When I am directed to the "playground" page
+        Then the "full name" should not be displayed
