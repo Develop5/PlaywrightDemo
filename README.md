@@ -351,6 +351,10 @@ For accessibility:
         For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
     
 
+    4th accessibility issue to fix (now issue 2):   Heading levels should only increase by one
+    In the application, elements start with h1 and the next is h6. We need to have h1, then h2, etc. 
+    Replace h6 by h3 in renderPlaygroundForm
+    Refresh the page, to make sure nothing was broken and inspect headers in playground page.
 
 
 
