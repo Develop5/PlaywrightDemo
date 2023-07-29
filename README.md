@@ -360,6 +360,11 @@ For accessibility:
     5th accessibility issue to fix (now issue 3):   Links must have discernible text
     Related to header logo not having any text
 
+    
+    6th accessibility issue to fix (now issue 2):   Form elements must have labels
+    We need to add aria-labels to all radio-buttons, to make them more descriptive.
+    The aria-label attribute can be used to define a string that labels the interactive element on which it is set. This provides the element with its accessible name.
+
 
 
 
@@ -368,7 +373,7 @@ For accessibility:
 *I am here:*
 - [ ] Section 21: Accessibility Automation Testing - Playwright + Axe Engine
 
-    Chapter 168. Analysing, Understanding and Fixing some Accessibility issues - part 1
+    Chapter 169. Analysing, Understanding and Fixing some Accessibility issues - part 2
 
 
     &nbsp;
