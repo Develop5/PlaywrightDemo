@@ -7,9 +7,8 @@
     "lint": "eslint . --ext .ts",
     "test": "npx playwright test --reporter=html",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
-    "precucumber": "mkdir reports && echo {} > reports/report.json",
-    "cucumber": "npm run transpile && cucumber-js",
-    "comment_cucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json" ,
+    "cucumber": "npm run transpile && cucumber-js"
   },
   "author": "",
   "license": "ISC",

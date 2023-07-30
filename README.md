@@ -465,7 +465,10 @@ Create cucumber.js, update package.json and install babel
     npm install @babel/preset-env
     npm install @babel/preset-typescript
 
-
+Create index.ts
+&nbsp;
+And now, the test is executed a little differently
+    npm run cucumber -- --profile dev
 
 
 
@@ -477,7 +480,7 @@ Create cucumber.js, update package.json and install babel
 *I am here:*
 - [ ] Section 28: Environment Variable Management and Custom Global Configuration
 
-    Chapter 209. Customise the cucumber-js on runtime - part 1
+    Chapter 210. Customise the cucumber-js on runtime - part 2
 
 
 
