@@ -399,11 +399,36 @@ Then, to execute the tests:
 &nbsp;
 
 *I am here:*
-- [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
+- [ ] Section 27: Introducing Cucumber and TypeScript
 
-    Chapter 184. Automating GET, POST, PUT, PATCH and DELETE with Playwright - part 3
+    Chapter 202. Running our first cucumber automation test
 
-    Business layer: interface between the UI and the database
+    Till now we have not used cucumber for API. If you plan to do that, follow these steps.
+
+    In the api_e2e folder execute:
+    npm install @cucumber/cucumber          (see what happens in package.json)
+
+    Next install typescript:
+    npm install typescript
+
+    If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
+
+
+    ts-node is a very popular package in Typescrip world. It allows us to run a test and get results without having to worry about file changes and compilation.
+
+    npm install ts-node
+
+    Once this module is installed, we can add scripts in package.json (cucumber, in this case)
+    This script indicates where are our features. The ts-node/register inside this script enables us to execute typescript code. Typescript is always compiled to JavaScript on runtime.
+    This script indicates where are the step-definitions as well.
+
+
+    Now, we can execute in our api_e2e folder:
+    npm run cucumber
+
+
+
+
 
 
     &nbsp;
