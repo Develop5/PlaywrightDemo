@@ -33,3 +33,5 @@ export class ScenarioWorld extends World {
 
     }
 }
+
+setWorldConstructor(ScenarioWorld)
