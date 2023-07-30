@@ -392,12 +392,16 @@ We are not going to use Cucumber for the API suite,therefore we will use tsconfi
 And we will use the playwright native html reporter instead of cucumber-html-reporter
 
 
+Then, to execute the tests:
+    yarn run test
+
+
 &nbsp;
 
 *I am here:*
 - [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
 
-    Chapter 179. Getting Ready! Setting up our postman collection - part 1
+    Chapter 182. Automating GET, POST, PUT, PATCH and DELETE with Playwright - part 1
 
     Business layer: interface between the UI and the database
 
