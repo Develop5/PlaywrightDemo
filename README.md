@@ -432,6 +432,21 @@ Now, we can execute in our api_e2e folder:
     npm run cucumber
 
 
+Then, we need to have test results segregated, independently of whether we run 1 or more tests at a time, in parallel.
+Cucumber World provides us an isolated context per scenario, exposed to the hooks and steps as this. Enabling you to set and recall some states across the lifecycle of your scenario.
+Cucumber world class is accessible via "this" in scenario before, after, when, given and then steps.
+It is used to store scenario configuration and current browser. 
+Cucumber world enables us to set global configuration for each scenario, meaning all our cucumber scenarios run independently and retain any configuration or variables set before or throughout.
+That is why with this, we can execute scenarios in parallel.
+
+
+Install playwright
+    npm install playwright
+
+
+
+
+
 
 
 
@@ -442,7 +457,7 @@ Now, we can execute in our api_e2e folder:
 *I am here:*
 - [ ] Section 27: Introducing Cucumber and TypeScript
 
-    Chapter 202. Running our first cucumber automation test
+    Chapter 203. Introducing Cucumber World - part 1
 
 
 
@@ -452,7 +467,7 @@ Now, we can execute in our api_e2e folder:
 
 
     &nbsp;
-    Time:       
+    Time:    9:40   
 &nbsp;
 
 
