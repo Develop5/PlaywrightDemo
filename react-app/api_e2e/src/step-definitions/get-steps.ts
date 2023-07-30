@@ -5,12 +5,16 @@ Given(
     /^I retrieve "([^"]*)"$/,
     async function(this: ScenarioWorld, route: string) {
         const {
-            api: { request }
+            api: { request },
+            globalAPIResponseVariables
         } = this
+
+        console.log(`I retrieve ${route}`)
 
         const response = await request.get("https://jsonplaceholder.typicode.com/"+route)
 
-        console.log(await response.text())
+        globalAPIResponseVariables.response = response
+
         
     }
 )
