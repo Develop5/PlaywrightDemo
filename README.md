@@ -401,7 +401,7 @@ Then, to execute the tests:
 *I am here:*
 - [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
 
-    Chapter 183. Automating GET, POST, PUT, PATCH and DELETE with Playwright - part 2
+    Chapter 184. Automating GET, POST, PUT, PATCH and DELETE with Playwright - part 3
 
     Business layer: interface between the UI and the database
 
