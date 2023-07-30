@@ -2,7 +2,6 @@ Feature: As an API I can retrieve posts
 
 
     @dev
-    @smoke
     @regression
     Scenario: As an API I can retrieve all the posts
         Given I retrieve "posts"
