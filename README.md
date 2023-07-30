@@ -458,6 +458,15 @@ And add the corresponding script in package.json, for lint to be executed
     npm run lint
 
 
+Create cucumber.js, update package.json and install babel
+
+    npm install @babel/core
+    npm install @babel/cli
+    npm install @babel/preset-env
+    npm install @babel/preset-typescript
+
+
+
 
 
 
@@ -466,9 +475,9 @@ And add the corresponding script in package.json, for lint to be executed
 &nbsp;
 
 *I am here:*
-- [ ] Section 27: Introducing Cucumber and TypeScript
+- [ ] Section 28: Environment Variable Management and Custom Global Configuration
 
-    Chapter 207. Introducing Lintrc to ensure code quality in our automation framework
+    Chapter 209. Customise the cucumber-js on runtime - part 1
 
 
 

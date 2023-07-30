@@ -6,11 +6,18 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "test": "npx playwright test --reporter=html",
-    "cucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "precucumber": "mkdir reports && echo {} > reports/report.json",
+    "cucumber": "npm run transpile && cucumber-js",
+    "comment_cucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
     "@cucumber/cucumber": "^9.3.0",
     "@playwright/test": "^1.36.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
