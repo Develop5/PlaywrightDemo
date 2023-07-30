@@ -444,7 +444,18 @@ Install playwright
     npm install playwright
 
 
+#### ESLint ####
 
+From our folder api_e2e:
+    npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+Now create files
+
+    .eslintrc
+    .eslintignore
+And add the corresponding script in package.json, for lint to be executed
+
+    npm run lint
 
 
 
@@ -457,7 +468,7 @@ Install playwright
 *I am here:*
 - [ ] Section 27: Introducing Cucumber and TypeScript
 
-    Chapter 206. Passing our API response to cucumber steps with Cucumber World - part 2
+    Chapter 207. Introducing Lintrc to ensure code quality in our automation framework
 
 
 
