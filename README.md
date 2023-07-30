@@ -368,13 +368,38 @@ For accessibility:
     7th accessibility issue to fix (now issue 1): Elements must meet minimum color contrast ratio thresholds
     For example, the blue line in the Index buttons has no enough contrast with the white.
 
+&nbsp;
+
+Create a new folder under the mainn react-app and name it api_e2e
+
+Then, go to this folder and:
+    npm init
+
+And yes (Enter) to all questions
+
+Then,
+    npx -p typescript tsc --init
+
+And yes to all.
+This creates the tsconfig.json file
+
+Now,
+    yarn add @playwright/test
+
+And then create the "src/tests" folder in react-app/api_e2e
+
+We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
+And we will use the playwright native html reporter instead of cucumber-html-reporter
+
 
 &nbsp;
 
 *I am here:*
 - [ ] Section 22: Getting our automation suite running in (CI) Continuous Integration
 
-    Chapter 172. Buildkite - Turning our machine into a build agent
+    Chapter 179. Getting Ready! Setting up our postman collection - part 1
+
+    Business layer: interface between the UI and the database
 
 
     &nbsp;
