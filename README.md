@@ -298,14 +298,14 @@ It is used with the purpose of generating random data for our form fields.
 
 From our e2e folder:
 
-    ```
+```
     yarn add faker -D
-    ```
+```
 After confirm the last stable version in package.json, execute (from e2e folder)
 
-    ```
+```
     yarn install
-    ```
+```
 But if you have still problems with faker, not recognized at import in random-data-helper.ts, go back to this version in package.json
     "faker": "^5.5.3",
 &nbsp;
@@ -314,58 +314,65 @@ And run again "yarn install"
 
 &nbsp;
 
-For accessibility:
+***Accessibility:***
 
-    Modules to test accessibility: axe-playwright and axe-html-reporter
+Modules to test accessibility: axe-playwright and axe-html-reporter
 
-        Go to e2e and:
+Go to e2e and:
         yarn add axe-playwright -D
         yarn add axe-html-reporter -D
 
-    Axe analyzes the application and reports any issue related to accessibility and we need to find ways accessibility can be improved
+Axe analyzes the application and reports any issue related to accessibility and we need to find ways accessibility can be improved
 
+```
     yarn add exe-playwright -D
+```
 
-    With accessibility.ts we inject the accessibility engine on the page we desire to analyze
+With accessibility.ts we inject the accessibility engine on the page we desire to analyze
 
-    Fixing some accessibility issues:
-    In react-app\public\index.html
+Fixing some accessibility issues:
 
-    Populate:
+***1st accessibility issue*** In react-app\public\index.html
+
+Populate:
+```
     <title></title>
-    With:
+```
+With:
+```
     <title>Testing Talks Hub</title>
+```
 
-    Because navigating through pages if they do not have titles is very confusing. And hides (as a helmet) other issues
+Because navigating through pages if they do not have titles is very confusing. And hides (as a helmet) other issues
     After fixing this title line, close Visual Code and open it again
 
-    2nd accessibility issue to fix:     Frames must have an accessible name
+***2nd accessibility issue to fix:***     Frames must have an accessible name
     This is fixed in 
     react-app\src\components\BasicIframe.react.js
     by adding attributes to the iFrame
 
-    3rd accessibility issue to fix (issue 4):     Document should have one main landmark
+***3rd accessibility issue to fix (issue 4):***     Document should have one main landmark
     We are missing main/main tags surrounding a pages main content
     Sections in pages must be clear
 
-        For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
+For this, in react-app\src\index.js look for the function renderPlaygroundForm and enclose  the whole className Playground inside a <main></main> block
     
 
-    4th accessibility issue to fix (now issue 2):   Heading levels should only increase by one
+***4th accessibility issue to fix (now issue 2):***   Heading levels should only increase by one
     In the application, elements start with h1 and the next is h6. We need to have h1, then h2, etc. 
     Replace h6 by h3 in renderPlaygroundForm
     Refresh the page, to make sure nothing was broken and inspect headers in playground page.
 
 
-    5th accessibility issue to fix (now issue 3):   Links must have discernible text
+***5th accessibility issue to fix (now issue 3):***   Links must have discernible text
     Related to header logo not having any text
 
     
-    6th accessibility issue to fix (now issue 2):   Form elements must have labels
+***6th accessibility issue to fix (now issue 2):***   Form elements must have labels
     We need to add aria-labels to all radio-buttons, to make them more descriptive.
     The aria-label attribute can be used to define a string that labels the interactive element on which it is set. This provides the element with its accessible name.
 
-    7th accessibility issue to fix (now issue 1): Elements must meet minimum color contrast ratio thresholds
+***7th accessibility issue to fix (now issue 1):*** Elements must meet minimum color contrast ratio thresholds
     For example, the blue line in the Index buttons has no enough contrast with the white.
 
 &nbsp;
@@ -373,8 +380,9 @@ For accessibility:
 Create a new folder under the mainn react-app and name it api_e2e
 
 Then, go to this folder and:
+```
     npm init
-
+```
 And yes (Enter) to all questions
 
 Then,
@@ -393,7 +401,40 @@ And we will use the playwright native html reporter instead of cucumber-html-rep
 
 
 Then, to execute the tests:
+
     yarn run test
+
+-----
+### API tests with Cucumber ###
+
+Till now we have not used cucumber for API. If you plan to do that, follow these steps.
+
+In the api_e2e folder execute:
+    npm install @cucumber/cucumber          (see what happens in package.json)
+
+Next install typescript:
+    npm install typescript
+
+If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
+
+
+ts-node is a very popular package in Typescrip world. It allows us to run a test and get results without having to worry about file changes and compilation.
+
+    npm install ts-node
+
+Once this module is installed, we can add scripts in package.json (cucumber, in this case)
+    
+This script indicates where are our features. The ts-node/register inside this script enables us to execute typescript code. Typescript is always compiled to JavaScript on runtime.
+This script also indicates where are the step-definitions.
+
+
+Now, we can execute in our api_e2e folder:
+    npm run cucumber
+
+
+
+
+
 
 
 &nbsp;
@@ -403,28 +444,7 @@ Then, to execute the tests:
 
     Chapter 202. Running our first cucumber automation test
 
-    Till now we have not used cucumber for API. If you plan to do that, follow these steps.
 
-    In the api_e2e folder execute:
-    npm install @cucumber/cucumber          (see what happens in package.json)
-
-    Next install typescript:
-    npm install typescript
-
-    If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
-
-
-    ts-node is a very popular package in Typescrip world. It allows us to run a test and get results without having to worry about file changes and compilation.
-
-    npm install ts-node
-
-    Once this module is installed, we can add scripts in package.json (cucumber, in this case)
-    This script indicates where are our features. The ts-node/register inside this script enables us to execute typescript code. Typescript is always compiled to JavaScript on runtime.
-    This script indicates where are the step-definitions as well.
-
-
-    Now, we can execute in our api_e2e folder:
-    npm run cucumber
 
 
 
