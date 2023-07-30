@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-all-the-posts",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As an API I can retrieve all the posts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12109700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I retrieve \"posts\"",
+            "match": {
+              "location": "src\\step-definitions\\get-steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 130891200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2353700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1162099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-retrieve-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can retrieve posts",
+    "tags": [],
+    "uri": "src\\features\\GET.feature"
+  }
+]

@@ -30,3 +30,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^the response status code is (\d*)$/, /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(statusCode) {
+    var globalAPIResponseVariables, response;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          globalAPIResponseVariables = this.globalAPIResponseVariables;
+          console.log("the response status code is ".concat(statusCode));
+          response = globalAPIResponseVariables.response;
+          (0, _test.expect)(response.status()).toBe(Number(statusCode));
+        case 4:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2, this);
+  }));
+  return function (_x4, _x5) {
+    return _ref2.apply(this, arguments);
+  };
+}());
