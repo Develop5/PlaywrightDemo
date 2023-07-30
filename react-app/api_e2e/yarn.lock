@@ -165,6 +165,16 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@playwright/test@^1.36.2":
+  version "1.36.2"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.36.2.tgz"
+  integrity sha512-2rVZeyPRjxfPH6J0oGJqE8YxiM1IBRyM8hyrXYK7eSiAqmbNhxwcLa7dZ7fy9Kj26V7FYia5fh9XJRq4Dqme+g==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.36.2"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 "@teppeis/multimaps@2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@teppeis/multimaps/-/multimaps-2.0.0.tgz"

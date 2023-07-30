@@ -457,7 +457,7 @@ Install playwright
 *I am here:*
 - [ ] Section 27: Introducing Cucumber and TypeScript
 
-    Chapter 205. Passing our API response to cucumber steps with Cucumber World - part 1
+    Chapter 206. Passing our API response to cucumber steps with Cucumber World - part 2
 
 
 
