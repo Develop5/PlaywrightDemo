@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .ts",
     "test": "npx playwright test --reporter=html",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
-    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json" ,
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
     "cucumber": "npm run transpile && cucumber-js"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "@playwright/test": "^1.36.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "dotenv": "^16.3.1",
     "eslint": "^8.46.0",
     "playwright": "^1.36.2",
     "ts-node": "^10.9.1",

@@ -471,6 +471,24 @@ And now, the test is executed a little differently
     npm run cucumber -- --profile dev
 
 
+#### Again, environment variable management ####
+
+In the api_e2e folder:
+
+    npm install dotenv
+
+common.env needs to be created
+
+Create files:
+    run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
+    run_tests.bat       For Windows
+
+And now tests can be executed through this command:
+    ./run_tests.sh dev
+            or
+    ./run_tests.bat dev
+Depending whethe you are in Linux or Windows
+
 
 
 
@@ -480,7 +498,7 @@ And now, the test is executed a little differently
 *I am here:*
 - [ ] Section 28: Environment Variable Management and Custom Global Configuration
 
-    Chapter 210. Customise the cucumber-js on runtime - part 2
+    Chapter 211. Environment files for better environment variable management
 
 
 
