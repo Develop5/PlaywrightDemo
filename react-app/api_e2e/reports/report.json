@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12606600
+              "duration": 12110299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109891599
+              "duration": 115540200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2251000
+              "duration": 2859799
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1461199
+              "duration": 965700
             }
           },
           {
@@ -83,7 +83,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4414000,
+              "duration": 6548600,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"2\"\u001b[39m\nReceived string:    \u001b[31m\"{\\\"userId\\\":1,\\\"id\\\":1,\\\"title\\\":\\\"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\\\",\\\"body\\\":\\\"quia et suscipit\\\\nsuscipit recusandae consequuntur expedita et cum\\\\nreprehenderit molestiae ut ut quas totam\\\\nnostrum rerum est autem sunt rem eveniet architecto\\\"}\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\api_e2e\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\api_e2e\\src\\step-definitions\\assertions\\response-steps.ts:43:62)\n    at fulfilled (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightDemo\\react-app\\api_e2e\\src\\step-definitions\\assertions\\response-steps.ts:5:58)"
             }
           }
