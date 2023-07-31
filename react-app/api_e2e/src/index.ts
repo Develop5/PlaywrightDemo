@@ -17,7 +17,7 @@ const payloadFiles = fs.readdirSync(`${process.cwd()}${env('JSON_PAYLOAD_PATH')}
 // Will return an array with all the file names
 
 const jsonPayloadMappings: JsonPayloadMappings = payloadFiles.reduce(
-    (payloadConfigAcc: {}, file: string) => {
+    (payloadConfigAcc, file) => {
         const key = file.replace('.json', '')
         const payloadMappings = getJsonFromFile(`${env('JSON_PAYLOAD_PATH')}${file}`)
         return {...payloadConfigAcc, [key]: payloadMappings}
