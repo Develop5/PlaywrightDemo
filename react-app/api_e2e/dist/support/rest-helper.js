@@ -21,8 +21,14 @@ var getResponse = /*#__PURE__*/function () {
         case 3:
           response = _context.sent;
           globalAPIResponseVariables.response = response;
+          _context.t0 = console;
+          _context.next = 8;
+          return response.text();
+        case 8:
+          _context.t1 = _context.sent;
+          _context.t0.log.call(_context.t0, _context.t1);
           return _context.abrupt("return", response);
-        case 6:
+        case 11:
         case "end":
           return _context.stop();
       }

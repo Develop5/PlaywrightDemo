@@ -15,5 +15,7 @@ export const getResponse = async (
 
     globalAPIResponseVariables.response = response
 
+    console.log(await response.text())
+
     return response
 }
