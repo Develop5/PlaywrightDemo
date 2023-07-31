@@ -464,7 +464,7 @@ Now create files
 And add the corresponding script in package.json, for lint to be executed
 
     npm run lint
-
+This can be launched from the command line, from time to time as well, to ensure the code is still clean.
 
 Create cucumber.js, update package.json and install babel
 
