@@ -1,4 +1,4 @@
-import { Then } from "@cucumber/cucumber";
+import { DataTable, Then } from "@cucumber/cucumber";
 import { ScenarioWorld } from "../setup/world";
 import { expect } from "@playwright/test"
 
@@ -38,13 +38,12 @@ Then(
 
 Then(
     /^the response json contains the attributes:$/,
-
-    async function(this: ScenarioWorld, dataTable) {
+    async function(this: ScenarioWorld, dataTable: DataTable) {
         const {
             globalAPIResponseVariables
         } = this
 
-        console.log(`the response json contains the attributes: %{dataTable.raw()}`)
+        console.log(`the response json contains the attributes: ${dataTable.raw()}`)
 
         const response = await globalAPIResponseVariables.response.json()
 
@@ -54,8 +53,6 @@ Then(
             for(let j = 0; j < expected_response[i].length; j++) {
                 expect(JSON.stringify(response)).toContain(expected_response[i][j])
             }
-
-
         }
     }
 )

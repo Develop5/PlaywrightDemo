@@ -73,3 +73,23 @@ export const patchResponse = async (
 
     return response
 }
+
+
+export const putResponse = async (
+    request: APIRequestContext,
+    route: string,
+    jsonPayloadName: JsonPayloadName,
+    globalConfig: GlobalConfig,
+    globalAPIResponseVariables: GlobalAPIResponseVariables
+): Promise<APIResponse> => {
+
+    const url = retrieveHostURL(globalConfig)
+
+    const payload = globalConfig.jsonPayloadMappings[jsonPayloadName]
+
+    const response = await request.put(url.href+route, {data: payload})
+
+    globalAPIResponseVariables.response = response
+
+    return response
+}

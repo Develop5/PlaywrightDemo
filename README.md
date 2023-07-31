@@ -514,7 +514,7 @@ from api_e2e folder, run:
 *I am here:*
 - [ ] Section 30: The Final 3 - Post, Patch and PUT and asserting on response text errors
 
-    Chapter 222. Editing posts with PATCH
+    Chapter 223. Updating posts with PUT
 
 
 
