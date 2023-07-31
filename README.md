@@ -514,7 +514,7 @@ from api_e2e folder, run:
 *I am here:*
 - [ ] Section 30: The Final 3 - Post, Patch and PUT and asserting on response text errors
 
-    Chapter 224. Validating our json payload exists
+    Chapter 225. Asserting on response text errors
 
 
 
@@ -552,6 +552,7 @@ Printing compelling messages:
     console.log(' Contains: ')
     console.log('Lourdes >>>>>>>>  🧨 ')
 
+    (An alien monster: 👾)
 
 &nbsp;
 

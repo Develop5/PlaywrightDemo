@@ -12,3 +12,10 @@ Feature: As an API I can update posts
             #| title  | Replacement post                |
             #| body   | This is completely updated post |
 
+
+
+    @dev
+    Scenario: Asan API I can not update a post that does not exist
+        Given I update the 200th "posts" with an "updated post"
+        And the response was unsuccessful
+        Then the response status code is 500
