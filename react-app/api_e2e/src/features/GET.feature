@@ -8,7 +8,7 @@ Feature: As an API I can retrieve posts
         And the response was successful
         Then the response status code is 200
 
-
+    @dev
     @smoke
     @regression
     Scenario: As an API I can retrieve a simple post
@@ -17,10 +17,11 @@ Feature: As an API I can retrieve posts
         Then the response status code is 200
         And the response json contains the attributes:
             | id     | 1 |
-            | userId | 1 |
+            | userId | 2 |
 
 
-    @dev
+    @smoke
+    @regression
     Scenario: As an API I cannot retrieve animals
         Given I retrieve "animals"
         And the response was unsuccessful
