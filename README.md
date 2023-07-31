@@ -514,7 +514,7 @@ from api_e2e folder, run:
 *I am here:*
 - [ ] Section 29: Cucumber HTML Report (Parallel and Retry)
 
-    Chapter 217. Introducing the cucumber html reporter - Adding Parallel and Retry capabilities
+    Chapter 218. Adding our first automation test for DELETE
 
 
 

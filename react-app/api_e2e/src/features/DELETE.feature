@@ -1,6 +1,7 @@
 Feature: As an API I can delete posts
 
-    @dev
+    @smoke
+    @regression
     Scenario: As an API I can delete a specific posts
         Given I delete the 1st "posts"
         And the response was successful
