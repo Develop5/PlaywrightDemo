@@ -498,7 +498,7 @@ Depending whethe you are in Linux or Windows
 *I am here:*
 - [ ] Section 28: Environment Variable Management and Custom Global Configuration
 
-    Chapter 211. Environment files for better environment variable management
+    Chapter 212. Introducing global configuration - Reusable getResponse function - part 1
 
 
 

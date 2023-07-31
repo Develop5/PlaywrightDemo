@@ -1,11 +1,26 @@
 import dotenv from 'dotenv'
-import { env } from './env/parseEnv'
+import { 
+    env,
+    getJsonFromFile
+} from './env/parseEnv'
+import { 
+    HostsConfig,
+    GlobalConfig
+} from './env/global'
+
 
 dotenv.config( {path: env('COMMON_CONFIG_FILE')} )
+
+const hostsConfig: HostsConfig = getJsonFromFile(env('HOSTS_URLS_PATH'))
+
+const worldParameters: GlobalConfig = {
+    hostsConfig
+}
 
 const common = `./src/features/**/*.feature \
                 --require-module ts-node/register \
                 --require ./src/step-definitions/**/**/*.ts \
+                --world-parameters ${JSON.stringify(worldParameters)} \
                 -f json:./reports/report.json \
                 --format progress-bar`
 
