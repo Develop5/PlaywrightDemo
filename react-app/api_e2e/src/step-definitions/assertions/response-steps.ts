@@ -4,7 +4,7 @@ import { expect } from "@playwright/test"
 
 Then(
     /^the response was (successful)?(unsuccessful)?$/,
-    async function(this: ScenarioWorld, success: boolean, unsuccessful: boolean) {
+    async function(this: ScenarioWorld, successful: boolean, unsuccessful: boolean) {
         const {
             globalAPIResponseVariables
         } = this
