@@ -1,5 +1,5 @@
 import { APIRequestContext, APIResponse } from "playwright";
-import { GlobalConfig, GlobalAPIResponseVariables } from "../env/global";
+import { GlobalConfig, GlobalAPIResponseVariables, JsonPayloadName } from "../env/global";
 import { retrieveHostURL } from "./host-helper" 
 
 export const getResponse = async (
@@ -28,6 +28,26 @@ export const deleteResponse = async (
     const url = retrieveHostURL(globalConfig)
 
     const response = await request.delete(url.href+route)
+
+    globalAPIResponseVariables.response = response
+
+    return response
+}
+
+
+export const postResponse = async (
+    request: APIRequestContext,
+    route: string,
+    jsonPayloadName: JsonPayloadName,
+    globalConfig: GlobalConfig,
+    globalAPIResponseVariables: GlobalAPIResponseVariables
+): Promise<APIResponse> => {
+
+    const url = retrieveHostURL(globalConfig)
+
+    const payload = globalConfig.jsonPayloadMappings[jsonPayloadName]
+
+    const response = await request.post(url.href+route, {data: payload})
 
     globalAPIResponseVariables.response = response
 

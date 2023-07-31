@@ -64,7 +64,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           response = _context3.sent;
           expected_response = dataTable.raw();
           for (i = 0; i < expected_response.length; i++) {
-            for (j = 0; j < expected_response.length; j++) {
+            for (j = 0; j < expected_response[i].length; j++) {
               (0, _test.expect)(JSON.stringify(response)).toContain(expected_response[i][j]);
             }
           }

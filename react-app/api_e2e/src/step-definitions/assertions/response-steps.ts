@@ -51,7 +51,7 @@ Then(
         const expected_response = dataTable.raw()
 
         for(let i = 0; i < expected_response.length; i++) {
-            for(let j = 0; j < expected_response.length; j++) {
+            for(let j = 0; j < expected_response[i].length; j++) {
                 expect(JSON.stringify(response)).toContain(expected_response[i][j])
             }
 

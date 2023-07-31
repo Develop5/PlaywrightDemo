@@ -512,9 +512,9 @@ from api_e2e folder, run:
 &nbsp;
 
 *I am here:*
-- [ ] Section 29: Cucumber HTML Report (Parallel and Retry)
+- [ ] Section 30: The Final 3 - Post, Patch and PUT and asserting on response text errors
 
-    Chapter 218. Adding our first automation test for DELETE
+    Chapter 220. Creating posts with POST - part 1
 
 
 
@@ -523,6 +523,7 @@ from api_e2e folder, run:
     Time:     
 &nbsp;
 
+##### Resources #####
 
 Emoji
 A simple plugin to insert emoji from the command palette.
@@ -537,6 +538,23 @@ type > select Emoji: Insert emoji
 
 Run Emoji: Insert emoji or Emoji: Insert emoji unicode in the command palette by hitting enter and select the emoji to insert at the cursor.
 
-Example
+&nbsp;
+
+Printing compelling messages:
+
+[Look for emojies here](https://emojipedia.org/firecracker)
+
+
+    (ex. with Dynamite)
+
+    console.log('  🧨 Lourdes >>>>>>>>  ')
+    console.log(` Cell i, j : ${i},    ${i}     Contains: ${expected_response[i][j]}`)
+    console.log(' Contains: ')
+    console.log('Lourdes >>>>>>>>  🧨 ')
+
+
+&nbsp;
+
+For Markdown Syntax:
 
 [Makdown Guide](https://www.markdownguide.org/basic-syntax)

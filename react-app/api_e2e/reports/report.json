@@ -4,30 +4,30 @@
     "elements": [
       {
         "description": "",
-        "id": "as-an-api-i-can-delete-posts;as-an-api-i-can-delete-a-specific-posts",
+        "id": "as-an-api-i-can-create-posts;as-an-api-i-can-create-a-new-post",
         "keyword": "Scenario",
         "line": 4,
-        "name": "As an API I can delete a specific posts",
+        "name": "As an API I can create a new post",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 15151500
+              "duration": 14383499
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I delete the 1st \"posts\"",
+            "name": "I create a new \"posts\" with \"new post\"",
             "match": {
-              "location": "src\\step-definitions\\delete-steps.ts:14"
+              "location": "src\\step-definitions\\post-steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 300734799
+              "duration": 312175500
             }
           },
           {
@@ -40,20 +40,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4169800
+              "duration": 4572999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "the response status code is 200",
+            "name": "the response status code is 201",
             "match": {
               "location": "src\\step-definitions\\assertions\\response-steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2490799
+              "duration": 2462699
             }
           },
           {
@@ -62,7 +62,26 @@
                 "rows": [
                   {
                     "cells": [
-                      "{}"
+                      "id",
+                      "101"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "userId",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "title",
+                      "New Post"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "body",
+                      "This is a new post"
                     ]
                   }
                 ]
@@ -76,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4557400
+              "duration": 6253799
             }
           }
         ],
@@ -89,11 +108,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-an-api-i-can-delete-posts",
+    "id": "as-an-api-i-can-create-posts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As an API I can delete posts",
+    "name": "As an API I can create posts",
     "tags": [],
-    "uri": "src\\features\\DELETE.feature"
+    "uri": "src\\features\\POST.feature"
   }
 ]
