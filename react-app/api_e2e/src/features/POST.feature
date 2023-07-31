@@ -1,6 +1,7 @@
 Feature: As an API I can create posts
 
-    @dev
+    @smoke
+    @regression
     Scenario: As an API I can create a new post
         Given I create a new "posts" with "new post"
         And the response was successful

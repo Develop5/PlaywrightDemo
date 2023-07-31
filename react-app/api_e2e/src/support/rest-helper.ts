@@ -53,3 +53,23 @@ export const postResponse = async (
 
     return response
 }
+
+
+export const patchResponse = async (
+    request: APIRequestContext,
+    route: string,
+    jsonPayloadName: JsonPayloadName,
+    globalConfig: GlobalConfig,
+    globalAPIResponseVariables: GlobalAPIResponseVariables
+): Promise<APIResponse> => {
+
+    const url = retrieveHostURL(globalConfig)
+
+    const payload = globalConfig.jsonPayloadMappings[jsonPayloadName]
+
+    const response = await request.patch(url.href+route, {data: payload})
+
+    globalAPIResponseVariables.response = response
+
+    return response
+}

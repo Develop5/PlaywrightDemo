@@ -4,30 +4,30 @@
     "elements": [
       {
         "description": "",
-        "id": "as-an-api-i-can-create-posts;as-an-api-i-can-create-a-new-post",
+        "id": "as-an-api-i-can-edit-posts;as-an-api-i-can-edit-a-post",
         "keyword": "Scenario",
         "line": 4,
-        "name": "As an API I can create a new post",
+        "name": "As an API I can edit a post",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 14383499
+              "duration": 15481300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I create a new \"posts\" with \"new post\"",
+            "name": "I patch the 1st \"posts\" with an \"new title\"",
             "match": {
-              "location": "src\\step-definitions\\post-steps.ts:14"
+              "location": "src\\step-definitions\\patch-steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 312175500
+              "duration": 308143900
             }
           },
           {
@@ -40,20 +40,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4572999
+              "duration": 3688899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "the response status code is 201",
+            "name": "the response status code is 200",
             "match": {
               "location": "src\\step-definitions\\assertions\\response-steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2462699
+              "duration": 2486599
             }
           },
           {
@@ -63,7 +63,7 @@
                   {
                     "cells": [
                       "id",
-                      "101"
+                      "1"
                     ]
                   },
                   {
@@ -74,14 +74,8 @@
                   },
                   {
                     "cells": [
-                      "title",
-                      "New Post"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "body",
-                      "This is a new post"
+                      "id",
+                      "Just an edited title"
                     ]
                   }
                 ]
@@ -95,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6253799
+              "duration": 4371600
             }
           }
         ],
@@ -108,11 +102,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-an-api-i-can-create-posts",
+    "id": "as-an-api-i-can-edit-posts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As an API I can create posts",
+    "name": "As an API I can edit posts",
     "tags": [],
-    "uri": "src\\features\\POST.feature"
+    "uri": "src\\features\\PATCH.feature"
   }
 ]
