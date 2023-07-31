@@ -509,6 +509,17 @@ from api_e2e folder, run:
     npm install cucumber-html-reporter
 
 
+#### Changes in the script "test" ####
+
+This piece was added to "test" which ensures that the folder with transpiled code is cleaned up before calling cucumber-js.
+
+    rimraf dist && 
+
+Now, by running
+
+    npm run test
+The complete folder is deleted
+
 &nbsp;
 
 *I am here:*
