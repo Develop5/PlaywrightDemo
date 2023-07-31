@@ -1,6 +1,7 @@
 Feature: As an API I can update posts
 
-    @dev
+    @smoke
+    @regression
     Scenario: As an API I can update a specific post
         Given I update the 1st "posts" with an "updated post"
         And the response was successful
