@@ -262,7 +262,7 @@ Other tips in Playwright Inspector:
 
 Introduce a typo in the source code
 
-react-app\src\ContactItem.react.js
+    react-app\src\ContactItem.react.js
 
 Now you go to the page in the browser and you will see an extra "s" at the end of each name
 ```
@@ -319,6 +319,7 @@ And run again "yarn install"
 Modules to test accessibility: axe-playwright and axe-html-reporter
 
 Go to e2e and:
+
         yarn add axe-playwright -D
         yarn add axe-html-reporter -D
 
@@ -386,12 +387,14 @@ Then, go to this folder and:
 And yes (Enter) to all questions
 
 Then,
+
     npx -p typescript tsc --init
 
 And yes to all.
 This creates the tsconfig.json file
 
 Now,
+
     yarn add @playwright/test
 
 And then create the "src/tests" folder in react-app/api_e2e
@@ -410,9 +413,11 @@ Then, to execute the tests:
 Till now we have not used cucumber for API. If you plan to do that, follow these steps.
 
 In the api_e2e folder execute:
+
     npm install @cucumber/cucumber          (see what happens in package.json)
 
 Next install typescript:
+
     npm install typescript
 
 If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
@@ -429,6 +434,7 @@ This script also indicates where are the step-definitions.
 
 
 Now, we can execute in our api_e2e folder:
+
     npm run cucumber
 
 
@@ -441,12 +447,14 @@ That is why with this, we can execute scenarios in parallel.
 
 
 Install playwright
+
     npm install playwright
 
 
 #### ESLint ####
 
 From our folder api_e2e:
+
     npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
 Now create files
@@ -468,6 +476,7 @@ Create cucumber.js, update package.json and install babel
 Create index.ts
 &nbsp;
 And now, the test is executed a little differently
+
     npm run cucumber -- --profile dev
 
 
@@ -480,6 +489,7 @@ In the api_e2e folder:
 common.env needs to be created
 
 Create files:
+
     run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
     run_tests.bat       For Windows
 
@@ -490,7 +500,13 @@ And now tests can be executed through this command:
 Depending whethe you are in Linux or Windows
 
 
+#### Cucumber reporter ####
 
+Create a folder reporter an a cucumber-report.ts inside it
+
+from api_e2e folder, run:
+
+    npm install cucumber-html-reporter
 
 
 &nbsp;
