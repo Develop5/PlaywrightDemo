@@ -78,3 +78,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref3.apply(this, arguments);
   };
 }());
+(0, _cucumber.Then)(/^the response text contains the attributes:$/, /*#__PURE__*/function () {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(dataTable) {
+    var globalAPIResponseVariables, response, expected_response, i, j;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          globalAPIResponseVariables = this.globalAPIResponseVariables;
+          console.log("the response text contains the attributes: ".concat(dataTable.raw()));
+          _context4.next = 4;
+          return globalAPIResponseVariables.response.text();
+        case 4:
+          response = _context4.sent;
+          expected_response = dataTable.raw();
+          for (i = 0; i < expected_response.length; i++) {
+            for (j = 0; j < expected_response[i].length; j++) {
+              (0, _test.expect)(response).toContain(expected_response[i][j]);
+            }
+          }
+        case 7:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, this);
+  }));
+  return function (_x8, _x9) {
+    return _ref4.apply(this, arguments);
+  };
+}());

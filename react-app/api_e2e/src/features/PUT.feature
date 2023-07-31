@@ -13,9 +13,12 @@ Feature: As an API I can update posts
             #| body   | This is completely updated post |
 
 
-
     @dev
+    @smoke
+    @regression
     Scenario: Asan API I can not update a post that does not exist
         Given I update the 200th "posts" with an "updated post"
         And the response was unsuccessful
         Then the response status code is 500
+        And the response text contains the attributes:
+            |   Cannot read properties of undefined (reading 'id')  |
