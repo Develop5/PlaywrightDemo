@@ -493,11 +493,11 @@ Create files:
     run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
     run_tests.bat       For Windows
 
-And now tests can be executed through this command:
-    ./run_tests.sh dev          (Works for me)
+And now tests can be executed through this command: 
+    ./run_tests.sh dev          
             or
     ./run_tests.bat dev         
-Depending whethe you are in Linux or Windows
+Depending whethe you are in Linux or Windows. (Both work for me)
 
 
 #### Cucumber reporter ####
