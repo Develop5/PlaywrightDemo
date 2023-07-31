@@ -484,9 +484,9 @@ Create files:
     run_tests.bat       For Windows
 
 And now tests can be executed through this command:
-    ./run_tests.sh dev
+    ./run_tests.sh dev          (Works for me)
             or
-    ./run_tests.bat dev
+    ./run_tests.bat dev         
 Depending whethe you are in Linux or Windows
 
 

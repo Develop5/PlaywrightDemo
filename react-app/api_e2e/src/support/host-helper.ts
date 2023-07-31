@@ -8,6 +8,7 @@ export const retrieveHostURL = (
     } = process.env
 
     const hostPath = hostsConfig[hostname]
+    
     const url = new URL(hostPath)
 
     return url

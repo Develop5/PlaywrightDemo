@@ -13,11 +13,8 @@ Given(
 
         console.log(`I retrieve ${route}`)
 
-        const response = await request.get("https://jsonplaceholder.typicode.com/"+route)
+        //const response = await request.get("https://jsonplaceholder.typicode.com/"+route)
         await getResponse(request, route, globalConfig, globalAPIResponseVariables)
 
-        globalAPIResponseVariables.response = response
-
-        
     }
 )
