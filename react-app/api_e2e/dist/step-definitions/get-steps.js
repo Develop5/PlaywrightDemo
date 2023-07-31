@@ -14,8 +14,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         case 0:
           request = this.api.request, globalAPIResponseVariables = this.globalAPIResponseVariables, globalConfig = this.globalConfig;
           console.log("I retrieve ".concat(route));
-
-          //const response = await request.get("https://jsonplaceholder.typicode.com/"+route)
           _context.next = 4;
           return (0, _restHelper.getResponse)(request, route, globalConfig, globalAPIResponseVariables);
         case 4:
@@ -26,5 +24,28 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   }));
   return function (_x, _x2) {
     return _ref.apply(this, arguments);
+  };
+}());
+(0, _cucumber.Given)(/^I retrieve the ([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd) "([^"]*)"$/, /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(index, route) {
+    var _index$match;
+    var request, globalConfig, globalAPIResponseVariables, currentIndex, routeAtIndex;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          request = this.api.request, globalConfig = this.globalConfig, globalAPIResponseVariables = this.globalAPIResponseVariables;
+          console.log("I retrieve the ".concat(index, " ").concat(route));
+          currentIndex = Number((_index$match = index.match(/\d/g)) === null || _index$match === void 0 ? void 0 : _index$match.join(''));
+          routeAtIndex = "".concat(route, "/").concat(currentIndex);
+          _context2.next = 6;
+          return (0, _restHelper.getResponse)(request, routeAtIndex, globalConfig, globalAPIResponseVariables);
+        case 6:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2, this);
+  }));
+  return function (_x3, _x4, _x5) {
+    return _ref2.apply(this, arguments);
   };
 }());

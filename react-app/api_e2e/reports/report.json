@@ -4,67 +4,37 @@
     "elements": [
       {
         "description": "",
-        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-all-the-posts",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-a-simple-post",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "As an API I can retrieve all the posts",
+        "line": 13,
+        "name": "As an API I can retrieve a simple post",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12811800
+              "duration": 12961399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "I retrieve \"posts\"",
+            "line": 14,
+            "name": "I retrieve the 1st \"posts\"",
             "match": {
-              "location": "src\\step-definitions\\get-steps.ts:14"
+              "location": "src\\step-definitions\\get-steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 121971599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the response was successful",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\response-steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2383499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "the response status code is 200",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\response-steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 957900
+              "duration": 125221299
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 4
-          },
-          {
-            "name": "@regression",
-            "line": 5
+            "line": 12
           }
         ],
         "type": "scenario"

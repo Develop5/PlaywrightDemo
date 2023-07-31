@@ -496,9 +496,9 @@ Depending whethe you are in Linux or Windows
 &nbsp;
 
 *I am here:*
-- [ ] Section 28: Environment Variable Management and Custom Global Configuration
+- [ ] Section 29: Cucumber HTML Report (Parallel and Retry)
 
-    Chapter 212. Introducing global configuration - Reusable getResponse function - part 1
+    Chapter 215. Adding more GET automation tests to our suite - part 1
 
 
 
