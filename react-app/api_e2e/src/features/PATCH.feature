@@ -1,6 +1,7 @@
 Feature: As an API I can edit posts
 
-    @dev
+    @smoke
+    @regression
     Scenario: As an API I can edit a post
         Given I patch the 1st "posts" with an "new title"
         And the response was successful
