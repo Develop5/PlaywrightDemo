@@ -498,9 +498,8 @@ Depending whethe you are in Linux or Windows
 *I am here:*
 - [ ] Section 29: Cucumber HTML Report (Parallel and Retry)
 
-    Chapter 216. Adding more GET automation tests to our suite - part 2
+    Chapter 217. Introducing the cucumber html reporter - Adding Parallel and Retry capabilities
 
-    dataTable is an object that contain data defined for a new step (not the whole scenario)
 
 
 
