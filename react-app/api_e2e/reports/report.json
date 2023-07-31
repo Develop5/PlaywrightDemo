@@ -4,93 +4,63 @@
     "elements": [
       {
         "description": "",
-        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-a-simple-post",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-cannot-retrieve-animals",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "As an API I can retrieve a simple post",
+        "line": 24,
+        "name": "As an API I cannot retrieve animals",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 13176399
+              "duration": 13611599
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
-            "name": "I retrieve the 1st \"posts\"",
+            "line": 25,
+            "name": "I retrieve \"animals\"",
             "match": {
-              "location": "src\\step-definitions\\get-steps.ts:21"
+              "location": "src\\step-definitions\\get-steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 221711099
+              "duration": 302342199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "the response was successful",
+            "line": 26,
+            "name": "the response was unsuccessful",
             "match": {
               "location": "src\\step-definitions\\assertions\\response-steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1915700
+              "duration": 1971900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "the response status code is 200",
+            "line": 27,
+            "name": "the response status code is 404",
             "match": {
               "location": "src\\step-definitions\\assertions\\response-steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 953600
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "id",
-                      "1"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "userId",
-                      "1"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the response json contains the attributes:",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\response-steps.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3539900
+              "duration": 975600
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 12
+            "line": 23
           }
         ],
         "type": "scenario"
