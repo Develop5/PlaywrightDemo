@@ -498,7 +498,9 @@ Depending whethe you are in Linux or Windows
 *I am here:*
 - [ ] Section 29: Cucumber HTML Report (Parallel and Retry)
 
-    Chapter 215. Adding more GET automation tests to our suite - part 1
+    Chapter 216. Adding more GET automation tests to our suite - part 2
+
+    dataTable is an object that contain data defined for a new step (not the whole scenario)
 
 
 

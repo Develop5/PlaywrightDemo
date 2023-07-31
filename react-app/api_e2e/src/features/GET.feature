@@ -14,3 +14,6 @@ Feature: As an API I can retrieve posts
         Given I retrieve the 1st "posts"
         And the response was successful
         Then the response status code is 200
+        And the response json contains the attributes:
+            | id     | 1 |
+            | userId | 1 |

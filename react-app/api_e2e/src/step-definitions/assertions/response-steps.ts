@@ -35,3 +35,27 @@ Then(
         expect(response.status()).toBe(Number(statusCode))
     }
 )
+
+Then(
+    /^the response json contains the attributes:$/,
+
+    async function(this: ScenarioWorld, dataTable) {
+        const {
+            globalAPIResponseVariables
+        } = this
+
+        console.log(`the response json contains the attributes: %{dataTable.raw()}`)
+
+        const response = await globalAPIResponseVariables.response.json()
+
+        const expected_response = dataTable.raw()
+
+        for(let i = 0; i < expected_response.length; i++) {
+            for(let j = 0; j < expected_response.length; j++) {
+                expect(JSON.stringify(response)).toContain(expected_response[i][j])
+            }
+
+
+        }
+    }
+)
