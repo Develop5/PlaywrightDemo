@@ -523,9 +523,7 @@ The complete folder is deleted
 &nbsp;
 
 *I am here:*
-- [ ] Section 30: The Final 3 - Post, Patch and PUT and asserting on response text errors
-
-    Chapter 225. Asserting on response text errors
+- [ ] Conclussion
 
 
 
